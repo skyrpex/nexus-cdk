@@ -31,5 +31,8 @@
 		"onlyBuiltDependencies": [
 			"esbuild"
 		]
+	},
+	"dependencies": {
+		"@changesets/cli": "^2.27.12"
 	}
 }
