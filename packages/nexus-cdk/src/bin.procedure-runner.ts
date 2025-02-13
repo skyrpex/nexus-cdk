@@ -26,7 +26,7 @@ const ws = new WebSocket(wssUrl, {
 // );
 
 const module = await import(fileURLToPath(importFilename));
-// eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
+
 const procedure: Procedure | undefined = module[importName];
 assert(procedure);
 
@@ -48,5 +48,6 @@ await new Promise<void>((resolve, reject) => {
 		ws.on("error", reject);
 	}
 });
+// eslint-disable-next-line @typescript-eslint/no-deprecated
 ws.send(stringify(output as Serializable));
 ws.close();

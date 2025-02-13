@@ -12,6 +12,7 @@ import { getSpawnNodeTypescriptOptions } from "./utils/spawn-node-typescript.ts"
 
 export interface ProcedureRunnerOptions {
 	constructPath: string;
+	// eslint-disable-next-line @typescript-eslint/no-deprecated
 	context: Serializable;
 	importFilename: string;
 	importName: string;

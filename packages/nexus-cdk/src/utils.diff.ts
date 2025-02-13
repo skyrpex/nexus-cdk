@@ -59,7 +59,7 @@ export function diff(a: unknown, b: unknown): boolean {
 	}
 
 	for (const key of keysA) {
-		// eslint-disable-next-line @typescript-eslint/no-explicit-any, @typescript-eslint/no-unsafe-member-access
+		// eslint-disable-next-line @typescript-eslint/no-explicit-any
 		if (!keysB.includes(key) || diff((a as any)[key], (b as any)[key])) {
 			return true;
 		}

@@ -24,9 +24,6 @@ importers:
       eslint:
         specifier: ^9.20.0
         version: 9.20.1
-      eslint-config-turbo:
-        specifier: ^2.4.1
-        version: 2.4.2(eslint@9.20.1)(turbo@2.4.2)
       eslint-import-resolver-typescript:
         specifier: ^3.7.0
         version: 3.7.0(eslint-plugin-import@2.31.0)(eslint@9.20.1)
@@ -84,6 +81,9 @@ importers:
       '@nexus-cdk/service':
         specifier: workspace:^
         version: link:../service
+      '@nexus-cdk/utils':
+        specifier: workspace:^
+        version: link:../utils
       constructs:
         specifier: ^10.4.2
         version: 10.4.2
@@ -291,6 +291,9 @@ importers:
       '@nexus-cdk/utils':
         specifier: workspace:^
         version: link:../@nexus-cdk/utils
+      '@nexus-cdk/vite':
+        specifier: workspace:^
+        version: link:../@nexus-cdk/vite
       aws-cdk-lib:
         specifier: ^2.178.1
         version: 2.178.2(constructs@10.4.2)
@@ -1694,10 +1697,6 @@ packages:
     resolution: {integrity: sha512-35mSku4ZXK0vfCuHEDAwt55dg2jNajHZ1odvF+8SSr82EsZY4QmXfuWso8oEd8zRhVObSN18aM0CjSdoBX7zIw==}
     engines: {node: '>=0.10.0'}
 
-  dotenv@16.0.3:
-    resolution: {integrity: sha512-7GO6HghkA5fYG9TYnNxi14/7K9f5occMlp3zXAuSxn7CKCxt9xbNWG7yF8hTCSUchlfWSe3uLmlPfigevRItzQ==}
-    engines: {node: '>=12'}
-
   dotenv@16.4.7:
     resolution: {integrity: sha512-47qPchRCykZC03FhkYAhrvwU4xDBFIj1QPqaarj6mdM/hgUzfPHcpkHJOn3mJAufFeeAxAzeGsr5X0M4k6fLZQ==}
     engines: {node: '>=12'}
@@ -1772,12 +1771,6 @@ packages:
     resolution: {integrity: sha512-TtpcNJ3XAzx3Gq8sWRzJaVajRs0uVxA2YAkdb1jm2YkPz4G6egUFAyA3n5vtEIZefPk5Wa4UXbKuS5fKkJWdgA==}
     engines: {node: '>=10'}
 
-  eslint-config-turbo@2.4.2:
-    resolution: {integrity: sha512-yPiW5grffSWETp/3bVPUXWQkHfiLoOBb3wuBbM90HlKkLOhggySn9C6/yUccprqRguMgR5OzXIuzDuUnX6bulw==}
-    peerDependencies:
-      eslint: '>6.6.0'
-      turbo: '>2.0.0'
-
   eslint-import-resolver-node@0.3.9:
     resolution: {integrity: sha512-WFj2isz22JahUv+B788TlO3N6zL3nNJGU8CcZbPZvVEkBPaJdCV4vy5wyghty5ROFbCRnm132v8BScu5/1BQ8g==}
 
@@ -1830,12 +1823,6 @@ packages:
     engines: {node: ^18.0.0 || >=20.0.0}
     peerDependencies:
       eslint: '>=8.0.0'
-
-  eslint-plugin-turbo@2.4.2:
-    resolution: {integrity: sha512-67IZtvOFaWDnUmYMV3luRIE1kqL+ok5MxPEsIPUqH2vQggML7jmZFZx/P9jhXAoFH+pViEz5QEzDa2DBLHqzQg==}
-    peerDependencies:
-      eslint: '>6.6.0'
-      turbo: '>2.0.0'
 
   eslint-scope@8.2.0:
     resolution: {integrity: sha512-PHlWUfG6lvPc3yvP5A4PNyBL1W8fkDUccmI21JUu/+GKZBoH/W5u6usENXUrWFRsyoW5ACUjFGgAFQp5gUlb/A==}
@@ -4577,8 +4564,6 @@ snapshots:
     dependencies:
       esutils: 2.0.3
 
-  dotenv@16.0.3: {}
-
   dotenv@16.4.7: {}
 
   dunder-proto@1.0.1:
@@ -4772,12 +4757,6 @@ snapshots:
 
   escape-string-regexp@4.0.0: {}
 
-  eslint-config-turbo@2.4.2(eslint@9.20.1)(turbo@2.4.2):
-    dependencies:
-      eslint: 9.20.1
-      eslint-plugin-turbo: 2.4.2(eslint@9.20.1)(turbo@2.4.2)
-      turbo: 2.4.2
-
   eslint-import-resolver-node@0.3.9:
     dependencies:
       debug: 3.2.7
@@ -4851,12 +4830,6 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
       - typescript
-
-  eslint-plugin-turbo@2.4.2(eslint@9.20.1)(turbo@2.4.2):
-    dependencies:
-      dotenv: 16.0.3
-      eslint: 9.20.1
-      turbo: 2.4.2
 
   eslint-scope@8.2.0:
     dependencies:

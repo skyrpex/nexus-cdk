@@ -1,5 +1,6 @@
 import { App } from "aws-cdk-lib";
 import * as cdk from "nexus-cdk";
+
 import {
 	deleteMessage,
 	listMessages,
@@ -28,23 +29,23 @@ const table = new cdk.DynamodbTable(app, "Messages", {
 
 const api = cdk.Api.fromEndpoints(app, "Api", {
 	endpoints: {
-		writeMessage: new cdk.Mutation(app, "WriteMessage", {
-			procedure: writeMessage,
+		deleteMessage: new cdk.Mutation(app, "DeleteMessage", {
 			context: {
 				table: table.connection,
 			},
+			procedure: deleteMessage,
 		}),
 		listMessages: new cdk.Query(app, "ListMessages", {
+			context: {
+				table: table.connection,
+			},
 			procedure: listMessages,
-			context: {
-				table: table.connection,
-			},
 		}),
-		deleteMessage: new cdk.Mutation(app, "DeleteMessage", {
-			procedure: deleteMessage,
+		writeMessage: new cdk.Mutation(app, "WriteMessage", {
 			context: {
 				table: table.connection,
 			},
+			procedure: writeMessage,
 		}),
 	},
 	prefix: "api",

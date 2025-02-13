@@ -1,4 +1,5 @@
 import assert from "node:assert";
+
 import getPort, { portNumbers } from "get-port";
 
 import { procedure } from "@nexus-cdk/procedure";
@@ -15,8 +16,8 @@ export const { viteProcedure } = procedure("viteProcedure", import.meta.url)
 		const server = await createServer({
 			root: opts.ctx.root,
 			server: {
-				proxy: opts.ctx.proxy,
 				port,
+				proxy: opts.ctx.proxy,
 				strictPort: true,
 			},
 		});

@@ -1,4 +1,7 @@
+/* eslint-disable @typescript-eslint/non-nullable-type-assertion-style */
+
 import { createApiClient } from "@nexus-sdk/client-api";
+
 import type { Api } from "../src/infra.ts";
 
 const form = document.querySelector("#form") as HTMLFormElement;
@@ -7,7 +10,7 @@ const messageList = document.querySelector("#list") as HTMLUListElement;
 
 const client = createApiClient<Api>("/api");
 
-async function updateMessageList() {
+const updateMessageList = async () => {
 	const messages = await client.listMessages.query();
 	messageList.innerHTML = messages
 		.map(
@@ -15,9 +18,9 @@ async function updateMessageList() {
 				`<li>[${message.messageId}] ${message.message} <button data-message-id="${message.messageId}">Delete</button></li>`,
 		)
 		.join("");
-}
+};
 
-async function writeMessage() {
+const writeMessage = async () => {
 	const { value } = input;
 	if (!value) return;
 	input.value = "";
@@ -26,22 +29,23 @@ async function writeMessage() {
 		message: value,
 	});
 	await updateMessageList();
-}
+};
 
 form.addEventListener("submit", (event) => {
 	event.preventDefault();
-	writeMessage();
+	void writeMessage();
 });
 
-messageList.addEventListener("click", async (event) => {
+messageList.addEventListener("click", (event) => {
 	const target = event.target as HTMLElement;
 	if (target.tagName === "BUTTON") {
 		const messageId = target.dataset.messageId;
 		if (messageId) {
-			await client.deleteMessage.mutation({ messageId });
-			await updateMessageList();
+			void client.deleteMessage.mutation({ messageId }).then(async () => {
+				await updateMessageList();
+			});
 		}
 	}
 });
 
-updateMessageList();
+void updateMessageList();

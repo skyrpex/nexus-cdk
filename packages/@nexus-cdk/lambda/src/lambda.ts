@@ -53,6 +53,7 @@ export class Lambda<T extends BuiltProcedureDef>
 		} else {
 			const service = new Service(this, "Service", {
 				context: {
+					// eslint-disable-next-line @typescript-eslint/no-deprecated
 					context: props.context as Serializable,
 					importFilename: props.procedure.importFilename,
 					importName: props.procedure.importName,

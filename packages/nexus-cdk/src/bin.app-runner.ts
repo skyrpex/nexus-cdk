@@ -139,6 +139,7 @@ ws.send(
 		procedures.map((procedure) => ({
 			...procedure,
 			hash: hashes.get(getProcedureId(procedure)),
+			// eslint-disable-next-line @typescript-eslint/no-deprecated
 		})) as unknown as Serializable,
 	),
 );

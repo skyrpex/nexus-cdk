@@ -41,13 +41,10 @@ type AnyProcedureBuilderDef = ProcedureBuilderDef<any, any>;
 
 type AnyResolver = ProcedureResolver<any, any, any, any>;
 
-type ContainsNever<T> = [T] extends [never]
-	? true
-	: T extends object
-		? { [K in keyof T]: ContainsNever<T[K]> }[keyof T] extends true
-			? true
-			: false
-		: false;
+interface CheckAnyHKT extends HKT {
+	 
+	apply: (value: Assume<this["_1"], any>) => typeof value;
+}
 
 // type CheckSchemaInputOrNever<Check extends HKT, T> = T extends StandardSchemaV1
 // 	? Apply<Check, StandardSchemaV1.InferInput<T>> extends never
@@ -66,6 +63,14 @@ type CheckSchemaOutputOrNever<Check extends HKT, T> = T extends StandardSchemaV1
 		? never
 		: T
 	: never;
+
+type ContainsNever<T> = [T] extends [never]
+	? true
+	: T extends object
+		? { [K in keyof T]: ContainsNever<T[K]> }[keyof T] extends true
+			? true
+			: false
+		: false;
 
 type DefaultValue<TValue, TFallback> = TValue extends UnsetMarker
 	? TFallback
@@ -159,11 +164,6 @@ interface ProcedureResolverOptions<TContext, TInputOut> {
 type Simplify<TType> = TType extends any[] | Date
 	? TType
 	: { [K in keyof TType]: TType[K] };
-
-interface CheckAnyHKT extends HKT {
-	// eslint-disable-next-line @typescript-eslint/no-explicit-any
-	apply: (value: Assume<this["_1"], any>) => typeof value;
-}
 
 export function createBuilder<Serializable extends HKT = CheckAnyHKT>() {
 	return <ImportName extends string>(

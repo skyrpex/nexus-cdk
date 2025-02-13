@@ -17,7 +17,7 @@ test("allows creating simple procedures", () => {
 	});
 });
 
-test("procedures can be invoked", async () => {
+test("procedures can be invoked", () => {
 	const { procedure } = anyProcedure(
 		"procedure",
 		"file://procedure.ts",
