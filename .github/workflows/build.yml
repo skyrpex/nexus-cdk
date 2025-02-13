@@ -25,7 +25,7 @@ jobs:
       - name: Install dependencies
         run: pnpm install
       - name: Lint and format
-        run: pnpm run lint
+        run: bunx --bun eslint --fix
       - name: Test
         run: bun test
       - name: Find mutations
