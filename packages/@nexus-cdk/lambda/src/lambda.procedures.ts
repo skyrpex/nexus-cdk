@@ -16,6 +16,7 @@ export const { createLambdaServer } = procedure(
 	import.meta.url,
 )
 	.context<{
+		// eslint-disable-next-line @typescript-eslint/no-deprecated
 		context: Serializable;
 		importFilename: string;
 		importName: string;
@@ -31,10 +32,13 @@ export const { createLambdaServer } = procedure(
 		app.post("/", async (c) => {
 			// const mod = await tsImport(opts.ctx.importFilename, import.meta.url);
 			const mod = await import(opts.ctx.importFilename);
-			 
+
 			const procedure = mod[opts.ctx.importName] as Procedure<{
+				// eslint-disable-next-line @typescript-eslint/no-deprecated
 				context: Serializable;
+				// eslint-disable-next-line @typescript-eslint/no-deprecated
 				input: Serializable;
+				// eslint-disable-next-line @typescript-eslint/no-deprecated
 				output: Serializable;
 			}>;
 			assert(
@@ -42,6 +46,7 @@ export const { createLambdaServer } = procedure(
 				`Procedure [${opts.ctx.importName}] is required but not found in [${opts.ctx.importFilename}]`,
 			);
 			const raw = await c.req.text();
+			// eslint-disable-next-line @typescript-eslint/no-deprecated
 			const input = parse(raw as Stringified<Serializable>);
 			const output = await procedure.invoke({
 				ctx: opts.ctx.context,
@@ -54,7 +59,7 @@ export const { createLambdaServer } = procedure(
 		app.get("/", async (c) => {
 			// const mod = await tsImport(opts.ctx.importFilename, import.meta.url);
 			const mod = await import(opts.ctx.importFilename);
-			 
+
 			const procedure = mod[opts.ctx.importName] as Procedure;
 			assert(
 				procedure,

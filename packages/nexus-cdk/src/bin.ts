@@ -82,6 +82,7 @@ if (mode === "synth") {
 
 interface ServiceDetails {
 	context: {
+		// eslint-disable-next-line @typescript-eslint/no-deprecated
 		context: Record<string, Serializable> | undefined;
 		importFilename: string;
 		importName: string;
@@ -215,6 +216,7 @@ const startProcedures = async (procedures: ServiceDetails[]) => {
 			const child = spawnProcedure({
 				constructPath: service.path,
 
+				// eslint-disable-next-line @typescript-eslint/no-deprecated
 				context: parse(resolvedContext) as unknown as Serializable,
 				importFilename,
 				importName,

@@ -1,7 +1,8 @@
+import assert from "node:assert";
+
+import { DynamoDB } from "@aws-sdk/client-dynamodb";
 import * as cdk from "nexus-cdk";
 import { z } from "zod";
-import { DynamoDB } from "@aws-sdk/client-dynamodb";
-import assert from "node:assert";
 
 export const { writeMessage } = cdk
 	.procedure("writeMessage", import.meta.url)
@@ -16,12 +17,12 @@ export const { writeMessage } = cdk
 			endpoint: ctx.table.endpoint,
 		});
 		await dynamodb.putItem({
-			TableName: ctx.table.tableName,
 			Item: {
 				channel: { S: "default" },
-				messageId: { S: crypto.randomUUID() },
 				message: { S: input.message },
+				messageId: { S: crypto.randomUUID() },
 			},
+			TableName: ctx.table.tableName,
 		});
 		return {
 			ok: true,
@@ -36,19 +37,19 @@ export const { listMessages } = cdk
 			endpoint: ctx.table.endpoint,
 		});
 		const result = await dynamodb.query({
-			TableName: ctx.table.tableName,
-			KeyConditionExpression: "channel = :channel",
 			ExpressionAttributeValues: {
 				":channel": { S: "default" },
 			},
+			KeyConditionExpression: "channel = :channel",
+			TableName: ctx.table.tableName,
 		});
 		assert(result.Items);
 		return result.Items.map((item) => {
 			assert(item.message?.S);
 			assert(item.messageId?.S);
 			return {
-				messageId: item.messageId.S,
 				message: item.message.S,
+				messageId: item.messageId.S,
 			};
 		});
 	});
@@ -66,11 +67,11 @@ export const { deleteMessage } = cdk
 			endpoint: ctx.table.endpoint,
 		});
 		await dynamodb.deleteItem({
-			TableName: ctx.table.tableName,
 			Key: {
 				channel: { S: "default" },
 				messageId: { S: input.messageId },
 			},
+			TableName: ctx.table.tableName,
 		});
 		return {
 			ok: true,
