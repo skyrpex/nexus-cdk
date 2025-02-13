@@ -1,0 +1,14 @@
+{
+	"name": "@nexus-cdk/tokens",
+	"version": "0.0.0",
+	"type": "module",
+	"exports": {
+		"import": "./src/index.ts",
+		"types": "./src/index.ts"
+	},
+	"dependencies": {
+		"constructs": "^10.4.2",
+		"ohash": "^1.1.4"
+	},
+	"sideEffects": false
+}

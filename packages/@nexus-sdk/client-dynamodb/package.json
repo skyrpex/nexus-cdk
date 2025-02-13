@@ -1,0 +1,13 @@
+{
+	"name": "@nexus-sdk/client-dynamodb",
+	"version": "0.0.0",
+	"type": "module",
+	"exports": {
+		"import": "./src/index.ts",
+		"types": "./src/index.ts"
+	},
+	"dependencies": {
+		"@nexus-sdk/lib-dynamodb": "workspace:^"
+	},
+	"sideEffects": false
+}

@@ -1,0 +1,4 @@
+{
+	"extends": ["//"],
+	"globalEnv": ["NEXUS_CDK_MODE"]
+}

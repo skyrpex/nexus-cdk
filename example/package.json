@@ -1,0 +1,19 @@
+{
+	"name": "example",
+	"private": true,
+	"type": "module",
+	"exports": null,
+	"scripts": {
+		"dev": "bunx --bun nexus-cdk dev src/infra.ts",
+		"synth": "bunx --bun nexus-cdk synth src/infra.ts"
+	},
+	"dependencies": {
+		"@aws-sdk/client-dynamodb": "^3.744.0",
+		"@nexus-sdk/client-api": "workspace:^",
+		"aws-cdk-lib": "^2.178.1",
+		"constructs": "^10.4.2",
+		"nexus-cdk": "workspace:^",
+		"zod": "^3.24.2"
+	},
+	"sideEffects": false
+}

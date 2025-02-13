@@ -1,0 +1,23 @@
+{
+	"name": "@nexus-cdk/procedure",
+	"version": "0.0.0",
+	"type": "module",
+	"exports": {
+		"import": "./src/index.ts",
+		"types": "./src/index.ts"
+	},
+	"scripts": {
+		"test": "bun test --watch"
+	},
+	"dependencies": {
+		"@standard-schema/spec": "^1.0.0",
+		"codec-builder": "^1.1.0",
+		"devalue-codec": "^1.2.0",
+		"valibot": "1.0.0-rc.0"
+	},
+	"devDependencies": {
+		"@types/bun": "^1.2.2",
+		"json-codec": "^1.1.0"
+	},
+	"sideEffects": false
+}

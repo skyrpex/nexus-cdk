@@ -1,0 +1,13 @@
+{
+	"name": "@nexus-sdk/lib-dynamodb",
+	"version": "0.0.0",
+	"type": "module",
+	"exports": {
+		"import": "./src/index.ts",
+		"types": "./src/index.ts"
+	},
+	"dependencies": {
+		"devalue-codec": "^1.2.0"
+	},
+	"sideEffects": false
+}

@@ -1,0 +1,32 @@
+{
+	"name": "nexus-cdk",
+	"version": "0.0.0",
+	"type": "module",
+	"bin": {
+		"nexus-cdk": "./bin/nexus-cdk.js"
+	},
+	"exports": {
+		"import": "./src/index.ts",
+		"types": "./src/index.ts"
+	},
+	"dependencies": {
+		"@nexus-cdk/api": "workspace:^",
+		"@nexus-cdk/dynamodb": "workspace:^",
+		"@nexus-cdk/lambda": "workspace:^",
+		"@nexus-cdk/procedure": "workspace:^",
+		"@nexus-cdk/service": "workspace:^",
+		"@nexus-cdk/tokens": "workspace:^",
+		"@nexus-cdk/utils": "workspace:^",
+		"aws-cdk-lib": "^2.178.1",
+		"constructs": "^10.4.2",
+		"devalue-codec": "^1.2.0",
+		"emittery": "^1.1.0",
+		"esbuild": "^0.25.0",
+		"tsx": "^4.19.2",
+		"ws": "^8.18.0"
+	},
+	"devDependencies": {
+		"@types/ws": "^8.5.14"
+	},
+	"sideEffects": false
+}
