@@ -1,7 +1,7 @@
 import pluginJs from "@eslint/js";
 import pluginQuery from "@tanstack/eslint-plugin-query";
 // @ts-expect-error eslint-config-turbo is not typed
-import turboConfig from "eslint-config-turbo/flat";
+// import turboConfig from "eslint-config-turbo/flat";
 // @ts-expect-error eslint-plugin-import is not typed
 import * as pluginImport from "eslint-plugin-import";
 import perfectionist from "eslint-plugin-perfectionist";
@@ -23,7 +23,7 @@ export default tseslint.config(
 	////////////////////////////////////////////////////////////////////////////
 	// TURBO
 	////////////////////////////////////////////////////////////////////////////
-	...turboConfig,
+	// ...turboConfig,
 
 	////////////////////////////////////////////////////////////////////////////
 	// PLUGIN QUERY (TANSTACK)
@@ -69,11 +69,11 @@ export default tseslint.config(
 	////////////////////////////////////////////////////////////////////////////
 	// PLUGIN IMPORT
 	////////////////////////////////////////////////////////////////////////////
-
-	pluginImport.flatConfigs.recommended,
-
-	pluginImport.flatConfigs.typescript,
 	{
+		extends: [
+			pluginImport.flatConfigs.recommended,
+			pluginImport.flatConfigs.typescript,
+		],
 		rules: {
 			"import/extensions": [
 				"error",
@@ -86,6 +86,7 @@ export default tseslint.config(
 					tsx: "always",
 				},
 			],
+			// "import/enforce-node-protocol-usage": "error",
 		},
 		settings: {
 			"import/parsers": {

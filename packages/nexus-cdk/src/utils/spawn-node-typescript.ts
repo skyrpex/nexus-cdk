@@ -16,7 +16,7 @@ export const getSpawnNodeTypescriptOptions = (
 			process.execPath,
 			[
 				fileURLToPath(import.meta.resolve("tsx/cli")),
-				...(options.watch ? ["--watch", "--clear-screen=false", "--"] : []),
+				...(options.watch ? ["watch", "--clear-screen=false", "--"] : []),
 				options.filename,
 				...(options.args ?? []),
 			],

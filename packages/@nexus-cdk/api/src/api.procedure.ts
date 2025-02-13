@@ -34,10 +34,21 @@ export const { apiServer } = procedure("apiServer", import.meta.url)
 		for (const [key, value] of opts.ctx.endpoints.entries()) {
 			const method = value.type === "mutation" ? "post" : "get";
 			app[method](`${prefix}${key}`, async (c) => {
-				// eslint-disable-next-line @typescript-eslint/no-dynamic-delete
-				delete require.cache[fileURLToPath(value.importFilename)];
+				try {
+					// eslint-disable-next-line @typescript-eslint/no-dynamic-delete
+					delete require.cache[fileURLToPath(value.importFilename)];
+				} catch (error) {
+					if (
+						error instanceof Error &&
+						error.message.includes("require is not defined")
+					) {
+						// Just ignore it.
+					} else {
+						throw error;
+					}
+				}
 				const mod = await import(value.importFilename);
-				// eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
+
 				const procedure = mod[value.importName] as Procedure;
 				assert(
 					procedure,
@@ -85,7 +96,6 @@ export const { apiServer } = procedure("apiServer", import.meta.url)
 const getInput = async (c: Context) => {
 	const text = await c.req.text();
 	if (text) {
-		 
 		return await c.req.json();
 	}
 	return c.req.query();

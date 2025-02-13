@@ -1,0 +1,22 @@
+{
+	"editor.formatOnSave": true,
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"[typescript]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"editor.codeActionsOnSave": {
+		"source.fixAll": "always",
+		"source.fixAll.eslint": "always"
+		// "source.organizeImports": "always"
+	},
+	"js/ts.implicitProjectConfig.target": "ESNext",
+	"javascript.preferences.importModuleSpecifierEnding": "js",
+	"typescript.preferences.importModuleSpecifierEnding": "js",
+	"typescript.enablePromptUseWorkspaceTsdk": true,
+	"typescript.preferences.preferTypeOnlyAutoImports": true,
+	"typescript.preferences.importModuleSpecifier": "project-relative",
+	"typescript.tsdk": "node_modules/typescript/lib",
+	"typescript.updateImportsOnPaste.enabled": false,
+	"typescript.format.enable": false,
+	"prettier.trailingComma": "all"
+}

@@ -1,12 +1,31 @@
+import { exec } from "child_process";
 import assert from "node:assert";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { promisify } from "util";
 
 import { App } from "aws-cdk-lib";
 import { type Serializable, stringify } from "devalue-codec";
 import { WebSocket } from "ws";
 
 import { ServiceHost } from "@nexus-cdk/service";
+
+const resolveModule = async (
+	specifier: string,
+	parent: string,
+): Promise<string> => {
+	try {
+		return import.meta.resolve(specifier, parent);
+	} catch (error) {
+		const { stdout } = await promisify(exec)(
+			`${process.execPath} -e 'console.log(import.meta.resolve("${specifier}"))'`,
+			{
+				cwd: path.dirname(parent),
+			},
+		);
+		return stdout.trim();
+	}
+};
 
 const [, , filename, wssUrl] = process.argv;
 assert(filename);
@@ -51,6 +70,8 @@ const procedures = await Promise.all(
 
 const hashes = new Map<string, string>();
 
+import { spawnSync } from "node:child_process";
+
 import * as esbuild from "esbuild";
 await Promise.all(
 	procedures.map(async (procedure) => {
@@ -67,12 +88,9 @@ await Promise.all(
 				{
 					name: "externals",
 					setup(build) {
-						build.onResolve({ filter: /.*/ }, (args) => {
+						build.onResolve({ filter: /.*/ }, async (args) => {
 							if (!/^(#|\/|\.\/|\.\.\/)/.test(args.path)) {
-								const resolved = import.meta.resolve(
-									args.path,
-									args.resolveDir,
-								);
+								const resolved = await resolveModule(args.path, args.importer);
 								if (resolved.includes("/node_modules/")) {
 									return { external: true };
 								}
