@@ -13,6 +13,9 @@ export const { viteProcedure } = procedure("viteProcedure", import.meta.url)
 		const port = await getPort({
 			port: portNumbers(3000, 4000),
 		});
+		for (const [key, value] of Object.entries(opts.ctx.environment ?? {})) {
+			process.env[key] = value;
+		}
 		const server = await createServer({
 			define: opts.ctx.define,
 			root: opts.ctx.root,
