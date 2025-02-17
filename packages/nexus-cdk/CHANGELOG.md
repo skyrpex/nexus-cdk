@@ -1,5 +1,12 @@
 # nexus-cdk
 
+## 0.1.2
+
+### Patch Changes
+
+- Updated dependencies [db69ba3]
+  - @nexus-cdk/vite@0.2.0
+
 ## 0.1.1
 
 ### Patch Changes
