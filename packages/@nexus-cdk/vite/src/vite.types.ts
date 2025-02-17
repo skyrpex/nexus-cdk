@@ -4,6 +4,7 @@ export interface IVite {
 
 export interface ViteProps {
 	define?: Record<string, string>;
+	environment?: Record<string, string>;
 	proxy?: Record<string, string>;
 	root: string;
 }
