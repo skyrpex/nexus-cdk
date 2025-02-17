@@ -13,6 +13,7 @@ export class Vite extends Construct implements IVite {
 
 		const vite = new Service(this, "Service", {
 			context: {
+				define: props.define,
 				proxy: props.proxy,
 				root: props.root,
 			},
