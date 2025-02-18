@@ -12,7 +12,7 @@
 		"@aws-sdk/client-dynamodb": "^3.750.0",
 		"@dotenvx/dotenvx": "^1.36.0",
 		"@nexus-sdk/client-api": "workspace:^",
-		"aws-cdk-lib": "^2.178.1",
+		"aws-cdk-lib": "^2.179.0",
 		"constructs": "^10.4.2",
 		"nexus-cdk": "workspace:^",
 		"zod": "^3.24.2"
