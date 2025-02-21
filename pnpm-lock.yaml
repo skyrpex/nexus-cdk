@@ -55,14 +55,14 @@ importers:
         specifier: ^3.751.0
         version: 3.751.0
       '@dotenvx/dotenvx':
-        specifier: ^1.36.0
-        version: 1.36.0
+        specifier: ^1.37.0
+        version: 1.37.0
       '@nexus-sdk/client-api':
         specifier: workspace:^
         version: link:../packages/@nexus-sdk/client-api
       aws-cdk-lib:
-        specifier: ^2.179.0
-        version: 2.179.0(constructs@10.4.2)
+        specifier: ^2.180.0
+        version: 2.180.0(constructs@10.4.2)
       constructs:
         specifier: ^10.4.2
         version: 10.4.2
@@ -133,8 +133,8 @@ importers:
         specifier: workspace:^
         version: link:../utils
       aws-cdk-lib:
-        specifier: ^2.179.0
-        version: 2.179.0(constructs@10.4.2)
+        specifier: ^2.180.0
+        version: 2.180.0(constructs@10.4.2)
       constructs:
         specifier: ^10.4.2
         version: 10.4.2
@@ -240,8 +240,8 @@ importers:
   packages/@nexus-sdk/client-api:
     dependencies:
       '@tanstack/react-query':
-        specifier: ^5.66.8
-        version: 5.66.8(react@19.0.0)
+        specifier: ^5.66.9
+        version: 5.66.9(react@19.0.0)
 
   packages/@nexus-sdk/client-dynamodb:
     dependencies:
@@ -295,8 +295,8 @@ importers:
         specifier: workspace:^
         version: link:../@nexus-cdk/vite
       aws-cdk-lib:
-        specifier: ^2.179.0
-        version: 2.179.0(constructs@10.4.2)
+        specifier: ^2.180.0
+        version: 2.180.0(constructs@10.4.2)
       constructs:
         specifier: ^10.4.2
         version: 10.4.2
@@ -313,8 +313,8 @@ importers:
         specifier: ^4.19.3
         version: 4.19.3
       ws:
-        specifier: ^8.18.0
-        version: 8.18.0
+        specifier: ^8.18.1
+        version: 8.18.1
     devDependencies:
       '@types/ws':
         specifier: ^8.5.14
@@ -506,8 +506,8 @@ packages:
   '@changesets/write@0.4.0':
     resolution: {integrity: sha512-CdTLvIOPiCNuH71pyDu3rA+Q0n65cmAbXnwWH84rKGiFumFzkmHNT8KHTMEchcxN+Kl8I54xGUhJ7l3E7X396Q==}
 
-  '@dotenvx/dotenvx@1.36.0':
-    resolution: {integrity: sha512-SCS+N/UdQcMwJCefvC32K5VD4kV19wC32eR2lJ0S+9gurNngJAK96BZBPcIHNTi0tEFa71DBUbiRQiD2+OVyIQ==}
+  '@dotenvx/dotenvx@1.37.0':
+    resolution: {integrity: sha512-AMPts6UnBQoJ+ash2M5MLSVETa0MZCY89p5msW+ojq7sbgM7R+H9Kmd8Gj1yTpcBoKbiOElWq5OLSHwG5nyCNg==}
     hasBin: true
 
   '@ecies/ciphers@0.2.2':
@@ -1198,8 +1198,8 @@ packages:
   '@tanstack/query-core@5.66.4':
     resolution: {integrity: sha512-skM/gzNX4shPkqmdTCSoHtJAPMTtmIJNS0hE+xwTTUVYwezArCT34NMermABmBVUg5Ls5aiUXEDXfqwR1oVkcA==}
 
-  '@tanstack/react-query@5.66.8':
-    resolution: {integrity: sha512-LqYHYArmM7ycyT1I/Txc/n6KzI8S/hBFw2SQ9Uj1GpbZ89AvZLEvetquiQEHkZ5rFEm+iVNpZ6zYjTiPmJ9N5Q==}
+  '@tanstack/react-query@5.66.9':
+    resolution: {integrity: sha512-NRI02PHJsP5y2gAuWKP+awamTIBFBSKMnO6UVzi03GTclmHHHInH5UzVgzi5tpu4+FmGfsdT7Umqegobtsp23A==}
     peerDependencies:
       react: ^18 || ^19
 
@@ -1402,8 +1402,8 @@ packages:
     resolution: {integrity: sha512-wvUjBtSGN7+7SjNpq/9M2Tg350UZD3q62IFZLbRAR1bSMlCo1ZaeW+BJ+D090e4hIIZLBcTDWe4Mh4jvUDajzQ==}
     engines: {node: '>= 0.4'}
 
-  aws-cdk-lib@2.179.0:
-    resolution: {integrity: sha512-fwkoEzvh3TXYj+GPkyq/GSQt63JJV1dBgDKwr3xRdb8lQaPntSclmisa+ARO8tjPfkru1NqxAFQTtiqtAE83cA==}
+  aws-cdk-lib@2.180.0:
+    resolution: {integrity: sha512-ncYx3MGcLL397WAg6LOHV8G/5d0FkdoskiUscqFawLWioK75f0M6AIuif9kxrxLBvbMOncOfqhV8wIsCM1fquA==}
     engines: {node: '>= 14.15.0'}
     peerDependencies:
       constructs: ^10.0.0
@@ -2798,8 +2798,8 @@ packages:
     resolution: {integrity: sha512-BN22B5eaMMI9UMtjrGd5g5eCYPpCPDUy0FJXbYsaT5zYxjFOckS53SQDE3pWkVoWpHXVb3BrYcEN4Twa55B5cA==}
     engines: {node: '>=0.10.0'}
 
-  ws@8.18.0:
-    resolution: {integrity: sha512-8VbfWfHLbbwu3+N6OKsOMpBdT4kXPDDB9cJk2bJ6mh9ucxdlnNvH1e+roYkKmN9Nxw2yjz7VzeO9oOz2zJ04Pw==}
+  ws@8.18.1:
+    resolution: {integrity: sha512-RKW2aJZMXeMxVpnZ6bck+RswznaxmzdULiBr6KY7XkTnW8uvt0iT9H5DkHUChXrc+uurzwa0rVI16n/Xzjdz1w==}
     engines: {node: '>=10.0.0'}
     peerDependencies:
       bufferutil: ^4.0.1
@@ -3333,7 +3333,7 @@ snapshots:
       human-id: 4.1.1
       prettier: 2.8.8
 
-  '@dotenvx/dotenvx@1.36.0':
+  '@dotenvx/dotenvx@1.37.0':
     dependencies:
       commander: 11.1.0
       dotenv: 16.4.7
@@ -3946,7 +3946,7 @@ snapshots:
 
   '@tanstack/query-core@5.66.4': {}
 
-  '@tanstack/react-query@5.66.8(react@19.0.0)':
+  '@tanstack/react-query@5.66.9(react@19.0.0)':
     dependencies:
       '@tanstack/query-core': 5.66.4
       react: 19.0.0
@@ -4215,7 +4215,7 @@ snapshots:
     dependencies:
       possible-typed-array-names: 1.1.0
 
-  aws-cdk-lib@2.179.0(constructs@10.4.2):
+  aws-cdk-lib@2.180.0(constructs@10.4.2):
     dependencies:
       '@aws-cdk/asset-awscli-v1': 2.2.224
       '@aws-cdk/asset-node-proxy-agent-v6': 2.1.0
@@ -5755,7 +5755,7 @@ snapshots:
 
   word-wrap@1.2.5: {}
 
-  ws@8.18.0: {}
+  ws@8.18.1: {}
 
   yocto-queue@0.1.0: {}
 
