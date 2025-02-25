@@ -1,5 +1,11 @@
 # nexus-cdk
 
+## 0.1.3
+
+### Patch Changes
+
+- cd5da83: Allow constructs with no tokens
+
 ## 0.1.2
 
 ### Patch Changes
