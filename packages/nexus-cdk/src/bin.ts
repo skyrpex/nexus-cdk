@@ -279,9 +279,9 @@ wss.on("connection", (ws, req) => {
 		assert(constructPath, "Missing [x-nexus-cdk-construct-path] header");
 		ws.on("message", (data: Buffer) => {
 			const output = parse(
-				data.toString() as Stringified<Record<string, unknown>>,
+				data.toString() as Stringified<Record<string, unknown> | undefined>,
 			);
-			for (const [prop, value] of Object.entries(output)) {
+			for (const [prop, value] of Object.entries(output ?? {})) {
 				const token = TokensHost.of(
 					new App({
 						autoSynth: false,
