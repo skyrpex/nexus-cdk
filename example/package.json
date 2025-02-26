@@ -10,9 +10,9 @@
 	},
 	"dependencies": {
 		"@aws-sdk/client-dynamodb": "^3.751.0",
-		"@dotenvx/dotenvx": "^1.38.2",
+		"@dotenvx/dotenvx": "^1.38.3",
 		"@nexus-sdk/client-api": "workspace:^",
-		"aws-cdk-lib": "^2.180.0",
+		"aws-cdk-lib": "^2.181.0",
 		"constructs": "^10.4.2",
 		"nexus-cdk": "workspace:^",
 		"zod": "^3.24.2"
