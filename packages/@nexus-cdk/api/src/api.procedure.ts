@@ -1,12 +1,9 @@
 import type { Context } from "hono";
 
-import assert from "node:assert";
-import { fileURLToPath } from "node:url";
-
+import { LambdaClient } from "@nexus-sdk/client-lambda";
 import getPort, { portNumbers } from "get-port";
 
-import { procedure, type Procedure } from "@nexus-cdk/procedure";
-import { StandardSchemaV1Error } from "@nexus-cdk/procedure";
+import { procedure , StandardSchemaV1Error } from "@nexus-cdk/procedure";
 import { startServer } from "@nexus-cdk/utils";
 
 export const { apiServer } = procedure("apiServer", import.meta.url)
@@ -14,10 +11,9 @@ export const { apiServer } = procedure("apiServer", import.meta.url)
 		endpoints: Map<
 			string,
 			{
+				connectionString: string;
 				// eslint-disable-next-line @typescript-eslint/no-explicit-any
 				context: any;
-				importFilename: string;
-				importName: string;
 				type: "mutation" | "query";
 			}
 		>;
@@ -35,33 +31,15 @@ export const { apiServer } = procedure("apiServer", import.meta.url)
 			const method = value.type === "mutation" ? "post" : "get";
 			app[method](`${prefix}${key}`, async (c) => {
 				try {
-					// eslint-disable-next-line @typescript-eslint/no-dynamic-delete
-					delete require.cache[fileURLToPath(value.importFilename)];
-				} catch (error) {
-					if (
-						error instanceof Error &&
-						error.message.includes("require is not defined")
-					) {
-						// Just ignore it.
-					} else {
-						throw error;
-					}
-				}
-				const mod = await import(value.importFilename);
-
-				const procedure = mod[value.importName] as Procedure;
-				assert(
-					procedure,
-					`Procedure [${value.importName}] is required but not found in [${value.importFilename}]`,
-				);
-				try {
 					const input = await getInput(c);
-					const output = await procedure.invoke({
+					// eslint-disable-next-line @typescript-eslint/no-explicit-any
+					const lambda = new LambdaClient(value.connectionString as any);
+					const response = await lambda.invoke({
 						ctx: value.context,
 						input,
 					});
-					// eslint-disable-next-line @typescript-eslint/no-explicit-any
-					return c.json(output as any);
+					const output = await response.json();
+					return c.json(output as never);
 				} catch (error) {
 					if (error instanceof StandardSchemaV1Error) {
 						return c.json(

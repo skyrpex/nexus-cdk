@@ -70,8 +70,6 @@ const procedures = await Promise.all(
 
 const hashes = new Map<string, string>();
 
-import { spawnSync } from "node:child_process";
-
 import * as esbuild from "esbuild";
 await Promise.all(
 	procedures.map(async (procedure) => {
