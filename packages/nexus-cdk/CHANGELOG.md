@@ -1,5 +1,12 @@
 # nexus-cdk
 
+## 0.1.6
+
+### Patch Changes
+
+- Updated dependencies [dacb1c4]
+  - @nexus-cdk/api@0.1.3
+
 ## 0.1.5
 
 ### Patch Changes
