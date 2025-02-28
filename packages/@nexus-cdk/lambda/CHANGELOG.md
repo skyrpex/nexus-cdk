@@ -1,5 +1,11 @@
 # @nexus-cdk/lambda
 
+## 0.0.3
+
+### Patch Changes
+
+- 6f40429: Use random port allocation
+
 ## 0.0.2
 
 ### Patch Changes

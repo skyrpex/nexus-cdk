@@ -1,5 +1,13 @@
 # @nexus-cdk/api
 
+## 0.1.4
+
+### Patch Changes
+
+- Updated dependencies [6f40429]
+  - @nexus-cdk/lambda@0.0.3
+  - @nexus-sdk/client-lambda@0.0.0
+
 ## 0.1.3
 
 ### Patch Changes
