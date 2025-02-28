@@ -12,8 +12,6 @@ export const { apiServer } = procedure("apiServer", import.meta.url)
 			string,
 			{
 				connectionString: string;
-				// eslint-disable-next-line @typescript-eslint/no-explicit-any
-				context: any;
 				type: "mutation" | "query";
 			}
 		>;
@@ -34,10 +32,7 @@ export const { apiServer } = procedure("apiServer", import.meta.url)
 					const input = await getInput(c);
 					// eslint-disable-next-line @typescript-eslint/no-explicit-any
 					const lambda = new LambdaClient(value.connectionString as any);
-					const response = await lambda.invoke({
-						ctx: value.context,
-						input,
-					});
+					const response = await lambda.invoke(input);
 					const output = await response.json();
 					return c.json(output as never);
 				} catch (error) {
