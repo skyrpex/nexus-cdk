@@ -103,7 +103,9 @@ export const { createLambdaServer } = procedure(
 			return c.json((output as any).body, (output as any)?.status);
 		});
 
-		const port = await getPort({ port: portNumbers(3000, 4000) });
+		// TODO: Implement a port allocator that handles race conditions
+		// const port = await getPort({ port: portNumbers(3000, 4000) });
+		const port = await getPort();
 		const { endpoint } = await startServer(app, port);
 
 		const duration = Date.now() - now;
