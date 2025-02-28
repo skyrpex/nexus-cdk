@@ -1,5 +1,11 @@
 # @nexus-cdk/tokens
 
+## 0.0.2
+
+### Patch Changes
+
+- d5da935: Bump versions
+
 ## 0.0.1
 
 ### Patch Changes
