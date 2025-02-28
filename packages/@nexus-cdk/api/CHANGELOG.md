@@ -1,5 +1,11 @@
 # @nexus-cdk/api
 
+## 0.1.5
+
+### Patch Changes
+
+- 16ed374: Fixed API lambda invokation
+
 ## 0.1.4
 
 ### Patch Changes
