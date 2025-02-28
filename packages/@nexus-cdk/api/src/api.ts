@@ -3,6 +3,7 @@ import type * as jsonCodec from "json-codec";
 
 import { Construct } from "constructs";
 
+import { Lambda } from "@nexus-cdk/lambda";
 import {
 	type Assume,
 	type BuiltProcedureDef,
@@ -12,7 +13,6 @@ import {
 } from "@nexus-cdk/procedure";
 import { Service } from "@nexus-cdk/service";
 
-import { Lambda } from "../../lambda/src/lambda.ts";
 import { apiServer } from "./api.procedure.ts";
 
 export interface EndpointDef {

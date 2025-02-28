@@ -75,6 +75,9 @@ importers:
 
   packages/@nexus-cdk/api:
     dependencies:
+      '@nexus-cdk/lambda':
+        specifier: workspace:^
+        version: link:../lambda
       '@nexus-cdk/procedure':
         specifier: workspace:^
         version: link:../procedure
