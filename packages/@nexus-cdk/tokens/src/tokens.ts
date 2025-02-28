@@ -37,7 +37,7 @@ export class TokensHost extends Construct {
 	}
 }
 
-const NEXUS_TOKEN_REGEXP = /\$\{NEXUS_TOKEN\[TOKEN_[a-zA-Z0-9]{10}\]\}/g;
+const NEXUS_TOKEN_REGEXP = /\$\{NEXUS_TOKEN\[TOKEN_.*?\]\}/g;
 
 export const getTokensFromString = (value: string) => {
 	const tokens = new Set<string>();
