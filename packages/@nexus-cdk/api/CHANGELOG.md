@@ -1,5 +1,11 @@
 # @nexus-cdk/api
 
+## 0.1.3
+
+### Patch Changes
+
+- dacb1c4: Fix API doing wrong relative imports
+
 ## 0.1.2
 
 ### Patch Changes
