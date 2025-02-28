@@ -8,7 +8,7 @@
 	},
 	"dependencies": {
 		"constructs": "^10.4.2",
-		"ohash": "^2.0.6"
+		"ohash": "^2.0.7"
 	},
 	"sideEffects": false
 }
