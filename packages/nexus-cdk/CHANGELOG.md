@@ -1,5 +1,18 @@
 # nexus-cdk
 
+## 0.1.4
+
+### Patch Changes
+
+- Updated dependencies [69495c1]
+- Updated dependencies [1a21591]
+  - @nexus-cdk/api@0.1.1
+  - @nexus-cdk/tokens@0.0.1
+  - @nexus-cdk/service@0.0.1
+  - @nexus-cdk/dynamodb@0.0.1
+  - @nexus-cdk/lambda@0.0.1
+  - @nexus-cdk/vite@0.2.1
+
 ## 0.1.3
 
 ### Patch Changes
