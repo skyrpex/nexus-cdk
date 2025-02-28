@@ -7,6 +7,7 @@
 		"types": "./src/index.ts"
 	},
 	"dependencies": {
+		"@nexus-cdk/lambda": "workspace:^",
 		"@nexus-cdk/procedure": "workspace:^",
 		"@nexus-cdk/service": "workspace:^",
 		"@nexus-cdk/utils": "workspace:^",
