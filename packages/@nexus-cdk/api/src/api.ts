@@ -49,7 +49,6 @@ export class Api<T extends Record<string, EndpointDef>> extends Construct {
 						key,
 						{
 							connectionString: value.connectionString,
-							context: value.context,
 							type: value.type,
 						},
 					]),
@@ -57,7 +56,6 @@ export class Api<T extends Record<string, EndpointDef>> extends Construct {
 					string,
 					{
 						connectionString: string;
-						context: any;
 						type: "mutation" | "query";
 					}
 				>,
@@ -109,17 +107,13 @@ export interface QueryProps<T extends BuiltProcedureDef> {
 
 export class Mutation<T extends BuiltProcedureDef> extends Construct {
 	readonly connectionString: string;
-	readonly context: T["context"];
-	readonly procedure: Procedure<T>;
 	readonly type = "mutation";
 	constructor(scope: Construct, id: string, props: MutationProps<T>) {
 		super(scope, id);
-		this.procedure = props.procedure;
-		this.context = props.context;
 
 		const lambda = new Lambda(this, "Lambda", {
-			context: this.context as any,
-			procedure: this.procedure,
+			context: props.context as any,
+			procedure: props.procedure,
 		});
 
 		this.connectionString = lambda.endpoint;
@@ -128,17 +122,13 @@ export class Mutation<T extends BuiltProcedureDef> extends Construct {
 
 export class Query<T extends BuiltProcedureDef> extends Construct {
 	readonly connectionString: string;
-	readonly context: T["context"];
-	readonly procedure: Procedure<T>;
 	readonly type = "query";
 	constructor(scope: Construct, id: string, props: QueryProps<T>) {
 		super(scope, id);
-		this.procedure = props.procedure;
-		this.context = props.context;
 
 		const lambda = new Lambda(this, "Lambda", {
-			context: this.context as any,
-			procedure: this.procedure,
+			context: props.context as any,
+			procedure: props.procedure,
 		});
 
 		this.connectionString = lambda.endpoint;
