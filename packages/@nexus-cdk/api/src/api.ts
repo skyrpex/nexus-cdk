@@ -12,6 +12,7 @@ import {
 } from "@nexus-cdk/procedure";
 import { Service } from "@nexus-cdk/service";
 
+import { Lambda } from "../../lambda/src/lambda.ts";
 import { apiServer } from "./api.procedure.ts";
 
 export interface EndpointDef {
@@ -47,18 +48,16 @@ export class Api<T extends Record<string, EndpointDef>> extends Construct {
 					Object.entries(options.endpoints).map(([key, value]) => [
 						key,
 						{
+							connectionString: value.connectionString,
 							context: value.context,
-							importFilename: value.procedure.importFilename,
-							importName: value.procedure.importName,
 							type: value.type,
 						},
 					]),
 				) as Map<
 					string,
 					{
+						connectionString: string;
 						context: any;
-						importFilename: string;
-						importName: string;
 						type: "mutation" | "query";
 					}
 				>,
@@ -109,6 +108,7 @@ export interface QueryProps<T extends BuiltProcedureDef> {
 }
 
 export class Mutation<T extends BuiltProcedureDef> extends Construct {
+	readonly connectionString: string;
 	readonly context: T["context"];
 	readonly procedure: Procedure<T>;
 	readonly type = "mutation";
@@ -116,10 +116,18 @@ export class Mutation<T extends BuiltProcedureDef> extends Construct {
 		super(scope, id);
 		this.procedure = props.procedure;
 		this.context = props.context;
+
+		const lambda = new Lambda(this, "Lambda", {
+			context: this.context as any,
+			procedure: this.procedure,
+		});
+
+		this.connectionString = lambda.endpoint;
 	}
 }
 
 export class Query<T extends BuiltProcedureDef> extends Construct {
+	readonly connectionString: string;
 	readonly context: T["context"];
 	readonly procedure: Procedure<T>;
 	readonly type = "query";
@@ -127,5 +135,12 @@ export class Query<T extends BuiltProcedureDef> extends Construct {
 		super(scope, id);
 		this.procedure = props.procedure;
 		this.context = props.context;
+
+		const lambda = new Lambda(this, "Lambda", {
+			context: this.context as any,
+			procedure: this.procedure,
+		});
+
+		this.connectionString = lambda.endpoint;
 	}
 }

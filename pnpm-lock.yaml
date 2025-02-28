@@ -84,6 +84,9 @@ importers:
       '@nexus-cdk/utils':
         specifier: workspace:^
         version: link:../utils
+      '@nexus-sdk/client-lambda':
+        specifier: workspace:^
+        version: link:../../@nexus-sdk/client-lambda
       constructs:
         specifier: ^10.4.2
         version: 10.4.2

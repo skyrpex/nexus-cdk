@@ -1,4 +1,5 @@
 import assert from "node:assert";
+import { fileURLToPath } from "node:url";
 
 import {
 	parse,
@@ -30,7 +31,20 @@ export const { createLambdaServer } = procedure(
 
 		// invoke
 		app.post("/", async (c) => {
-			// const mod = await tsImport(opts.ctx.importFilename, import.meta.url);
+			try {
+					// eslint-disable-next-line @typescript-eslint/no-dynamic-delete
+					delete require.cache[fileURLToPath(opts.ctx.importFilename)];
+				} catch (error) {
+					if (
+						error instanceof Error &&
+						error.message.includes("require is not defined")
+					) {
+						// Just ignore it.
+					} else {
+						throw error;
+				}
+			}
+
 			const mod = await import(opts.ctx.importFilename);
 
 			const procedure = mod[opts.ctx.importName] as Procedure<{
@@ -57,7 +71,19 @@ export const { createLambdaServer } = procedure(
 
 		// public url
 		app.get("/", async (c) => {
-			// const mod = await tsImport(opts.ctx.importFilename, import.meta.url);
+			try {
+					// eslint-disable-next-line @typescript-eslint/no-dynamic-delete
+					delete require.cache[fileURLToPath(opts.ctx.importFilename)];
+				} catch (error) {
+					if (
+						error instanceof Error &&
+						error.message.includes("require is not defined")
+					) {
+						// Just ignore it.
+					} else {
+						throw error;
+				}
+			}
 			const mod = await import(opts.ctx.importFilename);
 
 			const procedure = mod[opts.ctx.importName] as Procedure;

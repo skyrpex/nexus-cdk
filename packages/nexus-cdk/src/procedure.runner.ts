@@ -8,7 +8,7 @@ import {
 	stringify,
 } from "devalue-codec";
 
-import { getSpawnNodeTypescriptOptions } from "./utils/spawn-node-typescript.ts";
+import { getSpawnNodeTypescriptOptions } from "@nexus-cdk/utils";
 
 export interface ProcedureRunnerOptions {
 	constructPath: string;

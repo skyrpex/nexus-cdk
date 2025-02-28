@@ -15,11 +15,10 @@ import Emittery from "emittery";
 import { WebSocketServer } from "ws";
 
 import { getTokensFromString, type Token, TokensHost } from "@nexus-cdk/tokens";
-import { addressInfoToURL } from "@nexus-cdk/utils";
+import { addressInfoToURL , getSpawnNodeTypescriptOptions } from "@nexus-cdk/utils";
 
 import { spawnProcedure } from "./procedure.runner.ts";
 import { diff } from "./utils.diff.ts";
-import { getSpawnNodeTypescriptOptions } from "./utils/spawn-node-typescript.ts";
 
 const diffServices = (
 	previous: Map<string, ServiceDetails>,
