@@ -94,6 +94,10 @@ await Promise.all(
 								}
 							}
 
+							if (args.path.startsWith("bun:")) {
+								return { external: true };
+							}
+
 							return undefined;
 						});
 					},
