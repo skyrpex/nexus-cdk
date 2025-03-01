@@ -1,5 +1,11 @@
 # nexus-cdk
 
+## 0.1.9
+
+### Patch Changes
+
+- 13224c5: Exclude bun packages from bundles
+
 ## 0.1.8
 
 ### Patch Changes
