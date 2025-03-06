@@ -13,7 +13,7 @@
 	"devDependencies": {
 		"@types/bun": "^1.2.4",
 		"typescript": "^5.8.2",
-		"vitest": "^3.0.7"
+		"vitest": "^3.0.8"
 	},
 	"sideEffects": false
 }
