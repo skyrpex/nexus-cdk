@@ -54,6 +54,34 @@ export const { listMessages } = cdk
 		});
 	});
 
+export const { getMessage } = cdk
+	.procedure("getMessage", import.meta.url)
+	.context<{ table: cdk.DynamodbTable.Connection }>()
+	.input(
+		z.object({
+			messageId: z.string(),
+		}),
+	)
+	.handler(async ({ ctx, input }) => {
+		const dynamodb = new DynamoDB({
+			endpoint: ctx.table.endpoint,
+		});
+		const result = await dynamodb.getItem({
+			Key: {
+				channel: { S: "default" },
+				messageId: { S: input.messageId },
+			},
+			TableName: ctx.table.tableName,
+		});
+		assert(result.Item);
+		assert(result.Item.message?.S);
+		assert(result.Item.messageId?.S);
+		return {
+			message: result.Item.message.S,
+			messageId: result.Item.messageId.S,
+		};
+	});
+
 export const { deleteMessage } = cdk
 	.procedure("deleteMessage", import.meta.url)
 	.context<{ table: cdk.DynamodbTable.Connection }>()

@@ -1,5 +1,3 @@
-/* eslint-disable @typescript-eslint/non-nullable-type-assertion-style */
-
 import { createApiClient } from "@nexus-sdk/client-api";
 
 import type { Api } from "../src/infra.ts";
@@ -25,7 +23,7 @@ const writeMessage = async () => {
 	if (!value) return;
 	input.value = "";
 	input.focus();
-	await client.writeMessage.mutation({
+	await client.writeMessage.mutate({
 		message: value,
 	});
 	await updateMessageList();
@@ -41,7 +39,7 @@ messageList.addEventListener("click", (event) => {
 	if (target.tagName === "BUTTON") {
 		const messageId = target.dataset.messageId;
 		if (messageId) {
-			void client.deleteMessage.mutation({ messageId }).then(async () => {
+			void client.deleteMessage.mutate({ messageId }).then(async () => {
 				await updateMessageList();
 			});
 		}
