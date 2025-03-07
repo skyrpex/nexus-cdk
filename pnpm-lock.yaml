@@ -62,7 +62,7 @@ importers:
         version: link:../packages/@nexus-sdk/client-api
       '@tanstack/react-query':
         specifier: ^5.67.1
-        version: 5.67.1(react@19.0.0)
+        version: 5.67.2(react@19.0.0)
       aws-cdk-lib:
         specifier: ^2.182.0
         version: 2.182.0(constructs@10.4.2)
