@@ -1,5 +1,11 @@
 # @nexus-cdk/api
 
+## 0.1.6
+
+### Patch Changes
+
+- 832fb78: fix(api): queryOptions and mutationOptions
+
 ## 0.1.5
 
 ### Patch Changes
