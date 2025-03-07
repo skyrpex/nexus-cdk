@@ -43,14 +43,14 @@ export const createApiClient = <
 		{
 			get(target, prop) {
 				const propString = String(prop);
-				const mutationFn = async (input: T[keyof T]["input"]) => {
+				const mutate = async (input: T[keyof T]["input"]) => {
 					const response = await fetch(`${url}/${propString}`, {
 						body: JSON.stringify(input),
 						method: "POST",
 					});
 					return response.json() as T[keyof T]["output"];
 				};
-				const queryFn = async (input: T[keyof T]["input"]) => {
+				const query = async (input: T[keyof T]["input"]) => {
 					const queryParams = new URLSearchParams();
 					for (const key in input) {
 						queryParams.set(key, String(input[key]));
@@ -64,16 +64,16 @@ export const createApiClient = <
 					return response.json() as T[keyof T]["output"];
 				};
 				return {
-					mutate: mutationFn,
+					mutate,
 					mutationOptions: () => {
 						return useMutation({
-							mutationFn,
+							mutationFn: (input: T[keyof T]["input"]) => mutate(input),
 						});
 					},
-					query: queryFn,
+					query,
 					queryOptions: (input: T[keyof T]["input"]) => {
 						return queryOptions({
-							queryFn,
+							queryFn: () => query(input),
 							queryKey: [propString, input],
 						});
 					},

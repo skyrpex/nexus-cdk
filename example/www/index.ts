@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/non-nullable-type-assertion-style */
 import { createApiClient } from "@nexus-sdk/client-api";
 
 import type { Api } from "../src/infra.ts";
