@@ -1,3 +1,10 @@
+import {
+	queryOptions,
+	type UndefinedInitialDataOptions,
+	useMutation,
+	type UseMutationOptions,
+} from "@tanstack/react-query";
+
 type ApiClient<
 	T extends Record<
 		string,
@@ -12,11 +19,13 @@ type ApiClient<
 };
 
 interface ApiClientMutation<T extends { input: unknown; output: unknown }> {
-	mutation: (input: T["input"]) => Promise<T["output"]>;
+	mutate: (input: T["input"]) => Promise<T["output"]>;
+	mutationOptions: () => UseMutationOptions<T["output"], Error, T["input"]>;
 }
 
 interface ApiClientQuery<T extends { input: unknown; output: unknown }> {
 	query: (input: T["input"]) => Promise<T["output"]>;
+	queryOptions: (input: T["input"]) => UndefinedInitialDataOptions<T["output"]>;
 }
 
 type EndpointType = "mutation" | "query";
@@ -33,26 +42,40 @@ export const createApiClient = <
 		{},
 		{
 			get(target, prop) {
+				const propString = String(prop);
+				const mutationFn = async (input: T[keyof T]["input"]) => {
+					const response = await fetch(`${url}/${propString}`, {
+						body: JSON.stringify(input),
+						method: "POST",
+					});
+					return response.json() as T[keyof T]["output"];
+				};
+				const queryFn = async (input: T[keyof T]["input"]) => {
+					const queryParams = new URLSearchParams();
+					for (const key in input) {
+						queryParams.set(key, String(input[key]));
+					}
+					const response = await fetch(
+						`${url}/${String(prop)}?${queryParams.toString()}`,
+						{
+							method: "GET",
+						},
+					);
+					return response.json() as T[keyof T]["output"];
+				};
 				return {
-					mutation: async (input: T[keyof T]["input"]) => {
-						const response = await fetch(`${url}/${String(prop)}`, {
-							body: JSON.stringify(input),
-							method: "POST",
+					mutate: mutationFn,
+					mutationOptions: () => {
+						return useMutation({
+							mutationFn,
 						});
-						return response.json() as T[keyof T]["output"];
 					},
-					query: async (input: T[keyof T]["input"]) => {
-						const queryParams = new URLSearchParams();
-						for (const key in input) {
-							queryParams.set(key, String(input[key]));
-						}
-						const response = await fetch(
-							`${url}/${String(prop)}?${queryParams.toString()}`,
-							{
-								method: "GET",
-							},
-						);
-						return response.json() as T[keyof T]["output"];
+					query: queryFn,
+					queryOptions: (input: T[keyof T]["input"]) => {
+						return queryOptions({
+							queryFn,
+							queryKey: [propString, input],
+						});
 					},
 				};
 			},

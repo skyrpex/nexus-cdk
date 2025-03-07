@@ -3,6 +3,7 @@ import * as cdk from "nexus-cdk";
 
 import {
 	deleteMessage,
+	getMessage,
 	listMessages,
 	writeMessage,
 } from "./infra.procedures.ts";
@@ -34,6 +35,12 @@ const api = cdk.Api.fromEndpoints(app, "Api", {
 				table: table.connection,
 			},
 			procedure: deleteMessage,
+		}),
+		getMessage: new cdk.Query(app, "GetMessage", {
+			context: {
+				table: table.connection,
+			},
+			procedure: getMessage,
 		}),
 		listMessages: new cdk.Query(app, "ListMessages", {
 			context: {
