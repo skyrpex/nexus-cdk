@@ -13,7 +13,7 @@
 		"@standard-schema/spec": "^1.0.0",
 		"codec-builder": "^1.1.0",
 		"devalue-codec": "^1.2.0",
-		"valibot": "1.0.0-rc.3"
+		"valibot": "1.0.0-rc.4"
 	},
 	"devDependencies": {
 		"@types/bun": "^1.2.5",
