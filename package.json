@@ -9,8 +9,8 @@
 	"devDependencies": {
 		"@eslint/js": "^9.23.0",
 		"@tanstack/eslint-plugin-query": "^5.68.0",
-		"@types/node": "^22.13.11",
-		"eslint": "^9.22.0",
+		"@types/node": "^22.13.13",
+		"eslint": "^9.23.0",
 		"eslint-import-resolver-typescript": "^4.2.2",
 		"eslint-plugin-import": "^2.31.0",
 		"eslint-plugin-perfectionist": "^4.10.1",
@@ -18,7 +18,7 @@
 		"prettier": "^3.5.3",
 		"turbo": "^2.4.4",
 		"typescript": "^5.8.2",
-		"typescript-eslint": "^8.27.0"
+		"typescript-eslint": "^8.28.0"
 	},
 	"engines": {
 		"node": "22",
