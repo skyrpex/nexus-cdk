@@ -52,8 +52,8 @@ importers:
   example:
     dependencies:
       '@aws-sdk/client-dynamodb':
-        specifier: ^3.782.0
-        version: 3.782.0
+        specifier: ^3.786.0
+        version: 3.786.0
       '@dotenvx/dotenvx':
         specifier: ^1.39.1
         version: 1.39.1
@@ -61,8 +61,8 @@ importers:
         specifier: workspace:^
         version: link:../packages/@nexus-sdk/client-api
       '@tanstack/react-query':
-        specifier: ^5.72.1
-        version: 5.72.1(react@19.0.0)
+        specifier: ^5.72.2
+        version: 5.72.2(react@19.0.0)
       aws-cdk-lib:
         specifier: ^2.188.0
         version: 2.188.0(constructs@10.4.2)
@@ -109,8 +109,8 @@ importers:
   packages/@nexus-cdk/dynamodb:
     dependencies:
       '@aws-sdk/client-dynamodb':
-        specifier: ^3.782.0
-        version: 3.782.0
+        specifier: ^3.786.0
+        version: 3.786.0
       '@nexus-cdk/procedure':
         specifier: workspace:^
         version: link:../procedure
@@ -249,8 +249,8 @@ importers:
   packages/@nexus-sdk/client-api:
     dependencies:
       '@tanstack/react-query':
-        specifier: ^5.72.1
-        version: 5.72.1(react@19.0.0)
+        specifier: ^5.72.2
+        version: 5.72.2(react@19.0.0)
 
   packages/@nexus-sdk/client-dynamodb:
     dependencies:
@@ -357,8 +357,8 @@ packages:
   '@aws-crypto/util@5.2.0':
     resolution: {integrity: sha512-4RkU9EsI6ZpBve5fseQlGNUWKMa1RLPQ1dnjnQoe07ldfIzcsGb5hC5W0Dm7u423KWzawlrpbjXBrXCEv9zazQ==}
 
-  '@aws-sdk/client-dynamodb@3.782.0':
-    resolution: {integrity: sha512-WS9GhnHjo5GeunVYSjExzKIWhE+5ZsdvlGlz1Z0FL02DjyTU+irJlNC1H0PiLISGN0/pwB9TIAvfbkdlsNSCGg==}
+  '@aws-sdk/client-dynamodb@3.786.0':
+    resolution: {integrity: sha512-UNDZUhgGZMTidmqPfxW94Dkk3Qe4dKtV2lAq2zjvc4zTAXr4t220p8XI6JgwCuA7vo3UdGT/7LvR1A6+l5HuJA==}
     engines: {node: '>=18.0.0'}
 
   '@aws-sdk/client-sso@3.782.0':
@@ -1172,11 +1172,11 @@ packages:
     peerDependencies:
       eslint: ^8.57.0 || ^9.0.0
 
-  '@tanstack/query-core@5.72.1':
-    resolution: {integrity: sha512-nOu0EEkZuJ0BZnYgeaEfo44+psq1jBO7/zp3KudixD4dvgOVerrhAhDEKsWx2N7MxB59mjO4r0ddP/VqWGPK+Q==}
+  '@tanstack/query-core@5.72.2':
+    resolution: {integrity: sha512-fxl9/0yk3mD/FwTmVEf1/H6N5B975H0luT+icKyX566w6uJG0x6o+Yl+I38wJRCaogiMkstByt+seXfDbWDAcA==}
 
-  '@tanstack/react-query@5.72.1':
-    resolution: {integrity: sha512-4UEMyRx54xj144D2nDvDIMiXSG5BrqyCJrmyNoGbymNS+VWODcBDFrmRk9p2fe12UGZ4JtKPTNuW2Jg0aisUgQ==}
+  '@tanstack/react-query@5.72.2':
+    resolution: {integrity: sha512-SVNHzyBUYiis+XiCl+8yiPZmMYei2AKYY94wM/zpvB5l1jxqOo82FQTziSJ4pBi96jtYqvYrTMxWynmbQh3XKw==}
     peerDependencies:
       react: ^18 || ^19
 
@@ -2942,7 +2942,7 @@ snapshots:
       '@smithy/util-utf8': 2.3.0
       tslib: 2.8.1
 
-  '@aws-sdk/client-dynamodb@3.782.0':
+  '@aws-sdk/client-dynamodb@3.786.0':
     dependencies:
       '@aws-crypto/sha256-browser': 5.2.0
       '@aws-crypto/sha256-js': 5.2.0
@@ -4042,11 +4042,11 @@ snapshots:
       - supports-color
       - typescript
 
-  '@tanstack/query-core@5.72.1': {}
+  '@tanstack/query-core@5.72.2': {}
 
-  '@tanstack/react-query@5.72.1(react@19.0.0)':
+  '@tanstack/react-query@5.72.2(react@19.0.0)':
     dependencies:
-      '@tanstack/query-core': 5.72.1
+      '@tanstack/query-core': 5.72.2
       react: 19.0.0
 
   '@tybys/wasm-util@0.9.0':
