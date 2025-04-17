@@ -55,17 +55,17 @@ importers:
         specifier: ^3.788.0
         version: 3.788.0
       '@dotenvx/dotenvx':
-        specifier: ^1.40.0
-        version: 1.40.0
+        specifier: ^1.40.1
+        version: 1.40.1
       '@nexus-sdk/client-api':
         specifier: workspace:^
         version: link:../packages/@nexus-sdk/client-api
       '@tanstack/react-query':
-        specifier: ^5.74.3
-        version: 5.74.3(react@19.0.0)
+        specifier: ^5.74.4
+        version: 5.74.4(react@19.0.0)
       aws-cdk-lib:
-        specifier: ^2.189.1
-        version: 2.189.1(constructs@10.4.2)
+        specifier: ^2.190.0
+        version: 2.190.0(constructs@10.4.2)
       constructs:
         specifier: ^10.4.2
         version: 10.4.2
@@ -73,8 +73,8 @@ importers:
         specifier: workspace:^
         version: link:../packages/nexus-cdk
       zod:
-        specifier: ^3.24.2
-        version: 3.24.2
+        specifier: ^3.24.3
+        version: 3.24.3
 
   packages/@nexus-cdk/api:
     dependencies:
@@ -142,8 +142,8 @@ importers:
         specifier: workspace:^
         version: link:../utils
       aws-cdk-lib:
-        specifier: ^2.189.1
-        version: 2.189.1(constructs@10.4.2)
+        specifier: ^2.190.0
+        version: 2.190.0(constructs@10.4.2)
       constructs:
         specifier: ^10.4.2
         version: 10.4.2
@@ -243,14 +243,14 @@ importers:
         specifier: ^7.1.0
         version: 7.1.0
       vite:
-        specifier: ^6.3.0
-        version: 6.3.0(@types/node@22.14.1)(tsx@4.19.3)
+        specifier: ^6.3.1
+        version: 6.3.1(@types/node@22.14.1)(tsx@4.19.3)
 
   packages/@nexus-sdk/client-api:
     dependencies:
       '@tanstack/react-query':
-        specifier: ^5.74.3
-        version: 5.74.3(react@19.0.0)
+        specifier: ^5.74.4
+        version: 5.74.4(react@19.0.0)
 
   packages/@nexus-sdk/client-dynamodb:
     dependencies:
@@ -304,8 +304,8 @@ importers:
         specifier: workspace:^
         version: link:../@nexus-cdk/vite
       aws-cdk-lib:
-        specifier: ^2.189.1
-        version: 2.189.1(constructs@10.4.2)
+        specifier: ^2.190.0
+        version: 2.190.0(constructs@10.4.2)
       constructs:
         specifier: ^10.4.2
         version: 10.4.2
@@ -516,8 +516,8 @@ packages:
   '@changesets/write@0.4.0':
     resolution: {integrity: sha512-CdTLvIOPiCNuH71pyDu3rA+Q0n65cmAbXnwWH84rKGiFumFzkmHNT8KHTMEchcxN+Kl8I54xGUhJ7l3E7X396Q==}
 
-  '@dotenvx/dotenvx@1.40.0':
-    resolution: {integrity: sha512-cfYHAIBkSfI0nuOagBhqYGq0k/pSIPdbM7+/IROcdGMjUxYdNXXqzO1d6b9u9dY4rancte3fR/4wGI4Zb09USg==}
+  '@dotenvx/dotenvx@1.40.1':
+    resolution: {integrity: sha512-AOPRTtCD+OKciAbaw4xPvD6kTCl78nvDLRYfNl58eulXoBkfbcha7YLuXpLTayDsks6ioS2VHqUiSIo7V1mw7w==}
     hasBin: true
 
   '@ecies/ciphers@0.2.3':
@@ -775,12 +775,8 @@ packages:
     resolution: {integrity: sha512-rONPWMC7PeExE077uLE4oqWrZ1IvAfz3oH9LibVAcVCopJiA9R62uavnbEzdkVmJYI6M6Zgkbeb07+tWjlq2XA==}
     engines: {node: ^14.21.3 || >=16}
 
-  '@noble/curves@1.8.1':
-    resolution: {integrity: sha512-warwspo+UYUPep0Q+vtdVB4Ugn8GGQj8iyB3gnRWsztmUHTI3S1nhdiWNsPUGL0vud7JlRRk1XEu7Lq1KGTnMQ==}
-    engines: {node: ^14.21.3 || >=16}
-
-  '@noble/hashes@1.7.1':
-    resolution: {integrity: sha512-B8XBPsn4vT/KJAGqDzbwztd+6Yte3P4V7iafm24bxgDe/mlRuK6xmWPuCNrKt2vDafZ8MfJLlchDG/vYafQEjQ==}
+  '@noble/curves@1.8.2':
+    resolution: {integrity: sha512-vnI7V6lFNe0tLAuJMu+2sX+FcL14TaCWy1qiczg1VwRmPrpQCdq5ESXQMqUc2tluRNf6irBXrWbl1mGN8uaU/g==}
     engines: {node: ^14.21.3 || >=16}
 
   '@noble/hashes@1.7.2':
@@ -1182,11 +1178,11 @@ packages:
     peerDependencies:
       eslint: ^8.57.0 || ^9.0.0
 
-  '@tanstack/query-core@5.74.3':
-    resolution: {integrity: sha512-Mqk+5o3qTuAiZML248XpNH8r2cOzl15+LTbUsZQEwvSvn1GU4VQhvqzAbil36p+MBxpr/58oBSnRzhrBevDhfg==}
+  '@tanstack/query-core@5.74.4':
+    resolution: {integrity: sha512-YuG0A0+3i9b2Gfo9fkmNnkUWh5+5cFhWBN0pJAHkHilTx6A0nv8kepkk4T4GRt4e5ahbtFj2eTtkiPcVU1xO4A==}
 
-  '@tanstack/react-query@5.74.3':
-    resolution: {integrity: sha512-QrycUn0wxjVPzITvQvOxFRdhlAwIoOQSuav7qWD4SWCoKCdLbyRZ2vji2GuBq/glaxbF4wBx3fqcYRDOt8KDTA==}
+  '@tanstack/react-query@5.74.4':
+    resolution: {integrity: sha512-mAbxw60d4ffQ4qmRYfkO1xzRBPUEf/72Dgo3qqea0J66nIKuDTLEqQt0ku++SDFlMGMnB6uKDnEG1xD/TDse4Q==}
     peerDependencies:
       react: ^18 || ^19
 
@@ -1464,8 +1460,8 @@ packages:
     resolution: {integrity: sha512-wvUjBtSGN7+7SjNpq/9M2Tg350UZD3q62IFZLbRAR1bSMlCo1ZaeW+BJ+D090e4hIIZLBcTDWe4Mh4jvUDajzQ==}
     engines: {node: '>= 0.4'}
 
-  aws-cdk-lib@2.189.1:
-    resolution: {integrity: sha512-9JU0yUr2iRTJ1oCPrHyx7hOtBDWyUfyOcdb6arlumJnMcQr2cyAMASY8HuAXHc8Y10ipVp8dRTW+J4/132IIYA==}
+  aws-cdk-lib@2.190.0:
+    resolution: {integrity: sha512-D6BGf0Gg4s3XCnNiXnCgH1NHXYjngizs676HeytI4ekrUMtsw1ZmH9dlFBattH1x9gYX/9A+UxMkid+P4bNZKA==}
     engines: {node: '>= 14.15.0'}
     peerDependencies:
       constructs: ^10.0.0
@@ -2795,8 +2791,8 @@ packages:
       yaml:
         optional: true
 
-  vite@6.3.0:
-    resolution: {integrity: sha512-9aC0n4pr6hIbvi1YOpFjwQ+QOTGssvbJKoeYkuHHGWwlXfdxQlI8L2qNMo9awEEcCPSiS+5mJZk5jH1PAqoDeQ==}
+  vite@6.3.1:
+    resolution: {integrity: sha512-kkzzkqtMESYklo96HKKPE5KKLkC1amlsqt+RjFMlX2AvbRB/0wghap19NdBxxwGZ+h/C6DLCrcEphPIItlGrRQ==}
     engines: {node: ^18.0.0 || ^20.0.0 || >=22.0.0}
     hasBin: true
     peerDependencies:
@@ -2918,8 +2914,8 @@ packages:
     resolution: {integrity: sha512-b4JR1PFR10y1mKjhHY9LaGo6tmrgjit7hxVIeAmyMw3jegXR4dhYqLaQF5zMXZxY7tLpMyJeLjr1C4rLmkVe8g==}
     engines: {node: '>=12.20'}
 
-  zod@3.24.2:
-    resolution: {integrity: sha512-lY7CDW43ECgW9u1TcT3IoXHflywfVqDYze4waEz812jR/bZ8FHDsl7pFQoSZTz5N+2NqRXs8GBwnAwo3ZNxqhQ==}
+  zod@3.24.3:
+    resolution: {integrity: sha512-HhY1oqzWCQWuUqvBFnsyrtZRhyPeR7SUGv+C4+MsisMuVfSPx8HpwWqH8tRahSlt6M3PiFAcoeFhZAqIXTxoSg==}
 
 snapshots:
 
@@ -3433,7 +3429,7 @@ snapshots:
       human-id: 4.1.1
       prettier: 2.8.8
 
-  '@dotenvx/dotenvx@1.40.0':
+  '@dotenvx/dotenvx@1.40.1':
     dependencies:
       commander: 11.1.0
       dotenv: 16.5.0
@@ -3637,11 +3633,9 @@ snapshots:
 
   '@noble/ciphers@1.2.1': {}
 
-  '@noble/curves@1.8.1':
+  '@noble/curves@1.8.2':
     dependencies:
-      '@noble/hashes': 1.7.1
-
-  '@noble/hashes@1.7.1': {}
+      '@noble/hashes': 1.7.2
 
   '@noble/hashes@1.7.2': {}
 
@@ -4062,11 +4056,11 @@ snapshots:
       - supports-color
       - typescript
 
-  '@tanstack/query-core@5.74.3': {}
+  '@tanstack/query-core@5.74.4': {}
 
-  '@tanstack/react-query@5.74.3(react@19.0.0)':
+  '@tanstack/react-query@5.74.4(react@19.0.0)':
     dependencies:
-      '@tanstack/query-core': 5.74.3
+      '@tanstack/query-core': 5.74.4
       react: 19.0.0
 
   '@tybys/wasm-util@0.9.0':
@@ -4381,7 +4375,7 @@ snapshots:
     dependencies:
       possible-typed-array-names: 1.1.0
 
-  aws-cdk-lib@2.189.1(constructs@10.4.2):
+  aws-cdk-lib@2.190.0(constructs@10.4.2):
     dependencies:
       '@aws-cdk/asset-awscli-v1': 2.2.232
       '@aws-cdk/asset-node-proxy-agent-v6': 2.1.0
@@ -4547,7 +4541,7 @@ snapshots:
     dependencies:
       '@ecies/ciphers': 0.2.3(@noble/ciphers@1.2.1)
       '@noble/ciphers': 1.2.1
-      '@noble/curves': 1.8.1
+      '@noble/curves': 1.8.2
       '@noble/hashes': 1.7.2
 
   emittery@1.1.0: {}
@@ -5817,7 +5811,7 @@ snapshots:
       debug: 4.4.0
       es-module-lexer: 1.6.0
       pathe: 2.0.3
-      vite: 6.3.0(@types/node@22.14.1)(tsx@4.19.3)
+      vite: 6.3.1(@types/node@22.14.1)(tsx@4.19.3)
     transitivePeerDependencies:
       - '@types/node'
       - jiti
@@ -5842,7 +5836,7 @@ snapshots:
       fsevents: 2.3.3
       tsx: 4.19.3
 
-  vite@6.3.0(@types/node@22.14.1)(tsx@4.19.3):
+  vite@6.3.1(@types/node@22.14.1)(tsx@4.19.3):
     dependencies:
       esbuild: 0.25.2
       fdir: 6.4.3(picomatch@4.0.2)
@@ -5954,4 +5948,4 @@ snapshots:
 
   yocto-queue@1.1.1: {}
 
-  zod@3.24.2: {}
+  zod@3.24.3: {}
