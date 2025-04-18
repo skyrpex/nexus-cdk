@@ -7,10 +7,10 @@
 		"test": "bun test --watch"
 	},
 	"devDependencies": {
-		"@eslint/js": "^9.24.0",
+		"@eslint/js": "^9.25.0",
 		"@tanstack/eslint-plugin-query": "^5.73.3",
 		"@types/node": "^22.14.1",
-		"eslint": "^9.24.0",
+		"eslint": "^9.25.0",
 		"eslint-import-resolver-typescript": "^4.3.2",
 		"eslint-plugin-import": "^2.31.0",
 		"eslint-plugin-perfectionist": "^4.11.0",
