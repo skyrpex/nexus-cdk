@@ -31,8 +31,8 @@ importers:
         specifier: ^2.31.0
         version: 2.31.0(@typescript-eslint/parser@8.31.0(eslint@9.25.1)(typescript@5.8.3))(eslint-import-resolver-typescript@4.3.4)(eslint@9.25.1)
       eslint-plugin-perfectionist:
-        specifier: ^4.12.0
-        version: 4.12.0(eslint@9.25.1)(typescript@5.8.3)
+        specifier: ^4.12.1
+        version: 4.12.1(eslint@9.25.1)(typescript@5.8.3)
       globals:
         specifier: ^16.0.0
         version: 16.0.0
@@ -1630,8 +1630,8 @@ packages:
       '@typescript-eslint/parser':
         optional: true
 
-  eslint-plugin-perfectionist@4.12.0:
-    resolution: {integrity: sha512-qvjf2IK3w11kyA24eLBKRifjtnwu+kluYTALmKdYCg5xWH1W5uQar3QXGHNOIvGuIM1djpy0FDMssVPPIbTe4Q==}
+  eslint-plugin-perfectionist@4.12.1:
+    resolution: {integrity: sha512-0w0zF4ugHqFfsSFfZcg/pQTUoKkSJOYqqFPURRgA8hkpZsbYksCO4rfpDdiMkOgCJ3y4wxPvwKm3eTrP7jl7zg==}
     engines: {node: ^18.0.0 || >=20.0.0}
     peerDependencies:
       eslint: '>=8.45.0'
@@ -4524,7 +4524,7 @@ snapshots:
       - eslint-import-resolver-webpack
       - supports-color
 
-  eslint-plugin-perfectionist@4.12.0(eslint@9.25.1)(typescript@5.8.3):
+  eslint-plugin-perfectionist@4.12.1(eslint@9.25.1)(typescript@5.8.3):
     dependencies:
       '@typescript-eslint/types': 8.31.0
       '@typescript-eslint/utils': 8.31.0(eslint@9.25.1)(typescript@5.8.3)
