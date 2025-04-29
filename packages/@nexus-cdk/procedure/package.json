@@ -16,7 +16,7 @@
 		"valibot": "1.0.0"
 	},
 	"devDependencies": {
-		"@types/bun": "^1.2.10",
+		"@types/bun": "^1.2.11",
 		"json-codec": "^1.1.0"
 	},
 	"sideEffects": false
