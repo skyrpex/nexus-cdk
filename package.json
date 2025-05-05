@@ -7,10 +7,10 @@
 		"test": "bun test --watch"
 	},
 	"devDependencies": {
-		"@eslint/js": "^9.25.1",
+		"@eslint/js": "^9.26.0",
 		"@tanstack/eslint-plugin-query": "^5.74.7",
-		"@types/node": "^22.15.3",
-		"eslint": "^9.25.1",
+		"@types/node": "^22.15.6",
+		"eslint": "^9.26.0",
 		"eslint-import-resolver-typescript": "^4.3.4",
 		"eslint-plugin-import": "^2.31.0",
 		"eslint-plugin-perfectionist": "^4.12.3",
@@ -18,7 +18,7 @@
 		"prettier": "^3.5.3",
 		"turbo": "^2.5.2",
 		"typescript": "^5.8.3",
-		"typescript-eslint": "^8.31.1"
+		"typescript-eslint": "^8.32.0"
 	},
 	"engines": {
 		"node": "22",
