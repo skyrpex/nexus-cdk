@@ -17,7 +17,7 @@
 		"esbuild": "^0.25.4",
 		"find-up": "^7.0.0",
 		"get-port": "^7.1.0",
-		"hono": "^4.7.8",
+		"hono": "^4.7.9",
 		"tsx": "^4.19.4"
 	},
 	"sideEffects": false
