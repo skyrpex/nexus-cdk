@@ -7,7 +7,7 @@
 		"types": "./src/index.ts"
 	},
 	"dependencies": {
-		"@hono/node-server": "^1.14.1",
+		"@hono/node-server": "^1.14.2",
 		"@nexus-cdk/procedure": "workspace:^",
 		"@nexus-cdk/service": "workspace:^",
 		"@nexus-cdk/utils": "workspace:^",
@@ -17,7 +17,7 @@
 		"esbuild": "^0.25.4",
 		"find-up": "^7.0.0",
 		"get-port": "^7.1.0",
-		"hono": "^4.7.9",
+		"hono": "^4.7.10",
 		"tsx": "^4.19.4"
 	},
 	"sideEffects": false
