@@ -73,8 +73,8 @@ importers:
         specifier: workspace:^
         version: link:../packages/nexus-cdk
       zod:
-        specifier: ^3.24.4
-        version: 3.24.4
+        specifier: ^3.25.4
+        version: 3.25.4
 
   packages/@nexus-cdk/api:
     dependencies:
@@ -100,8 +100,8 @@ importers:
         specifier: ^7.1.0
         version: 7.1.0
       hono:
-        specifier: ^4.7.9
-        version: 4.7.9
+        specifier: ^4.7.10
+        version: 4.7.10
       json-codec:
         specifier: ^1.1.0
         version: 1.1.0
@@ -130,8 +130,8 @@ importers:
   packages/@nexus-cdk/lambda:
     dependencies:
       '@hono/node-server':
-        specifier: ^1.14.1
-        version: 1.14.1(hono@4.7.9)
+        specifier: ^1.14.2
+        version: 1.14.2(hono@4.7.10)
       '@nexus-cdk/procedure':
         specifier: workspace:^
         version: link:../procedure
@@ -160,8 +160,8 @@ importers:
         specifier: ^7.1.0
         version: 7.1.0
       hono:
-        specifier: ^4.7.9
-        version: 4.7.9
+        specifier: ^4.7.10
+        version: 4.7.10
       tsx:
         specifier: ^4.19.4
         version: 4.19.4
@@ -212,11 +212,11 @@ importers:
   packages/@nexus-cdk/utils:
     dependencies:
       '@hono/node-server':
-        specifier: ^1.14.1
-        version: 1.14.1(hono@4.7.9)
+        specifier: ^1.14.2
+        version: 1.14.2(hono@4.7.10)
       hono:
-        specifier: ^4.7.9
-        version: 4.7.9
+        specifier: ^4.7.10
+        version: 4.7.10
     devDependencies:
       '@types/bun':
         specifier: ^1.2.13
@@ -723,8 +723,8 @@ packages:
     resolution: {integrity: sha512-0J+zgWxHN+xXONWIyPWKFMgVuJoZuGiIFu8yxk7RJjxkzpGmyja5wRFqZIVtjDVOQpV+Rw0iOAjYPE2eQyjr0w==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
-  '@hono/node-server@1.14.1':
-    resolution: {integrity: sha512-vmbuM+HPinjWzPe7FFPWMMQMsbKE9gDPhaH0FFdqbGpkT5lp++tcWDTxwBl5EgS5y6JVgIaCdjeHRfQ4XRBRjQ==}
+  '@hono/node-server@1.14.2':
+    resolution: {integrity: sha512-GHjpOeHYbr9d1vkID2sNUYkl5IxumyhDrUJB7wBp7jvqYwPFt+oNKsAPBRcdSbV7kIrXhouLE199ks1QcK4r7A==}
     engines: {node: '>=18.14.1'}
     peerDependencies:
       hono: ^4
@@ -1884,8 +1884,8 @@ packages:
     resolution: {integrity: sha512-0hJU9SCPvmMzIBdZFqNPXWa6dqh7WdH0cII9y+CyS8rG3nL48Bclra9HmKhVVUHyPWNH5Y7xDwAB7bfgSjkUMQ==}
     engines: {node: '>= 0.4'}
 
-  hono@4.7.9:
-    resolution: {integrity: sha512-/EsCoR5h7N4yu01TDu9GMCCJa6ZLk5ZJIWFFGNawAXmd1Tp53+Wir4xm0D2X19bbykWUlzQG0+BvPAji6p9E8Q==}
+  hono@4.7.10:
+    resolution: {integrity: sha512-QkACju9MiN59CKSY5JsGZCYmPZkA6sIW6OFCUp7qDjZu6S6KHtJHhAc9Uy9mV9F8PJ1/HQ3ybZF2yjCa/73fvQ==}
     engines: {node: '>=16.9.0'}
 
   human-id@4.1.1:
@@ -2787,8 +2787,8 @@ packages:
     resolution: {integrity: sha512-b4JR1PFR10y1mKjhHY9LaGo6tmrgjit7hxVIeAmyMw3jegXR4dhYqLaQF5zMXZxY7tLpMyJeLjr1C4rLmkVe8g==}
     engines: {node: '>=12.20'}
 
-  zod@3.24.4:
-    resolution: {integrity: sha512-OdqJE9UDRPwWsrHjLN2F8bPxvwJBK22EHLWtanu0LSYr5YqzsaaW3RMgmjwr8Rypg5k+meEJdSPXJZXE/yqOMg==}
+  zod@3.25.4:
+    resolution: {integrity: sha512-7zz8qNtVv37yCd8OeUW37PMXrR0K/zg+6vw+Z2FJ2+oozVdRbFKldkCoqxd9nJflDrx2ZkjUJrPF2DMj+L4pBQ==}
 
 snapshots:
 
@@ -3451,9 +3451,9 @@ snapshots:
       '@eslint/core': 0.14.0
       levn: 0.4.1
 
-  '@hono/node-server@1.14.1(hono@4.7.9)':
+  '@hono/node-server@1.14.2(hono@4.7.10)':
     dependencies:
-      hono: 4.7.9
+      hono: 4.7.10
 
   '@humanfs/core@0.19.1': {}
 
@@ -4831,7 +4831,7 @@ snapshots:
     dependencies:
       function-bind: 1.1.2
 
-  hono@4.7.9: {}
+  hono@4.7.10: {}
 
   human-id@4.1.1: {}
 
@@ -5745,4 +5745,4 @@ snapshots:
 
   yocto-queue@1.1.1: {}
 
-  zod@3.24.4: {}
+  zod@3.25.4: {}
