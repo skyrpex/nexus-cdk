@@ -10,13 +10,13 @@
 	},
 	"dependencies": {
 		"@aws-sdk/client-dynamodb": "^3.844.0",
-		"@dotenvx/dotenvx": "^1.47.2",
+		"@dotenvx/dotenvx": "^1.47.3",
 		"@nexus-sdk/client-api": "workspace:^",
 		"@tanstack/react-query": "^5.82.0",
 		"aws-cdk-lib": "^2.204.0",
 		"constructs": "^10.4.2",
 		"nexus-cdk": "workspace:^",
-		"zod": "^4.0.0"
+		"zod": "^4.0.3"
 	},
 	"sideEffects": false
 }
