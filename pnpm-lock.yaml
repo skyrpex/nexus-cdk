@@ -55,8 +55,8 @@ importers:
         specifier: ^3.848.0
         version: 3.848.0
       '@dotenvx/dotenvx':
-        specifier: ^1.47.7
-        version: 1.47.7
+        specifier: ^1.48.0
+        version: 1.48.0
       '@nexus-sdk/client-api':
         specifier: workspace:^
         version: link:../packages/@nexus-sdk/client-api
@@ -520,8 +520,8 @@ packages:
   '@changesets/write@0.4.0':
     resolution: {integrity: sha512-CdTLvIOPiCNuH71pyDu3rA+Q0n65cmAbXnwWH84rKGiFumFzkmHNT8KHTMEchcxN+Kl8I54xGUhJ7l3E7X396Q==}
 
-  '@dotenvx/dotenvx@1.47.7':
-    resolution: {integrity: sha512-WFuNE77SRFc+nMW2IR6PzDllNYLcfn1QskK9a+Et8D1XvK25QNSRdGk/uti1ekdMZCJrM6dCKw+oJzo0PB+iXA==}
+  '@dotenvx/dotenvx@1.48.0':
+    resolution: {integrity: sha512-UrAKBvUYl8SwCyYa8U8lND4rkdPbd7uOPtCPeiObeg5B44yrdH2ioO0tLfsGAGoenLmf6IpN6be4eT4gXxyzjQ==}
     hasBin: true
 
   '@ecies/ciphers@0.2.4':
@@ -3578,7 +3578,7 @@ snapshots:
       human-id: 4.1.1
       prettier: 2.8.8
 
-  '@dotenvx/dotenvx@1.47.7':
+  '@dotenvx/dotenvx@1.48.0':
     dependencies:
       commander: 11.1.0
       dotenv: 16.6.1
