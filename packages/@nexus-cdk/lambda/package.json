@@ -7,14 +7,14 @@
 		"types": "./src/index.ts"
 	},
 	"dependencies": {
-		"@hono/node-server": "^1.16.0",
+		"@hono/node-server": "^1.17.1",
 		"@nexus-cdk/procedure": "workspace:^",
 		"@nexus-cdk/service": "workspace:^",
 		"@nexus-cdk/utils": "workspace:^",
 		"aws-cdk-lib": "^2.206.0",
 		"constructs": "^10.4.2",
 		"devalue-codec": "^1.2.0",
-		"esbuild": "^0.25.6",
+		"esbuild": "^0.25.8",
 		"find-up": "^7.0.0",
 		"get-port": "^7.1.0",
 		"hono": "^4.8.5",
