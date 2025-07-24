@@ -64,8 +64,8 @@ importers:
         specifier: ^5.83.0
         version: 5.83.0(react@19.0.0)
       aws-cdk-lib:
-        specifier: ^2.206.0
-        version: 2.206.0(constructs@10.4.2)
+        specifier: ^2.207.0
+        version: 2.207.0(constructs@10.4.2)
       constructs:
         specifier: ^10.4.2
         version: 10.4.2
@@ -73,8 +73,8 @@ importers:
         specifier: workspace:^
         version: link:../packages/nexus-cdk
       zod:
-        specifier: ^4.0.5
-        version: 4.0.5
+        specifier: ^4.0.9
+        version: 4.0.9
 
   packages/@nexus-cdk/api:
     dependencies:
@@ -142,8 +142,8 @@ importers:
         specifier: workspace:^
         version: link:../utils
       aws-cdk-lib:
-        specifier: ^2.206.0
-        version: 2.206.0(constructs@10.4.2)
+        specifier: ^2.207.0
+        version: 2.207.0(constructs@10.4.2)
       constructs:
         specifier: ^10.4.2
         version: 10.4.2
@@ -243,8 +243,8 @@ importers:
         specifier: ^7.1.0
         version: 7.1.0
       vite:
-        specifier: ^7.0.5
-        version: 7.0.5(@types/node@24.1.0)(tsx@4.20.3)
+        specifier: ^7.0.6
+        version: 7.0.6(@types/node@24.1.0)(tsx@4.20.3)
 
   packages/@nexus-sdk/client-api:
     dependencies:
@@ -304,8 +304,8 @@ importers:
         specifier: workspace:^
         version: link:../@nexus-cdk/vite
       aws-cdk-lib:
-        specifier: ^2.206.0
-        version: 2.206.0(constructs@10.4.2)
+        specifier: ^2.207.0
+        version: 2.207.0(constructs@10.4.2)
       constructs:
         specifier: ^10.4.2
         version: 10.4.2
@@ -1553,8 +1553,8 @@ packages:
     resolution: {integrity: sha512-wvUjBtSGN7+7SjNpq/9M2Tg350UZD3q62IFZLbRAR1bSMlCo1ZaeW+BJ+D090e4hIIZLBcTDWe4Mh4jvUDajzQ==}
     engines: {node: '>= 0.4'}
 
-  aws-cdk-lib@2.206.0:
-    resolution: {integrity: sha512-WQGSSzSX+CvIG3j4GICxCAARGaB2dbB2ZiAn8dqqWdUkF6G9pedlSd3bjB0NHOqrxJMu3jYQCYf3gLYTaJuR8A==}
+  aws-cdk-lib@2.207.0:
+    resolution: {integrity: sha512-DlXUeg6cK6T71jyf6UQAUquRVnG388dIsxb4IuW0Wkn+9t6z4NO39sGCs91mV2RZtPChWy+e8BRVtQx/uBdLww==}
     engines: {node: '>= 14.15.0'}
     peerDependencies:
       constructs: ^10.0.0
@@ -2931,8 +2931,8 @@ packages:
       yaml:
         optional: true
 
-  vite@7.0.5:
-    resolution: {integrity: sha512-1mncVwJxy2C9ThLwz0+2GKZyEXuC3MyWtAAlNftlZZXZDP3AJt5FmwcMit/IGGaNZ8ZOB2BNO/HFUB+CpN0NQw==}
+  vite@7.0.6:
+    resolution: {integrity: sha512-MHFiOENNBd+Bd9uvc8GEsIzdkn1JxMmEeYX35tI3fv0sJBUTfW5tQsoaOwuY4KhBI09A3dUJ/DXf2yxPVPUceg==}
     engines: {node: ^20.19.0 || >=22.12.0}
     hasBin: true
     peerDependencies:
@@ -3054,8 +3054,8 @@ packages:
     resolution: {integrity: sha512-b4JR1PFR10y1mKjhHY9LaGo6tmrgjit7hxVIeAmyMw3jegXR4dhYqLaQF5zMXZxY7tLpMyJeLjr1C4rLmkVe8g==}
     engines: {node: '>=12.20'}
 
-  zod@4.0.5:
-    resolution: {integrity: sha512-/5UuuRPStvHXu7RS+gmvRf4NXrNxpSllGwDnCBcJZtQsKrviYXm54yDGV2KYNLT5kq0lHGcl7lqWJLgSaG+tgA==}
+  zod@4.0.9:
+    resolution: {integrity: sha512-PAqUh1FW4Irxcs6/sWfnhJGV/8F0eLNd1FryydBfbA9Qvz1LaJk0TDrSC+hIKlArS/xVISuX/yjlS1bzg2D3Zw==}
 
 snapshots:
 
@@ -4634,7 +4634,7 @@ snapshots:
     dependencies:
       possible-typed-array-names: 1.1.0
 
-  aws-cdk-lib@2.206.0(constructs@10.4.2):
+  aws-cdk-lib@2.207.0(constructs@10.4.2):
     dependencies:
       '@aws-cdk/asset-awscli-v1': 2.2.242
       '@aws-cdk/asset-node-proxy-agent-v6': 2.1.0
@@ -6116,7 +6116,7 @@ snapshots:
       debug: 4.4.1
       es-module-lexer: 1.7.0
       pathe: 2.0.3
-      vite: 7.0.5(@types/node@24.1.0)(tsx@4.20.3)
+      vite: 7.0.6(@types/node@24.1.0)(tsx@4.20.3)
     transitivePeerDependencies:
       - '@types/node'
       - jiti
@@ -6144,7 +6144,7 @@ snapshots:
       fsevents: 2.3.3
       tsx: 4.20.3
 
-  vite@7.0.5(@types/node@24.1.0)(tsx@4.20.3):
+  vite@7.0.6(@types/node@24.1.0)(tsx@4.20.3):
     dependencies:
       esbuild: 0.25.8
       fdir: 6.4.6(picomatch@4.0.3)
@@ -6260,4 +6260,4 @@ snapshots:
 
   yocto-queue@1.1.1: {}
 
-  zod@4.0.5: {}
+  zod@4.0.9: {}
