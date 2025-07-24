@@ -13,10 +13,10 @@
 		"@dotenvx/dotenvx": "^1.48.3",
 		"@nexus-sdk/client-api": "workspace:^",
 		"@tanstack/react-query": "^5.83.0",
-		"aws-cdk-lib": "^2.206.0",
+		"aws-cdk-lib": "^2.207.0",
 		"constructs": "^10.4.2",
 		"nexus-cdk": "workspace:^",
-		"zod": "^4.0.5"
+		"zod": "^4.0.9"
 	},
 	"sideEffects": false
 }
