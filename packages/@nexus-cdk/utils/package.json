@@ -7,8 +7,8 @@
 		"types": "./src/index.ts"
 	},
 	"dependencies": {
-		"@hono/node-server": "^1.18.0",
-		"hono": "^4.8.10"
+		"@hono/node-server": "^1.18.1",
+		"hono": "^4.8.12"
 	},
 	"devDependencies": {
 		"@types/bun": "^1.2.19",
