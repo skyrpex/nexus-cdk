@@ -100,8 +100,8 @@ importers:
         specifier: ^7.1.0
         version: 7.1.0
       hono:
-        specifier: ^4.9.1
-        version: 4.9.1
+        specifier: ^4.9.2
+        version: 4.9.2
       json-codec:
         specifier: ^1.1.0
         version: 1.1.0
@@ -131,7 +131,7 @@ importers:
     dependencies:
       '@hono/node-server':
         specifier: ^1.18.2
-        version: 1.18.2(hono@4.9.1)
+        version: 1.18.2(hono@4.9.2)
       '@nexus-cdk/procedure':
         specifier: workspace:^
         version: link:../procedure
@@ -160,8 +160,8 @@ importers:
         specifier: ^7.1.0
         version: 7.1.0
       hono:
-        specifier: ^4.9.1
-        version: 4.9.1
+        specifier: ^4.9.2
+        version: 4.9.2
       tsx:
         specifier: ^4.20.4
         version: 4.20.4
@@ -213,10 +213,10 @@ importers:
     dependencies:
       '@hono/node-server':
         specifier: ^1.18.2
-        version: 1.18.2(hono@4.9.1)
+        version: 1.18.2(hono@4.9.2)
       hono:
-        specifier: ^4.9.1
-        version: 4.9.1
+        specifier: ^4.9.2
+        version: 4.9.2
     devDependencies:
       '@types/bun':
         specifier: ^1.2.20
@@ -2079,8 +2079,8 @@ packages:
     resolution: {integrity: sha512-0hJU9SCPvmMzIBdZFqNPXWa6dqh7WdH0cII9y+CyS8rG3nL48Bclra9HmKhVVUHyPWNH5Y7xDwAB7bfgSjkUMQ==}
     engines: {node: '>= 0.4'}
 
-  hono@4.9.1:
-    resolution: {integrity: sha512-qfvdJ42t6CQE0N/iSCa8KsW8SQqYD67YB+TYbwPHlnALvX+s7ynh8otR1NEk5jXtUg73gpV/B82OSufDmwtX3w==}
+  hono@4.9.2:
+    resolution: {integrity: sha512-UG2jXGS/gkLH42l/1uROnwXpkjvvxkl3kpopL3LBo27NuaDPI6xHNfuUSilIHcrBkPfl4y0z6y2ByI455TjNRw==}
     engines: {node: '>=16.9.0'}
 
   human-id@4.1.1:
@@ -3732,9 +3732,9 @@ snapshots:
       '@eslint/core': 0.15.2
       levn: 0.4.1
 
-  '@hono/node-server@1.18.2(hono@4.9.1)':
+  '@hono/node-server@1.18.2(hono@4.9.2)':
     dependencies:
-      hono: 4.9.1
+      hono: 4.9.2
 
   '@humanfs/core@0.19.1': {}
 
@@ -5280,7 +5280,7 @@ snapshots:
     dependencies:
       function-bind: 1.1.2
 
-  hono@4.9.1: {}
+  hono@4.9.2: {}
 
   human-id@4.1.1: {}
 
