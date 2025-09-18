@@ -1,6 +1,6 @@
 # Nexus CDK
 
-> ⚠️ This project is experimental and under active development!
+> ⚠️ This project is experimental!
 > 
 > It serves the purpose of experimenting with the DX for cloud applications, so I suggest not to use it.
 
