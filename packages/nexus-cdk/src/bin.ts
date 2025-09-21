@@ -134,7 +134,6 @@ const startProcedures = async (procedures: ServiceDetails[]) => {
 	// DELETE PROCESSES
 	if (!firstRun) {
 		console.log("Deleting", toDelete.size, "services...");
-		firstRun = false;
 	}
 	const deletedSet = new Set<string>();
 	const deletedEmittery = new Emittery<Record<string, void>>();
@@ -245,7 +244,7 @@ const startProcedures = async (procedures: ServiceDetails[]) => {
 				}
 			});
 			child.on("close", (code) => {
-				console.log(`[${service.path}] Process exited with code ${code}`);
+				console.log(`[${service.path}] Process exited with code ${code ?? 0}`);
 				processes.delete(service.path);
 			});
 		}),
@@ -259,9 +258,11 @@ const startProcedures = async (procedures: ServiceDetails[]) => {
 
 	const duration = Date.now() - now;
 	console.log(
-		`Stopped ${toDelete.size} services and started ${toCreate.size} services in ${duration}ms`,
+		`${firstRun ? "S" : `Stopped ${toDelete.size} services and s`}tarted ${toCreate.size} services in ${duration}ms`,
 	);
 	console.log();
+
+	firstRun = false;
 };
 
 const wss = new WebSocketServer({ port: 0 });

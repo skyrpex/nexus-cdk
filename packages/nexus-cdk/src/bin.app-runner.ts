@@ -51,7 +51,7 @@ await Promise.all(
 			process.cwd(),
 			procedure.importFilename,
 		);
-		console.log(`Time taken to hash [${relativeFilename}]: ${after - now}ms`);
+		// console.log(`Time taken to hash [${relativeFilename}]: ${after - now}ms`);
 
 		hashes.set(getProcedureId(procedure), hash);
 	}),

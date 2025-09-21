@@ -18,6 +18,8 @@ export const { dynamodbHostProcedure } = procedure(
 	"dynamodbHostProcedure",
 	import.meta.url,
 ).handler(async () => {
+	const start = Date.now();
+
 	const name = `nexus--dynamodb-${randomUUID()}`;
 
 	const dynamodb = spawn(
@@ -45,7 +47,11 @@ export const { dynamodbHostProcedure } = procedure(
 		await client.send(new ListTablesCommand({}));
 	});
 
-	console.log("DynamoDB container ready at", endpoint);
+	const duration = Date.now() - start;
+	console.log(`Server started in ${duration}ms`);
+
+	// console.log("DynamoDB container ready at", endpoint);
+	console.log(endpoint);
 
 	return {
 		endpoint,

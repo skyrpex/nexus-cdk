@@ -38,7 +38,7 @@ form.addEventListener("submit", (event) => {
 messageList.addEventListener("click", (event) => {
 	const target = event.target as HTMLElement;
 	if (target.tagName === "BUTTON") {
-		const messageId = target.dataset.messageId;
+		const { messageId } = target.dataset;
 		if (messageId) {
 			void client.deleteMessage.mutate({ messageId }).then(async () => {
 				await updateMessageList();
