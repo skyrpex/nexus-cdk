@@ -42,7 +42,6 @@ type AnyProcedureBuilderDef = ProcedureBuilderDef<any, any>;
 type AnyResolver = ProcedureResolver<any, any, any, any>;
 
 interface CheckAnyHKT extends HKT {
-	 
 	apply: (value: Assume<this["_1"], any>) => typeof value;
 }
 
@@ -165,7 +164,7 @@ type Simplify<TType> = TType extends any[] | Date
 	? TType
 	: { [K in keyof TType]: TType[K] };
 
-export function createBuilder<Serializable extends HKT = CheckAnyHKT>() {
+export const createBuilder = <Serializable extends HKT = CheckAnyHKT>() => {
 	return <ImportName extends string>(
 		importName: ImportName,
 		importMetaURL: string,
@@ -175,9 +174,9 @@ export function createBuilder<Serializable extends HKT = CheckAnyHKT>() {
 			importName,
 		});
 	};
-}
+};
 
-function createBuilderInternal<
+const createBuilderInternal = <
 	Serializable extends HKT,
 	ImportName extends string,
 >(
@@ -190,7 +189,7 @@ function createBuilderInternal<
 	UnsetMarker,
 	UnsetMarker,
 	UnsetMarker
-> {
+> => {
 	const builder: AnyProcedureBuilder = {
 		context: () => createNewBuilder(def, {}),
 		def,
@@ -212,24 +211,24 @@ function createBuilderInternal<
 		UnsetMarker,
 		UnsetMarker
 	>;
-}
+};
 
-function createNewBuilder(
+const createNewBuilder = (
 	def1: AnyProcedureBuilderDef,
 	def2: Partial<AnyProcedureBuilderDef>,
-): AnyProcedureBuilder {
+): AnyProcedureBuilder => {
 	return createBuilderInternal({
 		...def1,
 		...def2,
 	});
-}
+};
 
 import { StandardSchemaV1Error } from "./standard-schema-error.ts";
 
-function createResolver(
+const createResolver = (
 	def: AnyProcedureBuilderDef,
 	resolver: AnyResolver,
-): Procedure<any> {
+): Procedure<any> => {
 	return {
 		importFilename: def.importMetaURL,
 		importName: def.importName,
@@ -247,12 +246,12 @@ function createResolver(
 				: output;
 		},
 	};
-}
+};
 
-async function validate(schema: StandardSchemaV1, value: unknown) {
+const validate = async (schema: StandardSchemaV1, value: unknown) => {
 	const result = await schema["~standard"].validate(value);
 	if (result.issues) {
 		throw new StandardSchemaV1Error(result.issues);
 	}
 	return result.value;
-}
+};

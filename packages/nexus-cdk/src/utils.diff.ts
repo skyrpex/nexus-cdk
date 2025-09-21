@@ -16,7 +16,7 @@
  * diff([1, 2], [1, 2, 3]); // true
  * diff(null, undefined); // true
  */
-export function diff(a: unknown, b: unknown): boolean {
+export const diff = (a: unknown, b: unknown): boolean => {
 	if (Object.is(a, b)) {
 		// If they are the same (using Object.is), return false (no difference)
 		return false;
@@ -66,4 +66,4 @@ export function diff(a: unknown, b: unknown): boolean {
 	}
 
 	return false; // No differences found
-}
+};

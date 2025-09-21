@@ -1,6 +1,6 @@
 import { WebSocket } from "ws";
 
-export async function waitForOpen(ws: WebSocket) {
+export const waitForOpen = async (ws: WebSocket) => {
 	await new Promise<void>((resolve, reject) => {
 		if (ws.readyState === WebSocket.OPEN) {
 			resolve();
@@ -11,4 +11,4 @@ export async function waitForOpen(ws: WebSocket) {
 			ws.on("error", reject);
 		}
 	});
-}
+};

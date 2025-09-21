@@ -23,13 +23,13 @@ const resolveModule = async (
 	}
 };
 
-export async function getProcedureHash(
+export const getProcedureHash = async (
 	procedure: {
 		importFilename: string;
 		importName: string;
 	},
 	resolvedFilename: string,
-): Promise<string> {
+): Promise<string> => {
 	const importFilename = fileURLToPath(procedure.importFilename);
 	const virtualFileContent = `
 		export { ${procedure.importName} as procedure } from '${importFilename}';
@@ -72,15 +72,15 @@ export async function getProcedureHash(
 	const output = build.outputFiles[0];
 	assert(output);
 	return output.hash;
-}
+};
 
-export function getProcedureId(procedure: {
+export const getProcedureId = (procedure: {
 	importFilename: string;
 	importName: string;
-}) {
+}) => {
 	const relativeFilename = path.relative(
 		process.cwd(),
 		fileURLToPath(procedure.importFilename),
 	);
 	return `${relativeFilename}:${procedure.importName}`;
-}
+};
