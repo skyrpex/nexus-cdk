@@ -2,6 +2,7 @@ import type { Context } from "hono";
 
 import { LambdaClient } from "@nexus-sdk/client-lambda";
 import getPort, { portNumbers } from "get-port";
+import prettyMilliseconds from "pretty-ms";
 
 import { procedure, StandardSchemaV1Error } from "@nexus-cdk/procedure";
 import { startServer } from "@nexus-cdk/utils";
@@ -58,7 +59,7 @@ export const { apiServer } = procedure("apiServer", import.meta.url)
 		const endpoint = server.endpoint;
 
 		const duration = Date.now() - now;
-		console.log(`Server started in ${duration}ms`);
+		console.log(`Server started in ${prettyMilliseconds(duration)}`);
 		console.log(endpoint);
 
 		return {

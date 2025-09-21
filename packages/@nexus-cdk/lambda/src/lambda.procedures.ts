@@ -8,6 +8,7 @@ import {
 	stringify,
 } from "devalue-codec";
 import getPort, { portNumbers } from "get-port";
+import prettyMilliseconds from "pretty-ms";
 
 import { type Procedure, procedure } from "@nexus-cdk/procedure";
 import { startServer } from "@nexus-cdk/utils";
@@ -109,7 +110,7 @@ export const { createLambdaServer } = procedure(
 		const { endpoint } = await startServer(app, port);
 
 		const duration = Date.now() - now;
-		console.log(`Server started in ${duration}ms`);
+		console.log(`Server started in ${prettyMilliseconds(duration)}`);
 		console.log(endpoint);
 
 		return {

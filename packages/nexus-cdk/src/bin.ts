@@ -12,6 +12,7 @@ import {
 	stringify,
 } from "devalue-codec";
 import Emittery from "emittery";
+import prettyMilliseconds from "pretty-ms";
 import { WebSocketServer } from "ws";
 
 import { getTokensFromString, type Token, TokensHost } from "@nexus-cdk/tokens";
@@ -258,7 +259,7 @@ const startProcedures = async (procedures: ServiceDetails[]) => {
 
 	const duration = Date.now() - now;
 	console.log(
-		`${firstRun ? "S" : `Stopped ${toDelete.size} services and s`}tarted ${toCreate.size} services in ${duration}ms`,
+		`${firstRun ? "S" : `Stopped ${toDelete.size} services and s`}tarted ${toCreate.size} services in ${prettyMilliseconds(duration)}`,
 	);
 	console.log();
 

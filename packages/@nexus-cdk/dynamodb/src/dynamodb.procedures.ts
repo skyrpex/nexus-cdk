@@ -6,6 +6,8 @@ import type {
 import { spawn } from "node:child_process";
 import { randomUUID } from "node:crypto";
 
+import prettyMilliseconds from "pretty-ms";
+
 import { procedure } from "@nexus-cdk/procedure";
 import { exponentialBackoff, getDockerUrlForPort } from "@nexus-cdk/utils";
 
@@ -48,7 +50,7 @@ export const { dynamodbHostProcedure } = procedure(
 	});
 
 	const duration = Date.now() - start;
-	console.log(`Server started in ${duration}ms`);
+	console.log(`Server started in ${prettyMilliseconds(duration)}`);
 
 	// console.log("DynamoDB container ready at", endpoint);
 	console.log(endpoint);
