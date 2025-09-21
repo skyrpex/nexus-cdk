@@ -1,12 +1,12 @@
 import js from "@eslint/js";
 import query from "@tanstack/eslint-plugin-query";
-// @ts-expect-error eslint-plugin-import is not typed
 import * as pluginImport from "eslint-plugin-import";
 import perfectionist from "eslint-plugin-perfectionist";
+import { defineConfig } from "eslint/config";
 import globals from "globals";
-import tseslint from "typescript-eslint";
+import { configs } from "typescript-eslint";
 
-export default tseslint.config(
+export default defineConfig(
 	////////////////////////////////////////////////////////////////////////////
 	// FILES AND IGNORES
 	////////////////////////////////////////////////////////////////////////////
@@ -31,8 +31,8 @@ export default tseslint.config(
 	////////////////////////////////////////////////////////////////////////////
 	// TSESLINT
 	////////////////////////////////////////////////////////////////////////////
-	tseslint.configs.strictTypeChecked,
-	tseslint.configs.stylisticTypeChecked,
+	configs.strictTypeChecked,
+	configs.stylisticTypeChecked,
 	{
 		languageOptions: {
 			parserOptions: {

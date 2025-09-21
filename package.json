@@ -7,10 +7,10 @@
 		"test": "bun test --watch"
 	},
 	"devDependencies": {
-		"@eslint/js": "^9.35.0",
+		"@eslint/js": "^9.36.0",
 		"@tanstack/eslint-plugin-query": "^5.89.0",
 		"@types/node": "^24.5.2",
-		"eslint": "^9.35.0",
+		"eslint": "^9.36.0",
 		"eslint-import-resolver-typescript": "^4.4.4",
 		"eslint-plugin-import": "^2.32.0",
 		"eslint-plugin-perfectionist": "^4.15.0",
@@ -24,12 +24,17 @@
 		"node": "22",
 		"pnpm": "10"
 	},
-	"packageManager": "pnpm@10.4.1+sha512.c753b6c3ad7afa13af388fa6d808035a008e30ea9993f58c6663e2bc5ff21679aa834db094987129aa4d488b86df57f7b634981b2f827cdcacc698cc0cfb88af",
+	"packageManager": "pnpm@10.17.0+sha512.fce8a3dd29a4ed2ec566fb53efbb04d8c44a0f05bc6f24a73046910fb9c3ce7afa35a0980500668fa3573345bd644644fa98338fa168235c80f4aa17aa17fbef",
 	"sideEffects": false,
 	"pnpm": {
 		"onlyBuiltDependencies": [
-			"esbuild"
-		]
+			"esbuild",
+			"unrs-resolver"
+		],
+		"overrides": {
+			"devalue@<5.3.2": ">=5.3.2",
+			"vite@>=6.0.0 <=6.3.5": ">=6.3.6"
+		}
 	},
 	"dependencies": {
 		"@changesets/cli": "^2.29.7"

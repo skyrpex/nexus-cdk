@@ -15,7 +15,10 @@ import Emittery from "emittery";
 import { WebSocketServer } from "ws";
 
 import { getTokensFromString, type Token, TokensHost } from "@nexus-cdk/tokens";
-import { addressInfoToURL , getSpawnNodeTypescriptOptions } from "@nexus-cdk/utils";
+import {
+	addressInfoToURL,
+	getSpawnNodeTypescriptOptions,
+} from "@nexus-cdk/utils";
 
 import { spawnProcedure } from "./procedure.runner.ts";
 import { diff } from "./utils.diff.ts";
@@ -98,6 +101,8 @@ const tokenValues = new Map<string, Token>();
 const dependencies = new Map<string, Set<string>>();
 const emittery = new Emittery<Record<string, Token>>();
 
+let firstRun = true;
+
 const startProcedures = async (procedures: ServiceDetails[]) => {
 	const now = Date.now();
 
@@ -127,7 +132,10 @@ const startProcedures = async (procedures: ServiceDetails[]) => {
 	}
 
 	// DELETE PROCESSES
-	console.log("Deleting", toDelete.size, "services...");
+	if (!firstRun) {
+		console.log("Deleting", toDelete.size, "services...");
+		firstRun = false;
+	}
 	const deletedSet = new Set<string>();
 	const deletedEmittery = new Emittery<Record<string, void>>();
 	await Promise.all(
