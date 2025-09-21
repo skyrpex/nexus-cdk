@@ -16,7 +16,7 @@
 		"aws-cdk-lib": "^2.215.0",
 		"constructs": "^10.4.2",
 		"nexus-cdk": "workspace:^",
-		"zod": "^4.1.9"
+		"zod": "^4.1.11"
 	},
 	"sideEffects": false
 }
