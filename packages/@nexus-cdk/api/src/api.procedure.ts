@@ -3,7 +3,7 @@ import type { Context } from "hono";
 import { LambdaClient } from "@nexus-sdk/client-lambda";
 import getPort, { portNumbers } from "get-port";
 
-import { procedure , StandardSchemaV1Error } from "@nexus-cdk/procedure";
+import { procedure, StandardSchemaV1Error } from "@nexus-cdk/procedure";
 import { startServer } from "@nexus-cdk/utils";
 
 export const { apiServer } = procedure("apiServer", import.meta.url)

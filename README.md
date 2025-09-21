@@ -1,7 +1,7 @@
 # Nexus CDK
 
 > ⚠️ This project is experimental!
-> 
+>
 > It serves the purpose of experimenting with the DX for cloud applications, so I suggest not to use it.
 
 ## Requirements

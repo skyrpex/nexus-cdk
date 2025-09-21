@@ -32,16 +32,16 @@ export const { createLambdaServer } = procedure(
 		// invoke
 		app.post("/", async (c) => {
 			try {
-					// eslint-disable-next-line @typescript-eslint/no-dynamic-delete
-					delete require.cache[fileURLToPath(opts.ctx.importFilename)];
-				} catch (error) {
-					if (
-						error instanceof Error &&
-						error.message.includes("require is not defined")
-					) {
-						// Just ignore it.
-					} else {
-						throw error;
+				// eslint-disable-next-line @typescript-eslint/no-dynamic-delete
+				delete require.cache[fileURLToPath(opts.ctx.importFilename)];
+			} catch (error) {
+				if (
+					error instanceof Error &&
+					error.message.includes("require is not defined")
+				) {
+					// Just ignore it.
+				} else {
+					throw error;
 				}
 			}
 
@@ -72,16 +72,16 @@ export const { createLambdaServer } = procedure(
 		// public url
 		app.get("/", async (c) => {
 			try {
-					// eslint-disable-next-line @typescript-eslint/no-dynamic-delete
-					delete require.cache[fileURLToPath(opts.ctx.importFilename)];
-				} catch (error) {
-					if (
-						error instanceof Error &&
-						error.message.includes("require is not defined")
-					) {
-						// Just ignore it.
-					} else {
-						throw error;
+				// eslint-disable-next-line @typescript-eslint/no-dynamic-delete
+				delete require.cache[fileURLToPath(opts.ctx.importFilename)];
+			} catch (error) {
+				if (
+					error instanceof Error &&
+					error.message.includes("require is not defined")
+				) {
+					// Just ignore it.
+				} else {
+					throw error;
 				}
 			}
 			const mod = await import(opts.ctx.importFilename);

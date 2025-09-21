@@ -20,7 +20,10 @@ export class TokensHost extends Construct {
 	static of(scope: Construct): TokensHost {
 		const id = "nexus-TokensHost-mnnjwG2E2p";
 		const root = scope.node.root;
-		return (root.node.tryFindChild(id) as TokensHost | undefined) ?? new TokensHost(root, id);
+		return (
+			(root.node.tryFindChild(id) as TokensHost | undefined) ??
+			new TokensHost(root, id)
+		);
 	}
 
 	token(constructPath: string, outputKey: string): Token {

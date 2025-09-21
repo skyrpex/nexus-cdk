@@ -36,12 +36,13 @@ export type LambdaEndpoint<T extends { input: unknown; output: unknown }> =
 		};
 	};
 
-export type LambdaProps<T extends BuiltProcedureDef> = (InferProcedureContext<T> extends undefined
-	? {
-			readonly context?: undefined;
-		}
-	: {
-			readonly context: InferProcedureContext<T>;
-		}) & {
-	readonly procedure: Procedure<T>;
-};
+export type LambdaProps<T extends BuiltProcedureDef> =
+	(InferProcedureContext<T> extends undefined
+		? {
+				readonly context?: undefined;
+			}
+		: {
+				readonly context: InferProcedureContext<T>;
+			}) & {
+		readonly procedure: Procedure<T>;
+	};

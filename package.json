@@ -2,9 +2,9 @@
 	"type": "module",
 	"private": true,
 	"scripts": {
-		"dev": "turbo dev",
-		"format": "prettier --write .",
-		"lint": "eslint --fix",
+		"dev": "bunx --bun turbo dev",
+		"format": "bunx --bun prettier --write .",
+		"lint": "bunx --bun eslint --fix",
 		"test": "bun test --watch"
 	},
 	"devDependencies": {
