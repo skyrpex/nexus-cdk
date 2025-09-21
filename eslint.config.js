@@ -85,6 +85,12 @@ export default defineConfig(
 				},
 			],
 			// "import/enforce-node-protocol-usage": "error",
+			"import/no-unresolved": [
+				"error",
+				{
+					ignore: ["^bun:test$"],
+				},
+			],
 		},
 		settings: {
 			"import/parsers": {
