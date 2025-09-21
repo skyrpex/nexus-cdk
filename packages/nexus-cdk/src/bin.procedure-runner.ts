@@ -7,6 +7,7 @@ import { WebSocket } from "ws";
 import type { Procedure } from "@nexus-cdk/procedure";
 
 import { parseProcedureRunnerOptions } from "./procedure.runner.ts";
+import { waitForOpen } from "./utils.ws.ts";
 
 const [, , options] = process.argv;
 assert(options);
@@ -38,16 +39,8 @@ const output = await procedure.invoke({
 
 // console.log("Output:", output);
 
-await new Promise<void>((resolve, reject) => {
-	if (ws.readyState === WebSocket.OPEN) {
-		resolve();
-	} else {
-		ws.on("open", () => {
-			resolve();
-		});
-		ws.on("error", reject);
-	}
-});
+await waitForOpen(ws);
+
 // eslint-disable-next-line @typescript-eslint/no-deprecated
 ws.send(stringify(output as Serializable));
 ws.close();
