@@ -1,4 +1,5 @@
 import assert from "node:assert";
+import { randomUUID } from "node:crypto";
 
 import { DynamoDB } from "@aws-sdk/client-dynamodb";
 import * as cdk from "nexus-cdk";
@@ -20,7 +21,7 @@ export const { writeMessage } = cdk
 			Item: {
 				channel: { S: "default" },
 				message: { S: input.message },
-				messageId: { S: crypto.randomUUID() },
+				messageId: { S: randomUUID() },
 			},
 			TableName: ctx.table.tableName,
 		});

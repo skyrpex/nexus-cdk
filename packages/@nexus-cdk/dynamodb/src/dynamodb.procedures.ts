@@ -4,6 +4,7 @@ import type {
 } from "@aws-sdk/client-dynamodb";
 
 import { spawn } from "node:child_process";
+import { randomUUID } from "node:crypto";
 
 import { procedure } from "@nexus-cdk/procedure";
 import { exponentialBackoff, getDockerUrlForPort } from "@nexus-cdk/utils";
@@ -17,7 +18,7 @@ export const { dynamodbHostProcedure } = procedure(
 	"dynamodbHostProcedure",
 	import.meta.url,
 ).handler(async () => {
-	const name = `nexus--dynamodb-${crypto.randomUUID()}`;
+	const name = `nexus--dynamodb-${randomUUID()}`;
 
 	const dynamodb = spawn(
 		"docker",
@@ -71,13 +72,13 @@ export const { createDynamodbTableProcedure } = procedure(
 		});
 		const keySchema: KeySchemaElement[] = [
 			{
-				AttributeName: String(opts.ctx.props.primaryIndex.hashKey),
+				AttributeName: opts.ctx.props.primaryIndex.hashKey,
 				KeyType: "HASH",
 			},
 		];
 		if (opts.ctx.props.primaryIndex.rangeKey) {
 			keySchema.push({
-				AttributeName: String(opts.ctx.props.primaryIndex.rangeKey),
+				AttributeName: opts.ctx.props.primaryIndex.rangeKey,
 				KeyType: "RANGE",
 			});
 		}
@@ -86,7 +87,7 @@ export const { createDynamodbTableProcedure } = procedure(
 		const attributeDefinitions: AttributeDefinition[] = Object.entries(
 			opts.ctx.props.fields,
 		).map(([name, type]) => ({
-			AttributeName: String(name),
+			AttributeName: name,
 			AttributeType: type === "string" ? "S" : "N",
 		}));
 
