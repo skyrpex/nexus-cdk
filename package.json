@@ -16,7 +16,7 @@
 		"eslint-plugin-perfectionist": "^4.15.0",
 		"globals": "^16.4.0",
 		"prettier": "^3.6.2",
-		"turbo": "^2.5.7",
+		"turbo": "^2.5.8",
 		"typescript": "^5.9.2",
 		"typescript-eslint": "^8.44.1"
 	},
