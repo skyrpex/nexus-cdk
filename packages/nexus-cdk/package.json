@@ -23,7 +23,7 @@
 		"devalue-codec": "^1.2.0",
 		"emittery": "^1.2.0",
 		"esbuild": "^0.25.10",
-		"tsx": "^4.20.5",
+		"tsx": "^4.20.6",
 		"ws": "^8.18.3"
 	},
 	"devDependencies": {
