@@ -77,8 +77,8 @@ importers:
         specifier: workspace:^
         version: link:../packages/nexus-cdk
       zod:
-        specifier: ^4.1.11
-        version: 4.1.11
+        specifier: ^4.1.12
+        version: 4.1.12
 
   packages/@nexus-cdk/api:
     dependencies:
@@ -104,8 +104,8 @@ importers:
         specifier: ^7.1.0
         version: 7.1.0
       hono:
-        specifier: ^4.9.9
-        version: 4.9.9
+        specifier: ^4.9.10
+        version: 4.9.10
       json-codec:
         specifier: ^1.1.0
         version: 1.1.0
@@ -135,7 +135,7 @@ importers:
     dependencies:
       '@hono/node-server':
         specifier: ^1.19.5
-        version: 1.19.5(hono@4.9.9)
+        version: 1.19.5(hono@4.9.10)
       '@nexus-cdk/procedure':
         specifier: workspace:^
         version: link:../procedure
@@ -164,8 +164,8 @@ importers:
         specifier: ^7.1.0
         version: 7.1.0
       hono:
-        specifier: ^4.9.9
-        version: 4.9.9
+        specifier: ^4.9.10
+        version: 4.9.10
       tsx:
         specifier: ^4.20.6
         version: 4.20.6
@@ -217,10 +217,10 @@ importers:
     dependencies:
       '@hono/node-server':
         specifier: ^1.19.5
-        version: 1.19.5(hono@4.9.9)
+        version: 1.19.5(hono@4.9.10)
       hono:
-        specifier: ^4.9.9
-        version: 4.9.9
+        specifier: ^4.9.10
+        version: 4.9.10
     devDependencies:
       '@types/bun':
         specifier: ^1.2.23
@@ -2084,8 +2084,8 @@ packages:
     resolution: {integrity: sha512-0hJU9SCPvmMzIBdZFqNPXWa6dqh7WdH0cII9y+CyS8rG3nL48Bclra9HmKhVVUHyPWNH5Y7xDwAB7bfgSjkUMQ==}
     engines: {node: '>= 0.4'}
 
-  hono@4.9.9:
-    resolution: {integrity: sha512-Hxw4wT6zjJGZJdkJzAx9PyBdf7ZpxaTSA0NfxqjLghwMrLBX8p33hJBzoETRakF3UJu6OdNQBZAlNSkGqKFukw==}
+  hono@4.9.10:
+    resolution: {integrity: sha512-AlI15ijFyKTXR7eHo7QK7OR4RoKIedZvBuRjO8iy4zrxvlY5oFCdiRG/V/lFJHCNXJ0k72ATgnyzx8Yqa5arug==}
     engines: {node: '>=16.9.0'}
 
   human-id@4.1.1:
@@ -3043,8 +3043,8 @@ packages:
     resolution: {integrity: sha512-AyeEbWOu/TAXdxlV9wmGcR0+yh2j3vYPGOECcIj2S7MkrLyC7ne+oye2BKTItt0ii2PHk4cDy+95+LshzbXnGg==}
     engines: {node: '>=12.20'}
 
-  zod@4.1.11:
-    resolution: {integrity: sha512-WPsqwxITS2tzx1bzhIKsEs19ABD5vmCVa4xBo2tq/SrV4RNZtfws1EnCWQXM6yh8bD08a1idvkB5MZSBiZsjwg==}
+  zod@4.1.12:
+    resolution: {integrity: sha512-JInaHOamG8pt5+Ey8kGmdcAcg3OL9reK8ltczgHTAwNhMys/6ThXHityHxVV2p3fkw/c+MAvBHFVYHFZDmjMCQ==}
 
 snapshots:
 
@@ -3732,9 +3732,9 @@ snapshots:
       '@eslint/core': 0.15.2
       levn: 0.4.1
 
-  '@hono/node-server@1.19.5(hono@4.9.9)':
+  '@hono/node-server@1.19.5(hono@4.9.10)':
     dependencies:
-      hono: 4.9.9
+      hono: 4.9.10
 
   '@humanfs/core@0.19.1': {}
 
@@ -5237,7 +5237,7 @@ snapshots:
     dependencies:
       function-bind: 1.1.2
 
-  hono@4.9.9: {}
+  hono@4.9.10: {}
 
   human-id@4.1.1: {}
 
@@ -6212,4 +6212,4 @@ snapshots:
 
   yocto-queue@1.2.1: {}
 
-  zod@4.1.11: {}
+  zod@4.1.12: {}
