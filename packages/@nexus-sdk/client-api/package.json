@@ -7,7 +7,7 @@
 		"types": "./src/index.ts"
 	},
 	"dependencies": {
-		"@tanstack/react-query": "^5.90.3"
+		"@tanstack/react-query": "^5.90.5"
 	},
 	"sideEffects": false
 }
