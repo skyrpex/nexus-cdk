@@ -9,7 +9,7 @@
 	"dependencies": {
 		"@nexus-cdk/procedure": "workspace:^",
 		"@nexus-cdk/tokens": "workspace:^",
-		"constructs": "^10.4.2"
+		"constructs": "^10.4.3"
 	},
 	"sideEffects": false
 }
