@@ -69,10 +69,10 @@ importers:
         version: 5.90.7(react@19.0.0)
       aws-cdk-lib:
         specifier: ^2.222.0
-        version: 2.222.0(constructs@10.4.2)
+        version: 2.222.0(constructs@10.4.3)
       constructs:
-        specifier: ^10.4.2
-        version: 10.4.2
+        specifier: ^10.4.3
+        version: 10.4.3
       nexus-cdk:
         specifier: workspace:^
         version: link:../packages/nexus-cdk
@@ -98,8 +98,8 @@ importers:
         specifier: workspace:^
         version: link:../../@nexus-sdk/client-lambda
       constructs:
-        specifier: ^10.4.2
-        version: 10.4.2
+        specifier: ^10.4.3
+        version: 10.4.3
       get-port:
         specifier: ^7.1.0
         version: 7.1.0
@@ -128,8 +128,8 @@ importers:
         specifier: workspace:^
         version: link:../../@nexus-sdk/lib-dynamodb
       constructs:
-        specifier: ^10.4.2
-        version: 10.4.2
+        specifier: ^10.4.3
+        version: 10.4.3
 
   packages/@nexus-cdk/lambda:
     dependencies:
@@ -147,10 +147,10 @@ importers:
         version: link:../utils
       aws-cdk-lib:
         specifier: ^2.222.0
-        version: 2.222.0(constructs@10.4.2)
+        version: 2.222.0(constructs@10.4.3)
       constructs:
-        specifier: ^10.4.2
-        version: 10.4.2
+        specifier: ^10.4.3
+        version: 10.4.3
       devalue-codec:
         specifier: ^1.2.0
         version: 1.2.0
@@ -201,14 +201,14 @@ importers:
         specifier: workspace:^
         version: link:../tokens
       constructs:
-        specifier: ^10.4.2
-        version: 10.4.2
+        specifier: ^10.4.3
+        version: 10.4.3
 
   packages/@nexus-cdk/tokens:
     dependencies:
       constructs:
-        specifier: ^10.4.2
-        version: 10.4.2
+        specifier: ^10.4.3
+        version: 10.4.3
       ohash:
         specifier: ^2.0.11
         version: 2.0.11
@@ -241,14 +241,14 @@ importers:
         specifier: workspace:^
         version: link:../service
       constructs:
-        specifier: ^10.4.2
-        version: 10.4.2
+        specifier: ^10.4.3
+        version: 10.4.3
       get-port:
         specifier: ^7.1.0
         version: 7.1.0
       vite:
-        specifier: ^7.2.0
-        version: 7.2.0(@types/node@24.10.0)(tsx@4.20.6)
+        specifier: ^7.2.1
+        version: 7.2.1(@types/node@24.10.0)(tsx@4.20.6)
 
   packages/@nexus-sdk/client-api:
     dependencies:
@@ -309,10 +309,10 @@ importers:
         version: link:../@nexus-cdk/vite
       aws-cdk-lib:
         specifier: ^2.222.0
-        version: 2.222.0(constructs@10.4.2)
+        version: 2.222.0(constructs@10.4.3)
       constructs:
-        specifier: ^10.4.2
-        version: 10.4.2
+        specifier: ^10.4.3
+        version: 10.4.3
       devalue-codec:
         specifier: ^1.2.0
         version: 1.2.0
@@ -1566,8 +1566,8 @@ packages:
   concat-map@0.0.1:
     resolution: {integrity: sha512-/Srv4dswyQNBfohGpz9o6Yb3Gz3SrUDqBH5rTuhGR7ahtlbYKnVxw2bCFMRljaA7EXHaXZ8wsHdodFvbkhKmqg==}
 
-  constructs@10.4.2:
-    resolution: {integrity: sha512-wsNxBlAott2qg8Zv87q3eYZYgheb9lchtBfjHzzLHtXbttwSrHPs1NNQbBrmbb1YZvYg2+Vh0Dor76w4mFxJkA==}
+  constructs@10.4.3:
+    resolution: {integrity: sha512-3+ZB67qWGM1vEstNpj6pGaLNN1qz4gxC1CBhEUhZDZk0PqzQWY65IzC1Doq17MGPa9xa2wJ1G/DJ3swU8kWAHQ==}
 
   cross-spawn@7.0.6:
     resolution: {integrity: sha512-uV2QOWP2nWzsy2aMp8aRibhi9dlzF5Hgh5SHaB9OiTGEyDTiJJyx0uy51QXdyWbtAHNua4XJzUKca3OzKUd3vA==}
@@ -2803,8 +2803,8 @@ packages:
       yaml:
         optional: true
 
-  vite@7.2.0:
-    resolution: {integrity: sha512-C/Naxf8H0pBx1PA4BdpT+c/5wdqI9ILMdwjSMILw7tVIh3JsxzZqdeTLmmdaoh5MYUEOyBnM9K3o0DzoZ/fe+w==}
+  vite@7.2.1:
+    resolution: {integrity: sha512-qTl3VF7BvOupTR85Zc561sPEgxyUSNSvTQ9fit7DEMP7yPgvvIGm5Zfa1dOM+kOwWGNviK9uFM9ra77+OjK7lQ==}
     engines: {node: ^20.19.0 || >=22.12.0}
     hasBin: true
     peerDependencies:
@@ -4467,12 +4467,12 @@ snapshots:
     dependencies:
       possible-typed-array-names: 1.1.0
 
-  aws-cdk-lib@2.222.0(constructs@10.4.2):
+  aws-cdk-lib@2.222.0(constructs@10.4.3):
     dependencies:
       '@aws-cdk/asset-awscli-v1': 2.2.242
       '@aws-cdk/asset-node-proxy-agent-v6': 2.1.0
       '@aws-cdk/cloud-assembly-schema': 48.17.0
-      constructs: 10.4.2
+      constructs: 10.4.3
 
   balanced-match@1.0.2: {}
 
@@ -4544,7 +4544,7 @@ snapshots:
 
   concat-map@0.0.1: {}
 
-  constructs@10.4.2: {}
+  constructs@10.4.3: {}
 
   cross-spawn@7.0.6:
     dependencies:
@@ -5893,7 +5893,7 @@ snapshots:
       fsevents: 2.3.3
       tsx: 4.20.6
 
-  vite@7.2.0(@types/node@24.10.0)(tsx@4.20.6):
+  vite@7.2.1(@types/node@24.10.0)(tsx@4.20.6):
     dependencies:
       esbuild: 0.25.12
       fdir: 6.5.0(picomatch@4.0.3)
