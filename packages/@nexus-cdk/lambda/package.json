@@ -11,7 +11,7 @@
 		"@nexus-cdk/procedure": "workspace:^",
 		"@nexus-cdk/service": "workspace:^",
 		"@nexus-cdk/utils": "workspace:^",
-		"aws-cdk-lib": "^2.229.0",
+		"aws-cdk-lib": "^2.229.1",
 		"constructs": "^10.4.3",
 		"devalue-codec": "^1.2.0",
 		"esbuild": "^0.27.0",
