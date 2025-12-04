@@ -12,7 +12,7 @@
 		"@aws-sdk/client-dynamodb": "^3.943.0",
 		"@dotenvx/dotenvx": "^1.51.1",
 		"@nexus-sdk/client-api": "workspace:^",
-		"@tanstack/react-query": "^5.90.11",
+		"@tanstack/react-query": "^5.90.12",
 		"aws-cdk-lib": "^2.231.0",
 		"constructs": "^10.4.3",
 		"nexus-cdk": "workspace:^",
