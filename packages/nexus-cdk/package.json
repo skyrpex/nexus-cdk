@@ -19,7 +19,7 @@
 		"@nexus-cdk/utils": "workspace:^",
 		"@nexus-cdk/vite": "workspace:^",
 		"aws-cdk-lib": "^2.232.1",
-		"constructs": "^10.4.3",
+		"constructs": "^10.4.4",
 		"devalue-codec": "^1.2.0",
 		"emittery": "^1.2.0",
 		"esbuild": "^0.27.1",

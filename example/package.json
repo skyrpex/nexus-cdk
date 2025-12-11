@@ -14,7 +14,7 @@
 		"@nexus-sdk/client-api": "workspace:^",
 		"@tanstack/react-query": "^5.90.12",
 		"aws-cdk-lib": "^2.232.1",
-		"constructs": "^10.4.3",
+		"constructs": "^10.4.4",
 		"nexus-cdk": "workspace:^",
 		"zod": "^4.1.13"
 	},

@@ -9,7 +9,7 @@
 	"dependencies": {
 		"@nexus-cdk/procedure": "workspace:^",
 		"@nexus-cdk/service": "workspace:^",
-		"constructs": "^10.4.3",
+		"constructs": "^10.4.4",
 		"get-port": "^7.1.0",
 		"vite": "^7.2.7"
 	},

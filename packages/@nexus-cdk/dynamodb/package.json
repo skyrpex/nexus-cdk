@@ -12,7 +12,7 @@
 		"@nexus-cdk/service": "workspace:^",
 		"@nexus-cdk/utils": "workspace:^",
 		"@nexus-sdk/lib-dynamodb": "workspace:^",
-		"constructs": "^10.4.3"
+		"constructs": "^10.4.4"
 	},
 	"sideEffects": false
 }
