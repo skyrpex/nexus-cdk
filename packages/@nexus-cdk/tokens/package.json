@@ -7,7 +7,7 @@
 		"types": "./src/index.ts"
 	},
 	"dependencies": {
-		"constructs": "^10.4.3",
+		"constructs": "^10.4.4",
 		"ohash": "^2.0.11"
 	},
 	"sideEffects": false
