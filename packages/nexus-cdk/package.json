@@ -24,7 +24,7 @@
 		"emittery": "^1.2.0",
 		"esbuild": "^0.27.2",
 		"tsx": "^4.21.0",
-		"ws": "^8.18.3"
+		"ws": "^8.19.0"
 	},
 	"devDependencies": {
 		"@types/ws": "^8.18.1"
