@@ -22,7 +22,7 @@
 		"constructs": "^10.4.5",
 		"devalue-codec": "^1.2.0",
 		"emittery": "^1.2.0",
-		"esbuild": "^0.27.2",
+		"esbuild": "^0.27.3",
 		"tsx": "^4.21.0",
 		"ws": "^8.19.0"
 	},
