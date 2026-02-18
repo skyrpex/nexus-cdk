@@ -14,7 +14,7 @@
 		"@nexus-sdk/client-lambda": "workspace:^",
 		"constructs": "^10.5.0",
 		"get-port": "^7.1.0",
-		"hono": "^4.11.9",
+		"hono": "^4.11.10",
 		"json-codec": "^1.1.0"
 	},
 	"sideEffects": false
