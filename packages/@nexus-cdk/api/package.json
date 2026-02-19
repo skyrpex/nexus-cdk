@@ -12,9 +12,9 @@
 		"@nexus-cdk/service": "workspace:^",
 		"@nexus-cdk/utils": "workspace:^",
 		"@nexus-sdk/client-lambda": "workspace:^",
-		"constructs": "^10.5.0",
+		"constructs": "^10.5.1",
 		"get-port": "^7.1.0",
-		"hono": "^4.11.10",
+		"hono": "^4.12.0",
 		"json-codec": "^1.1.0"
 	},
 	"sideEffects": false
