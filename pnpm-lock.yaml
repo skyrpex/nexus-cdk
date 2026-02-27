@@ -56,8 +56,8 @@ importers:
   example:
     dependencies:
       '@aws-sdk/client-dynamodb':
-        specifier: ^3.999.0
-        version: 3.999.0
+        specifier: ^3.1000.0
+        version: 3.1000.0
       '@dotenvx/dotenvx':
         specifier: ^1.52.0
         version: 1.52.0
@@ -113,8 +113,8 @@ importers:
   packages/@nexus-cdk/dynamodb:
     dependencies:
       '@aws-sdk/client-dynamodb':
-        specifier: ^3.999.0
-        version: 3.999.0
+        specifier: ^3.1000.0
+        version: 3.1000.0
       '@nexus-cdk/procedure':
         specifier: workspace:^
         version: link:../procedure
@@ -317,8 +317,8 @@ importers:
         specifier: ^1.2.0
         version: 1.2.0
       emittery:
-        specifier: ^1.2.0
-        version: 1.2.0
+        specifier: ^1.2.1
+        version: 1.2.1
       esbuild:
         specifier: ^0.27.3
         version: 0.27.3
@@ -361,8 +361,8 @@ packages:
   '@aws-crypto/util@5.2.0':
     resolution: {integrity: sha512-4RkU9EsI6ZpBve5fseQlGNUWKMa1RLPQ1dnjnQoe07ldfIzcsGb5hC5W0Dm7u423KWzawlrpbjXBrXCEv9zazQ==}
 
-  '@aws-sdk/client-dynamodb@3.999.0':
-    resolution: {integrity: sha512-DbFR7Y4KQ6HUgt9QcKyx1XvBgz2JJP5JWApL4o1oxyYJaHwAazqKq+QtidOhGNVkaCMoQv70NrrUFwZXf3ArNQ==}
+  '@aws-sdk/client-dynamodb@3.1000.0':
+    resolution: {integrity: sha512-S0M9ndVgGiupQEX9M6yLIKx2Iw1Z/lnZR1j5guuR76sqteQM6jsQseTJepq0hJ9SGGpzSwMucYJxETQDHsgFhQ==}
     engines: {node: '>=20.0.0'}
 
   '@aws-sdk/core@3.973.15':
@@ -1665,8 +1665,8 @@ packages:
     resolution: {integrity: sha512-dS5cbA9rA2VR4Ybuvhg6jvdmp46ubLn3E+px8cG/35aEDNclrqoCjg6mt0HYZ/M+OoESS3jSkCrqk1kWAEhWAw==}
     engines: {bun: '>=1', deno: '>=2', node: '>=16'}
 
-  emittery@1.2.0:
-    resolution: {integrity: sha512-KxdRyyFcS85pH3dnU8Y5yFUm2YJdaHwcBZWrfG8o89ZY9a13/f9itbN+YG3ELbBo9Pg5zvIozstmuV8bX13q6g==}
+  emittery@1.2.1:
+    resolution: {integrity: sha512-sFz64DCRjirhwHLxofFqxYQm6DCp6o0Ix7jwKQvuCHPn4GMRZNuBZyLPu9Ccmk/QSCAMZt6FOUqA8JZCQvA9fw==}
     engines: {node: '>=14.16'}
 
   enquirer@2.4.1:
@@ -2916,7 +2916,7 @@ snapshots:
       '@smithy/util-utf8': 2.3.0
       tslib: 2.8.1
 
-  '@aws-sdk/client-dynamodb@3.999.0':
+  '@aws-sdk/client-dynamodb@3.1000.0':
     dependencies:
       '@aws-crypto/sha256-browser': 5.2.0
       '@aws-crypto/sha256-js': 5.2.0
@@ -4531,7 +4531,7 @@ snapshots:
       '@noble/curves': 1.9.7
       '@noble/hashes': 1.8.0
 
-  emittery@1.2.0: {}
+  emittery@1.2.1: {}
 
   enquirer@2.4.1:
     dependencies:
