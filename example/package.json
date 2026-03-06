@@ -10,7 +10,7 @@
 	},
 	"dependencies": {
 		"@aws-sdk/client-dynamodb": "^3.1003.0",
-		"@dotenvx/dotenvx": "^1.53.0",
+		"@dotenvx/dotenvx": "^1.54.1",
 		"@nexus-sdk/client-api": "workspace:^",
 		"@tanstack/react-query": "^5.90.21",
 		"aws-cdk-lib": "^2.241.0",
