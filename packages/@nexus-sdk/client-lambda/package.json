@@ -7,7 +7,7 @@
 		"types": "./src/index.ts"
 	},
 	"dependencies": {
-		"devalue": "^5.6.3"
+		"devalue": "^5.6.4"
 	},
 	"devDependencies": {
 		"@nexus-cdk/lambda": "workspace:^",
