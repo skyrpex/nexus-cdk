@@ -11,7 +11,7 @@
 		"@nexus-cdk/service": "workspace:^",
 		"constructs": "^10.6.0",
 		"get-port": "^7.2.0",
-		"vite": "^8.0.2"
+		"vite": "^8.0.3"
 	},
 	"sideEffects": false
 }
