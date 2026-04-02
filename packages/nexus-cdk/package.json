@@ -18,11 +18,11 @@
 		"@nexus-cdk/tokens": "workspace:^",
 		"@nexus-cdk/utils": "workspace:^",
 		"@nexus-cdk/vite": "workspace:^",
-		"aws-cdk-lib": "^2.246.0",
+		"aws-cdk-lib": "^2.247.0",
 		"constructs": "^10.6.0",
 		"devalue-codec": "^1.2.0",
 		"emittery": "^2.0.0",
-		"esbuild": "^0.27.5",
+		"esbuild": "^0.28.0",
 		"tsx": "^4.21.0",
 		"ws": "^8.20.0"
 	},
