@@ -14,7 +14,7 @@
 		"aws-cdk-lib": "^2.246.0",
 		"constructs": "^10.6.0",
 		"devalue-codec": "^1.2.0",
-		"esbuild": "^0.27.4",
+		"esbuild": "^0.27.5",
 		"find-up": "^8.0.0",
 		"get-port": "^7.2.0",
 		"hono": "^4.12.9",
