@@ -68,8 +68,8 @@ importers:
         specifier: ^5.99.0
         version: 5.99.0(react@19.0.0)
       aws-cdk-lib:
-        specifier: ^2.249.0
-        version: 2.249.0(constructs@10.6.0)
+        specifier: ^2.250.0
+        version: 2.250.0(constructs@10.6.0)
       constructs:
         specifier: ^10.6.0
         version: 10.6.0
@@ -104,8 +104,8 @@ importers:
         specifier: ^7.2.0
         version: 7.2.0
       hono:
-        specifier: ^4.12.12
-        version: 4.12.12
+        specifier: ^4.12.14
+        version: 4.12.14
       json-codec:
         specifier: ^1.1.0
         version: 1.1.0
@@ -135,7 +135,7 @@ importers:
     dependencies:
       '@hono/node-server':
         specifier: ^1.19.14
-        version: 1.19.14(hono@4.12.12)
+        version: 1.19.14(hono@4.12.14)
       '@nexus-cdk/procedure':
         specifier: workspace:^
         version: link:../procedure
@@ -146,8 +146,8 @@ importers:
         specifier: workspace:^
         version: link:../utils
       aws-cdk-lib:
-        specifier: ^2.249.0
-        version: 2.249.0(constructs@10.6.0)
+        specifier: ^2.250.0
+        version: 2.250.0(constructs@10.6.0)
       constructs:
         specifier: ^10.6.0
         version: 10.6.0
@@ -164,8 +164,8 @@ importers:
         specifier: ^7.2.0
         version: 7.2.0
       hono:
-        specifier: ^4.12.12
-        version: 4.12.12
+        specifier: ^4.12.14
+        version: 4.12.14
       tsx:
         specifier: ^4.21.0
         version: 4.21.0
@@ -217,10 +217,10 @@ importers:
     dependencies:
       '@hono/node-server':
         specifier: ^1.19.14
-        version: 1.19.14(hono@4.12.12)
+        version: 1.19.14(hono@4.12.14)
       hono:
-        specifier: ^4.12.12
-        version: 4.12.12
+        specifier: ^4.12.14
+        version: 4.12.14
     devDependencies:
       '@types/bun':
         specifier: ^1.3.12
@@ -308,8 +308,8 @@ importers:
         specifier: workspace:^
         version: link:../@nexus-cdk/vite
       aws-cdk-lib:
-        specifier: ^2.249.0
-        version: 2.249.0(constructs@10.6.0)
+        specifier: ^2.250.0
+        version: 2.250.0(constructs@10.6.0)
       constructs:
         specifier: ^10.6.0
         version: 10.6.0
@@ -1618,8 +1618,8 @@ packages:
     resolution: {integrity: sha512-wvUjBtSGN7+7SjNpq/9M2Tg350UZD3q62IFZLbRAR1bSMlCo1ZaeW+BJ+D090e4hIIZLBcTDWe4Mh4jvUDajzQ==}
     engines: {node: '>= 0.4'}
 
-  aws-cdk-lib@2.249.0:
-    resolution: {integrity: sha512-SRb6TpPtsaywyoihMAYKBKB6O4RwSKK4VMLZwZF4xAJ+bBv5TaQKyXw4gQvoktLvCs1Bnluci0F66VBMD4bIRw==}
+  aws-cdk-lib@2.250.0:
+    resolution: {integrity: sha512-8U8/S9VcmKSc3MHZWiB7P0IecgXoohI8Ya3dgtZMgbzC4mB+MEQmsYBeNgm4vzGQdRos8HjQLnFX1IBlZh7jQA==}
     engines: {node: '>= 20.0.0'}
     peerDependencies:
       constructs: ^10.5.0
@@ -2130,8 +2130,8 @@ packages:
     resolution: {integrity: sha512-0hJU9SCPvmMzIBdZFqNPXWa6dqh7WdH0cII9y+CyS8rG3nL48Bclra9HmKhVVUHyPWNH5Y7xDwAB7bfgSjkUMQ==}
     engines: {node: '>= 0.4'}
 
-  hono@4.12.12:
-    resolution: {integrity: sha512-p1JfQMKaceuCbpJKAPKVqyqviZdS0eUxH9v82oWo1kb9xjQ5wA6iP3FNVAPDFlz5/p7d45lO+BpSk1tuSZMF4Q==}
+  hono@4.12.14:
+    resolution: {integrity: sha512-am5zfg3yu6sqn5yjKBNqhnTX7Cv+m00ox+7jbaKkrLMRJ4rAdldd1xPd/JzbBWspqaQv6RSTrgFN95EsfhC+7w==}
     engines: {node: '>=16.9.0'}
 
   human-id@4.1.3:
@@ -3794,9 +3794,9 @@ snapshots:
       '@eslint/core': 1.2.0
       levn: 0.4.1
 
-  '@hono/node-server@1.19.14(hono@4.12.12)':
+  '@hono/node-server@1.19.14(hono@4.12.14)':
     dependencies:
-      hono: 4.12.12
+      hono: 4.12.14
 
   '@humanfs/core@0.19.1': {}
 
@@ -4598,7 +4598,7 @@ snapshots:
     dependencies:
       possible-typed-array-names: 1.1.0
 
-  aws-cdk-lib@2.249.0(constructs@10.6.0):
+  aws-cdk-lib@2.250.0(constructs@10.6.0):
     dependencies:
       '@aws-cdk/asset-awscli-v1': 2.2.273
       '@aws-cdk/asset-node-proxy-agent-v6': 2.1.1
@@ -5245,7 +5245,7 @@ snapshots:
     dependencies:
       function-bind: 1.1.2
 
-  hono@4.12.12: {}
+  hono@4.12.14: {}
 
   human-id@4.1.3: {}
 
