@@ -11,14 +11,14 @@
 		"@nexus-cdk/procedure": "workspace:^",
 		"@nexus-cdk/service": "workspace:^",
 		"@nexus-cdk/utils": "workspace:^",
-		"aws-cdk-lib": "^2.254.0",
+		"aws-cdk-lib": "^2.256.0",
 		"constructs": "^10.6.0",
 		"devalue-codec": "^1.2.0",
 		"esbuild": "^0.28.0",
 		"find-up": "^8.0.0",
 		"get-port": "^7.2.0",
-		"hono": "^4.12.19",
-		"tsx": "^4.22.2"
+		"hono": "^4.12.21",
+		"tsx": "^4.22.3"
 	},
 	"sideEffects": false
 }
