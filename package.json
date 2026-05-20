@@ -8,8 +8,8 @@
 	},
 	"devDependencies": {
 		"@eslint/js": "^10.0.1",
-		"@tanstack/eslint-plugin-query": "^5.100.10",
-		"@types/node": "^25.8.0",
+		"@tanstack/eslint-plugin-query": "^5.100.11",
+		"@types/node": "^25.9.1",
 		"eslint": "^10.4.0",
 		"eslint-import-resolver-typescript": "^4.4.4",
 		"eslint-plugin-import": "^2.32.0",
@@ -18,7 +18,7 @@
 		"prettier": "^3.8.3",
 		"turbo": "^2.9.14",
 		"typescript": "^6.0.3",
-		"typescript-eslint": "^8.59.3"
+		"typescript-eslint": "^8.59.4"
 	},
 	"engines": {
 		"node": "22",
