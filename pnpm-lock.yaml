@@ -56,8 +56,8 @@ importers:
   example:
     dependencies:
       '@aws-sdk/client-dynamodb':
-        specifier: ^3.1066.0
-        version: 3.1066.0
+        specifier: ^3.1067.0
+        version: 3.1067.0
       '@dotenvx/dotenvx':
         specifier: ^1.71.2
         version: 1.71.2
@@ -113,8 +113,8 @@ importers:
   packages/@nexus-cdk/dynamodb:
     dependencies:
       '@aws-sdk/client-dynamodb':
-        specifier: ^3.1066.0
-        version: 3.1066.0
+        specifier: ^3.1067.0
+        version: 3.1067.0
       '@nexus-cdk/procedure':
         specifier: workspace:^
         version: link:../procedure
@@ -365,8 +365,8 @@ packages:
   '@aws-crypto/util@5.2.0':
     resolution: {integrity: sha512-4RkU9EsI6ZpBve5fseQlGNUWKMa1RLPQ1dnjnQoe07ldfIzcsGb5hC5W0Dm7u423KWzawlrpbjXBrXCEv9zazQ==}
 
-  '@aws-sdk/client-dynamodb@3.1066.0':
-    resolution: {integrity: sha512-b1EtaQ4YtJh9PZ3NQSk8EkGpsrAZ2bDNeJp8VQ/TNeQdODbscT99qhq7bbq27ZkBva/jl8ma9ouwGWxwtsqeXQ==}
+  '@aws-sdk/client-dynamodb@3.1067.0':
+    resolution: {integrity: sha512-jX/bLWCkQ4hxBoaD+Ylv3jnuoOAPMvl1WGflGL0O1/gy+WbdlV000qiAhb/oEG7PIpRHjPLqFJx6jfmLgOW7Tg==}
     engines: {node: '>=20.0.0'}
 
   '@aws-sdk/core@3.974.20':
@@ -2831,7 +2831,7 @@ snapshots:
       '@smithy/util-utf8': 2.3.0
       tslib: 2.8.1
 
-  '@aws-sdk/client-dynamodb@3.1066.0':
+  '@aws-sdk/client-dynamodb@3.1067.0':
     dependencies:
       '@aws-crypto/sha256-browser': 5.2.0
       '@aws-crypto/sha256-js': 5.2.0
