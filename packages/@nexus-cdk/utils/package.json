@@ -7,7 +7,7 @@
 		"types": "./src/index.ts"
 	},
 	"dependencies": {
-		"@hono/node-server": "^2.0.4",
+		"@hono/node-server": "^2.0.5",
 		"hono": "^4.12.25"
 	},
 	"devDependencies": {
