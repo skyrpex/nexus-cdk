@@ -14,11 +14,11 @@
 		"eslint-import-resolver-typescript": "^4.4.5",
 		"eslint-plugin-import": "^2.32.0",
 		"eslint-plugin-perfectionist": "^5.9.1",
-		"globals": "^17.6.0",
+		"globals": "^17.7.0",
 		"prettier": "^3.8.4",
 		"turbo": "^2.9.18",
 		"typescript": "^6.0.3",
-		"typescript-eslint": "^8.61.1"
+		"typescript-eslint": "^8.62.0"
 	},
 	"engines": {
 		"node": "22",
