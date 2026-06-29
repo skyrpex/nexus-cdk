@@ -8,17 +8,17 @@
 	},
 	"devDependencies": {
 		"@eslint/js": "^10.0.1",
-		"@tanstack/eslint-plugin-query": "^5.101.0",
-		"@types/node": "^26.0.0",
-		"eslint": "^10.5.0",
+		"@tanstack/eslint-plugin-query": "^5.101.2",
+		"@types/node": "^26.0.1",
+		"eslint": "^10.6.0",
 		"eslint-import-resolver-typescript": "^4.4.5",
 		"eslint-plugin-import": "^2.32.0",
 		"eslint-plugin-perfectionist": "^5.9.1",
 		"globals": "^17.7.0",
-		"prettier": "^3.8.4",
-		"turbo": "^2.9.18",
+		"prettier": "^3.9.3",
+		"turbo": "^2.10.1",
 		"typescript": "^6.0.3",
-		"typescript-eslint": "^8.62.0"
+		"typescript-eslint": "^8.62.1"
 	},
 	"engines": {
 		"node": "22",
