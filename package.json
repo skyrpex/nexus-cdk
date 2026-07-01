@@ -9,7 +9,7 @@
 	"devDependencies": {
 		"@eslint/js": "^10.0.1",
 		"@tanstack/eslint-plugin-query": "^5.101.2",
-		"@types/node": "^26.0.1",
+		"@types/node": "^26.1.0",
 		"eslint": "^10.6.0",
 		"eslint-import-resolver-typescript": "^4.4.5",
 		"eslint-plugin-import": "^2.32.0",
