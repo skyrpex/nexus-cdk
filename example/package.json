@@ -9,8 +9,8 @@
 		"synth": "bunx --bun nexus-cdk synth src/infra.ts"
 	},
 	"dependencies": {
-		"@aws-sdk/client-dynamodb": "^3.1081.0",
-		"@dotenvx/dotenvx": "^2.1.5",
+		"@aws-sdk/client-dynamodb": "^3.1082.0",
+		"@dotenvx/dotenvx": "^2.2.1",
 		"@nexus-sdk/client-api": "workspace:^",
 		"@tanstack/react-query": "^5.101.2",
 		"aws-cdk-lib": "^2.261.0",
