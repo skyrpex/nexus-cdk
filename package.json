@@ -10,15 +10,15 @@
 		"@eslint/js": "^10.0.1",
 		"@tanstack/eslint-plugin-query": "^5.101.2",
 		"@types/node": "^26.1.1",
-		"eslint": "^10.6.0",
+		"eslint": "^10.7.0",
 		"eslint-import-resolver-typescript": "^4.4.5",
 		"eslint-plugin-import": "^2.32.0",
 		"eslint-plugin-perfectionist": "^5.10.0",
 		"globals": "^17.7.0",
 		"prettier": "^3.9.5",
-		"turbo": "^2.10.4",
+		"turbo": "^2.10.5",
 		"typescript": "^7.0.2",
-		"typescript-eslint": "^8.63.0"
+		"typescript-eslint": "^8.64.0"
 	},
 	"engines": {
 		"node": "22",
