@@ -56,11 +56,11 @@ importers:
   example:
     dependencies:
       '@aws-sdk/client-dynamodb':
-        specifier: ^3.1089.0
-        version: 3.1089.0
+        specifier: ^3.1090.0
+        version: 3.1090.0
       '@dotenvx/dotenvx':
-        specifier: ^2.13.0
-        version: 2.13.0
+        specifier: ^2.14.0
+        version: 2.14.0
       '@nexus-sdk/client-api':
         specifier: workspace:^
         version: link:../packages/@nexus-sdk/client-api
@@ -113,8 +113,8 @@ importers:
   packages/@nexus-cdk/dynamodb:
     dependencies:
       '@aws-sdk/client-dynamodb':
-        specifier: ^3.1089.0
-        version: 3.1089.0
+        specifier: ^3.1090.0
+        version: 3.1090.0
       '@nexus-cdk/procedure':
         specifier: workspace:^
         version: link:../procedure
@@ -348,8 +348,8 @@ packages:
       - jsonschema
       - semver
 
-  '@aws-sdk/client-dynamodb@3.1089.0':
-    resolution: {integrity: sha512-5sjA0CqMREHvCXK8i2eJLzOpVWwpbx7jnE/gQ7K4x8N76EvOfsW0qXvHGhIsNu4wb9A38cdUg/KwR3q+hE9QyQ==}
+  '@aws-sdk/client-dynamodb@3.1090.0':
+    resolution: {integrity: sha512-JjmuzG6XZG9vQFZ1Ob6kxJHz9U+x4Yxz+r717HeyYItRp+xRrGLNI5IggLDa9OfeYhq6mHJTZ6QMlyLI4EWK6w==}
     engines: {node: '>=20.0.0'}
 
   '@aws-sdk/core@3.975.3':
@@ -483,12 +483,12 @@ packages:
   '@changesets/write@0.4.0':
     resolution: {integrity: sha512-CdTLvIOPiCNuH71pyDu3rA+Q0n65cmAbXnwWH84rKGiFumFzkmHNT8KHTMEchcxN+Kl8I54xGUhJ7l3E7X396Q==}
 
-  '@dotenvx/dotenvx@2.13.0':
-    resolution: {integrity: sha512-Re5Tgpg8fftt4tMqYOFXqW1SdkQhVsdbUAiDOJ0B/XF7h05qnnnEYLb+ilaUDeN8Us7kC4h7bxDWUlNbkzO0ug==}
+  '@dotenvx/dotenvx@2.14.0':
+    resolution: {integrity: sha512-cNXKhPSSwl5H8udv31bLnBz8SW/R/9Ijbi96rUIovmG62i8B5zcp9IvWY3tAe/i4IPZaROGaJNZIsOD8OuUR2g==}
     hasBin: true
 
-  '@dotenvx/primitives@2.0.0':
-    resolution: {integrity: sha512-D3tfq9N5JfP6PEuOnaohcWF+9ZvnTj8adnwi3BQlCp5OjJSaAKWR+cVvHUUG2MmpeDP+MzosAHY5t+IQ5m8/5Q==}
+  '@dotenvx/primitives@2.1.0':
+    resolution: {integrity: sha512-GIpMSSgjZk4URRCtAw12vBmobnw3VeSKL+p7/y8ypWvTHFW+StAMZvq4wCjdX+QKuw4alXu0IMGW6QPhKo6ufg==}
 
   '@dotenvx/tooling@1.0.2':
     resolution: {integrity: sha512-yf4VwIZUzSqlLy2pe0kH2xk6dME73oYW5XqcHE7M1zA1H0RX/dSUThsSRmpCjp622iW9f6VGQl5Aa6szt5Xc0w==}
@@ -2795,7 +2795,7 @@ snapshots:
 
   '@aws-cdk/cloud-assembly-schema@54.8.0': {}
 
-  '@aws-sdk/client-dynamodb@3.1089.0':
+  '@aws-sdk/client-dynamodb@3.1090.0':
     dependencies:
       '@aws-sdk/core': 3.975.3
       '@aws-sdk/credential-provider-node': 3.972.70
@@ -3107,13 +3107,13 @@ snapshots:
       human-id: 4.2.0
       prettier: 2.8.8
 
-  '@dotenvx/dotenvx@2.13.0':
+  '@dotenvx/dotenvx@2.14.0':
     dependencies:
-      '@dotenvx/primitives': 2.0.0
+      '@dotenvx/primitives': 2.1.0
       '@dotenvx/tooling': 1.0.2
       yocto-spinner: 1.2.2
 
-  '@dotenvx/primitives@2.0.0': {}
+  '@dotenvx/primitives@2.1.0': {}
 
   '@dotenvx/tooling@1.0.2': {}
 
