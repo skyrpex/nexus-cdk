@@ -9,14 +9,14 @@
 	"devDependencies": {
 		"@eslint/js": "^10.0.1",
 		"@tanstack/eslint-plugin-query": "^5.101.4",
-		"@types/node": "^26.1.1",
+		"@types/node": "^26.1.2",
 		"eslint": "^10.8.0",
 		"eslint-import-resolver-typescript": "^4.4.5",
 		"eslint-plugin-import": "^2.32.0",
 		"eslint-plugin-perfectionist": "^5.10.0",
-		"globals": "^17.7.0",
+		"globals": "^17.8.0",
 		"prettier": "^3.9.6",
-		"turbo": "^2.10.6",
+		"turbo": "^2.10.7",
 		"typescript": "^7.0.2",
 		"typescript-eslint": "^8.65.0"
 	},
