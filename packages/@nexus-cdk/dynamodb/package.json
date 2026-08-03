@@ -7,7 +7,7 @@
 		"types": "./src/index.ts"
 	},
 	"dependencies": {
-		"@aws-sdk/client-dynamodb": "^3.1098.0",
+		"@aws-sdk/client-dynamodb": "^3.1101.0",
 		"@nexus-cdk/procedure": "workspace:^",
 		"@nexus-cdk/service": "workspace:^",
 		"@nexus-cdk/utils": "workspace:^",
