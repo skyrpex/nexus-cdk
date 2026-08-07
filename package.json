@@ -13,12 +13,12 @@
 		"eslint": "^10.8.0",
 		"eslint-import-resolver-typescript": "^4.4.5",
 		"eslint-plugin-import": "^2.32.0",
-		"eslint-plugin-perfectionist": "^5.10.0",
+		"eslint-plugin-perfectionist": "^5.10.1",
 		"globals": "^17.9.0",
 		"prettier": "^3.9.6",
 		"turbo": "^2.10.8",
 		"typescript": "^7.0.2",
-		"typescript-eslint": "^8.65.0"
+		"typescript-eslint": "^8.66.0"
 	},
 	"engines": {
 		"node": "22",
