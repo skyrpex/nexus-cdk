@@ -7,18 +7,18 @@
 		"types": "./src/index.ts"
 	},
 	"dependencies": {
-		"@hono/node-server": "^2.0.12",
+		"@hono/node-server": "^2.1.0",
 		"@nexus-cdk/procedure": "workspace:^",
 		"@nexus-cdk/service": "workspace:^",
 		"@nexus-cdk/utils": "workspace:^",
 		"aws-cdk-lib": "^2.263.0",
-		"constructs": "^10.7.2",
+		"constructs": "^10.8.1",
 		"devalue-codec": "^1.2.0",
 		"esbuild": "^0.28.1",
 		"find-up": "^8.0.0",
 		"get-port": "^7.2.0",
-		"hono": "^4.12.33",
-		"tsx": "^4.23.4"
+		"hono": "^4.13.0",
+		"tsx": "^4.23.5"
 	},
 	"sideEffects": false
 }
