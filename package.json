@@ -14,9 +14,9 @@
 		"eslint-import-resolver-typescript": "^4.4.5",
 		"eslint-plugin-import": "^2.32.0",
 		"eslint-plugin-perfectionist": "^5.10.1",
-		"globals": "^17.9.0",
+		"globals": "^17.11.0",
 		"prettier": "^3.9.6",
-		"turbo": "^2.10.9",
+		"turbo": "^2.10.10",
 		"typescript": "^7.0.2",
 		"typescript-eslint": "^8.67.0"
 	},
