@@ -56,20 +56,20 @@ importers:
   example:
     dependencies:
       '@aws-sdk/client-dynamodb':
-        specifier: ^3.1118.0
-        version: 3.1118.0
+        specifier: ^3.1121.0
+        version: 3.1121.0
       '@dotenvx/dotenvx':
-        specifier: ^2.21.0
-        version: 2.21.0
+        specifier: ^2.22.0
+        version: 2.22.0
       '@nexus-sdk/client-api':
         specifier: workspace:^
         version: link:../packages/@nexus-sdk/client-api
       '@tanstack/react-query':
-        specifier: ^5.102.3
-        version: 5.102.3(react@19.0.0)
+        specifier: ^5.102.8
+        version: 5.102.8(react@19.0.0)
       aws-cdk-lib:
-        specifier: ^2.266.0
-        version: 2.266.0(constructs@10.8.1)
+        specifier: ^2.267.0
+        version: 2.267.0(constructs@10.8.1)
       constructs:
         specifier: ^10.8.1
         version: 10.8.1
@@ -77,8 +77,8 @@ importers:
         specifier: workspace:^
         version: link:../packages/nexus-cdk
       zod:
-        specifier: ^4.4.3
-        version: 4.4.3
+        specifier: ^4.5.1
+        version: 4.5.1
 
   packages/@nexus-cdk/api:
     dependencies:
@@ -104,8 +104,8 @@ importers:
         specifier: ^7.2.0
         version: 7.2.0
       hono:
-        specifier: ^4.13.4
-        version: 4.13.4
+        specifier: ^4.13.5
+        version: 4.13.5
       json-codec:
         specifier: ^1.1.0
         version: 1.1.0
@@ -113,8 +113,8 @@ importers:
   packages/@nexus-cdk/dynamodb:
     dependencies:
       '@aws-sdk/client-dynamodb':
-        specifier: ^3.1118.0
-        version: 3.1118.0
+        specifier: ^3.1121.0
+        version: 3.1121.0
       '@nexus-cdk/procedure':
         specifier: workspace:^
         version: link:../procedure
@@ -135,7 +135,7 @@ importers:
     dependencies:
       '@hono/node-server':
         specifier: ^2.1.1
-        version: 2.1.1(hono@4.13.4)
+        version: 2.1.1(hono@4.13.5)
       '@nexus-cdk/procedure':
         specifier: workspace:^
         version: link:../procedure
@@ -146,8 +146,8 @@ importers:
         specifier: workspace:^
         version: link:../utils
       aws-cdk-lib:
-        specifier: ^2.266.0
-        version: 2.266.0(constructs@10.8.1)
+        specifier: ^2.267.0
+        version: 2.267.0(constructs@10.8.1)
       constructs:
         specifier: ^10.8.1
         version: 10.8.1
@@ -164,8 +164,8 @@ importers:
         specifier: ^7.2.0
         version: 7.2.0
       hono:
-        specifier: ^4.13.4
-        version: 4.13.4
+        specifier: ^4.13.5
+        version: 4.13.5
       tsx:
         specifier: ^4.23.12
         version: 4.23.12
@@ -217,10 +217,10 @@ importers:
     dependencies:
       '@hono/node-server':
         specifier: ^2.1.1
-        version: 2.1.1(hono@4.13.4)
+        version: 2.1.1(hono@4.13.5)
       hono:
-        specifier: ^4.13.4
-        version: 4.13.4
+        specifier: ^4.13.5
+        version: 4.13.5
     devDependencies:
       '@types/bun':
         specifier: ^1.4.0
@@ -253,8 +253,8 @@ importers:
   packages/@nexus-sdk/client-api:
     dependencies:
       '@tanstack/react-query':
-        specifier: ^5.102.3
-        version: 5.102.3(react@19.0.0)
+        specifier: ^5.102.8
+        version: 5.102.8(react@19.0.0)
 
   packages/@nexus-sdk/client-dynamodb:
     dependencies:
@@ -265,8 +265,8 @@ importers:
   packages/@nexus-sdk/client-lambda:
     dependencies:
       devalue:
-        specifier: ^5.9.1
-        version: 5.9.1
+        specifier: ^5.9.2
+        version: 5.9.2
     devDependencies:
       '@nexus-cdk/lambda':
         specifier: workspace:^
@@ -308,8 +308,8 @@ importers:
         specifier: workspace:^
         version: link:../@nexus-cdk/vite
       aws-cdk-lib:
-        specifier: ^2.266.0
-        version: 2.266.0(constructs@10.8.1)
+        specifier: ^2.267.0
+        version: 2.267.0(constructs@10.8.1)
       constructs:
         specifier: ^10.8.1
         version: 10.8.1
@@ -341,15 +341,15 @@ packages:
   '@aws-cdk/asset-node-proxy-agent-v6@2.1.2':
     resolution: {integrity: sha512-pDiuqH+qY3zM9lhhLjbKJ1tnKOHzQ2V4Wr/3qsxyKeKAkuPMI/BVGvZG1PbrikUw949cGVTfVEt4ETKKYnrj0Q==}
 
-  '@aws-cdk/cloud-assembly-schema@54.20.0':
-    resolution: {integrity: sha512-ts2dVBi0VUXOLKcqyLYsHUWYpwGPFd+xm4q+6Y4jjP8orwodjRi2mJrmpy9b0gHnbv8e/hFnmEbqrD0bBJOnPA==}
+  '@aws-cdk/cloud-assembly-schema@54.21.0':
+    resolution: {integrity: sha512-URh+k3/xG+e48lF41qBn/J8TzxwBaHt7Wsg5ZF+W4l76yiPhFmW7atV0BMVrWy7jh4SGO+yCuuqJe+CNjSk31w==}
     engines: {node: '>= 18.0.0'}
     bundledDependencies:
       - jsonschema
       - semver
 
-  '@aws-sdk/client-dynamodb@3.1118.0':
-    resolution: {integrity: sha512-svEO204aN18SV433vZ1+VRCdRrMhQto52pTDOJwkwO5FcydmZa+Ld+lWu0k6OC50Ft4qJb1WrG2lsEno/++lGg==}
+  '@aws-sdk/client-dynamodb@3.1121.0':
+    resolution: {integrity: sha512-q8s4cKsn0TdQ+QByWEUeajZMFrmF2GzDovrlfWMA7Pv3GfG5sADjbWAZxJXA9JsLGb4QT5ovTpOdArNqjbojZw==}
     engines: {node: '>=20.0.0'}
 
   '@aws-sdk/core@3.977.9':
@@ -493,8 +493,8 @@ packages:
     resolution: {integrity: sha512-y7/yvZ2TPAnR9+jnc00klvNNLkJiXFFrQA/hlLCcxA9a2A4zQIOimyFQ9XfwYKiGD1fb5GY8vbKIIgO8d5Tb2A==}
     engines: {node: '>= 20.12.0'}
 
-  '@dotenvx/dotenvx@2.21.0':
-    resolution: {integrity: sha512-BL6yuTmYeK2ak9YLpiBEI4Xuf9YkTJJH+DKK53CqR+TPaF5RiJ4VJpOy1pWjjipbZH9dcpfkkjf/PonJ+zcbFg==}
+  '@dotenvx/dotenvx@2.22.0':
+    resolution: {integrity: sha512-QnENtqMA/OhNDD9+boDuAmvjcW7WAT4nA/FExp1kwZ6zk365vCIrw588HzzT3+Sz7V/MMbqsz0nauZHnhSeR5g==}
     hasBin: true
 
   '@dotenvx/primitives@2.2.0':
@@ -899,11 +899,11 @@ packages:
       typescript:
         optional: true
 
-  '@tanstack/query-core@5.102.3':
-    resolution: {integrity: sha512-5O2VEceonqC4uaTLUGglb0hgPouWCJ4K1ykVWyeV8aThhdNCzwpwu01bYoaRNJ9mgFUXS7Kf9utJ46ysT8m+bw==}
+  '@tanstack/query-core@5.102.8':
+    resolution: {integrity: sha512-ZNjkJ33CqvPNec/6lZBnHqLc3EVGPZ9ySLhYahU9TcuRFdmwXewuj0c4hwSWcGHqEUwcSrKeZ+oGcvPBqXcQcg==}
 
-  '@tanstack/react-query@5.102.3':
-    resolution: {integrity: sha512-nHazxUEUQSGJOswGgSL2DI77f2K75WRCowDgaiyEi0ACocZTFKewTv+A/rJfq6QkuE35rVPff1QUT3ClbaePGQ==}
+  '@tanstack/react-query@5.102.8':
+    resolution: {integrity: sha512-TYBea4OuXWD7MhaSHq069TWbFe7rcwWN6kzT7JF0OKi1K6c1gTv2IzD6A6ExJsCMozdkqBWeuIUZmu4KQg0O5A==}
     peerDependencies:
       react: ^18 || ^19
 
@@ -1381,8 +1381,8 @@ packages:
     resolution: {integrity: sha512-wvUjBtSGN7+7SjNpq/9M2Tg350UZD3q62IFZLbRAR1bSMlCo1ZaeW+BJ+D090e4hIIZLBcTDWe4Mh4jvUDajzQ==}
     engines: {node: '>= 0.4'}
 
-  aws-cdk-lib@2.266.0:
-    resolution: {integrity: sha512-sBQU42pEc9ud3yeVU2En2euQRUhCg63eaJIPEVpBtE5aPhJjN3d9MkzQ9eYGLVXP3fnohUE54BiVOdUrkEDUbg==}
+  aws-cdk-lib@2.267.0:
+    resolution: {integrity: sha512-ubmc2Th+XFjQAy6cnihRmH9Xxf9X2iZ5Vuf0g/4kBiBSoLahJy5cwJB5TmicEpitZ+fHBRyfoAZ4BkLk4G0Stg==}
     engines: {node: '>= 20.0.0'}
     peerDependencies:
       constructs: ^10.5.0
@@ -1508,8 +1508,8 @@ packages:
   devalue@5.3.2:
     resolution: {integrity: sha512-UDsjUbpQn9kvm68slnrs+mfxwFkIflOhkanmyabZ8zOYk8SMEIbJ3TK+88g70hSIeytu4y18f0z/hYHMTrXIWw==}
 
-  devalue@5.9.1:
-    resolution: {integrity: sha512-+17vil3EVQRzvtDJSFuTWEb8XJRvXqAiV3qZyQWD398QeXUa6CxsUyMdD1fxzEhUrd4FojitFz7lhIHBTlV4fw==}
+  devalue@5.9.2:
+    resolution: {integrity: sha512-po4PAY5c53tw5XMocSnf8A/5OHhbbUftpr93aEN6BBoAdntUmK7vu7wOATqvt7cXO7m1Cl4gMVn6p7n6n4mj0w==}
 
   doctrine@2.1.0:
     resolution: {integrity: sha512-35mSku4ZXK0vfCuHEDAwt55dg2jNajHZ1odvF+8SSr82EsZY4QmXfuWso8oEd8zRhVObSN18aM0CjSdoBX7zIw==}
@@ -1797,8 +1797,8 @@ packages:
     resolution: {integrity: sha512-0hJU9SCPvmMzIBdZFqNPXWa6dqh7WdH0cII9y+CyS8rG3nL48Bclra9HmKhVVUHyPWNH5Y7xDwAB7bfgSjkUMQ==}
     engines: {node: '>= 0.4'}
 
-  hono@4.13.4:
-    resolution: {integrity: sha512-AGEwKIyRMHRv1t8Wjwa3LHxQ61X5CqrdFT+4BRNTpqS5aJNnpl5WLjADb7vFlJzI/8uK7T5QLVApCMQKNa3LgQ==}
+  hono@4.13.5:
+    resolution: {integrity: sha512-O6+/eCYRkzzzy0rPWwKLiGBR1nFuUPZynnwjxN1MBA62NNqbT0wQEzQyK2gSO5yDIDB336sXQleAhOHrzlYyKw==}
     engines: {node: '>=16.9.0'}
 
   human-id@4.2.1:
@@ -2561,8 +2561,8 @@ packages:
     resolution: {integrity: sha512-xYqdZFUK/VYazNl/oCDYN+3WloWQwMfZxBoiNt6qNyk+xfOdi598muWE42rNZFp1kNOiqW936q5RhUdnpqElSg==}
     engines: {node: '>=18'}
 
-  zod@4.4.3:
-    resolution: {integrity: sha512-ytENFjIJFl2UwYglde2jchW2Hwm4GJFLDiSXWdTrJQBIN9Fcyp7n4DhxJEiWNAJMV1/BqWfW/kkg71UDcHJyTQ==}
+  zod@4.5.1:
+    resolution: {integrity: sha512-P3GqeAEOEDqKvafVGLezbg+39YW/ze4xrD4qdS0adOY8eoI3zfjv1PQM4UwQzgT8mZKXEbqtVt8K+ZKGqkMFKg==}
 
 snapshots:
 
@@ -2570,9 +2570,9 @@ snapshots:
 
   '@aws-cdk/asset-node-proxy-agent-v6@2.1.2': {}
 
-  '@aws-cdk/cloud-assembly-schema@54.20.0': {}
+  '@aws-cdk/cloud-assembly-schema@54.21.0': {}
 
-  '@aws-sdk/client-dynamodb@3.1118.0':
+  '@aws-sdk/client-dynamodb@3.1121.0':
     dependencies:
       '@aws-sdk/core': 3.977.9
       '@aws-sdk/credential-provider-node': 3.972.81
@@ -2855,7 +2855,7 @@ snapshots:
       fast-wrap-ansi: 0.2.2
       sisteransi: 1.0.5
 
-  '@dotenvx/dotenvx@2.21.0':
+  '@dotenvx/dotenvx@2.22.0':
     dependencies:
       '@dotenvx/primitives': 2.2.0
       '@dotenvx/tooling': 1.0.3
@@ -2993,9 +2993,9 @@ snapshots:
       '@eslint/core': 1.2.1
       levn: 0.4.1
 
-  '@hono/node-server@2.1.1(hono@4.13.4)':
+  '@hono/node-server@2.1.1(hono@4.13.5)':
     dependencies:
-      hono: 4.13.4
+      hono: 4.13.5
 
   '@humanfs/core@0.19.2':
     dependencies:
@@ -3134,11 +3134,11 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@tanstack/query-core@5.102.3': {}
+  '@tanstack/query-core@5.102.8': {}
 
-  '@tanstack/react-query@5.102.3(react@19.0.0)':
+  '@tanstack/react-query@5.102.8(react@19.0.0)':
     dependencies:
-      '@tanstack/query-core': 5.102.3
+      '@tanstack/query-core': 5.102.8
       react: 19.0.0
 
   '@turbo/darwin-64@2.10.12':
@@ -3575,11 +3575,11 @@ snapshots:
     dependencies:
       possible-typed-array-names: 1.1.0
 
-  aws-cdk-lib@2.266.0(constructs@10.8.1):
+  aws-cdk-lib@2.267.0(constructs@10.8.1):
     dependencies:
       '@aws-cdk/asset-awscli-v1': 2.2.292
       '@aws-cdk/asset-node-proxy-agent-v6': 2.1.2
-      '@aws-cdk/cloud-assembly-schema': 54.20.0
+      '@aws-cdk/cloud-assembly-schema': 54.21.0
       constructs: 10.8.1
 
   balanced-match@1.0.2: {}
@@ -3687,7 +3687,7 @@ snapshots:
 
   devalue@5.3.2: {}
 
-  devalue@5.9.1: {}
+  devalue@5.9.2: {}
 
   doctrine@2.1.0:
     dependencies:
@@ -4089,7 +4089,7 @@ snapshots:
     dependencies:
       function-bind: 1.1.2
 
-  hono@4.13.4: {}
+  hono@4.13.5: {}
 
   human-id@4.2.1: {}
 
@@ -4878,4 +4878,4 @@ snapshots:
 
   yoctocolors@2.2.0: {}
 
-  zod@4.4.3: {}
+  zod@4.5.1: {}
