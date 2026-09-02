@@ -18,7 +18,7 @@
 		"find-up": "^8.0.0",
 		"get-port": "^7.2.0",
 		"hono": "^4.13.5",
-		"tsx": "^4.23.12"
+		"tsx": "^4.23.13"
 	},
 	"sideEffects": false
 }
