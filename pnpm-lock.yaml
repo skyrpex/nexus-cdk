@@ -56,8 +56,8 @@ importers:
   example:
     dependencies:
       '@aws-sdk/client-dynamodb':
-        specifier: ^3.1122.0
-        version: 3.1122.0
+        specifier: ^3.1124.0
+        version: 3.1124.0
       '@dotenvx/dotenvx':
         specifier: ^2.23.0
         version: 2.23.0
@@ -113,8 +113,8 @@ importers:
   packages/@nexus-cdk/dynamodb:
     dependencies:
       '@aws-sdk/client-dynamodb':
-        specifier: ^3.1122.0
-        version: 3.1122.0
+        specifier: ^3.1124.0
+        version: 3.1124.0
       '@nexus-cdk/procedure':
         specifier: workspace:^
         version: link:../procedure
@@ -348,8 +348,8 @@ packages:
       - jsonschema
       - semver
 
-  '@aws-sdk/client-dynamodb@3.1122.0':
-    resolution: {integrity: sha512-nquRzR2tNJDGHdq/QVX4xkvOtD9pY+hOK/XvXbXftVwhwu5x86ldPCgaCr2SwaA3LwtHNOLJzuGofMQ+OqXeAA==}
+  '@aws-sdk/client-dynamodb@3.1124.0':
+    resolution: {integrity: sha512-SRINKKaG79aG3q/6etfXux9q1KH3TLu9UzCoCuChC34zWpcH5ZEcHbA8/LhDxZEqcEJAp0sRIkkQZeCppqD/DA==}
     engines: {node: '>=20.0.0'}
 
   '@aws-sdk/core@3.977.9':
@@ -372,8 +372,8 @@ packages:
     resolution: {integrity: sha512-Jb59xfEISoN5mmbnA+HYqdtrSX3CgCtJoof+V5D8/TgUI56W63GEEd5Y58WijU3Ou6+WEgaLD1feVzaRXV5IDQ==}
     engines: {node: '>=20.0.0'}
 
-  '@aws-sdk/credential-provider-node@3.972.81':
-    resolution: {integrity: sha512-Rml+WitoFvXmv6JZ18U/xGdGDGGvB/mOin0ya0lTnTrdC0Z1lrVxTYh7iNklZBcvcRMrs4DoEf6xy1KWyrLQQw==}
+  '@aws-sdk/credential-provider-node@3.972.82':
+    resolution: {integrity: sha512-znDkEOGXB8W3kG1LJUKP3foBZY/9qLM0eil/DxWXSp37XsdsRLQHE/d/OaCGGVgKpA6znR38h/+INk8do1FjiA==}
     engines: {node: '>=20.0.0'}
 
   '@aws-sdk/credential-provider-process@3.972.70':
@@ -2573,10 +2573,10 @@ snapshots:
 
   '@aws-cdk/cloud-assembly-schema@54.21.0': {}
 
-  '@aws-sdk/client-dynamodb@3.1122.0':
+  '@aws-sdk/client-dynamodb@3.1124.0':
     dependencies:
       '@aws-sdk/core': 3.977.9
-      '@aws-sdk/credential-provider-node': 3.972.81
+      '@aws-sdk/credential-provider-node': 3.972.82
       '@aws-sdk/dynamodb-codec': 3.973.44
       '@aws-sdk/middleware-endpoint-discovery': 3.972.30
       '@aws-sdk/types': 3.974.5
@@ -2640,7 +2640,7 @@ snapshots:
       '@smithy/types': 4.17.2
       tslib: 2.8.1
 
-  '@aws-sdk/credential-provider-node@3.972.81':
+  '@aws-sdk/credential-provider-node@3.972.82':
     dependencies:
       '@aws-sdk/credential-provider-env': 3.972.70
       '@aws-sdk/credential-provider-http': 3.972.72
