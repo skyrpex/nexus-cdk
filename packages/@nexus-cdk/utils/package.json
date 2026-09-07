@@ -11,9 +11,9 @@
 		"hono": "^4.13.7"
 	},
 	"devDependencies": {
-		"@types/bun": "^1.4.0",
+		"@types/bun": "^1.4.1",
 		"typescript": "^7.0.2",
-		"vitest": "^4.1.11"
+		"vitest": "^5.0.0"
 	},
 	"sideEffects": false
 }

@@ -10,7 +10,7 @@
 		"@eslint/js": "^10.0.1",
 		"@tanstack/eslint-plugin-query": "^5.102.8",
 		"@types/node": "^26.4.1",
-		"eslint": "^10.9.1",
+		"eslint": "^10.10.0",
 		"eslint-import-resolver-typescript": "^4.4.5",
 		"eslint-plugin-import": "^2.32.0",
 		"eslint-plugin-perfectionist": "^5.11.0",
