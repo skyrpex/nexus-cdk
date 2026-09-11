@@ -56,8 +56,8 @@ importers:
   example:
     dependencies:
       '@aws-sdk/client-dynamodb':
-        specifier: ^3.1127.0
-        version: 3.1127.0
+        specifier: ^3.1128.0
+        version: 3.1128.0
       '@dotenvx/dotenvx':
         specifier: ^2.23.0
         version: 2.23.0
@@ -113,8 +113,8 @@ importers:
   packages/@nexus-cdk/dynamodb:
     dependencies:
       '@aws-sdk/client-dynamodb':
-        specifier: ^3.1127.0
-        version: 3.1127.0
+        specifier: ^3.1128.0
+        version: 3.1128.0
       '@nexus-cdk/procedure':
         specifier: workspace:^
         version: link:../procedure
@@ -348,8 +348,8 @@ packages:
       - jsonschema
       - semver
 
-  '@aws-sdk/client-dynamodb@3.1127.0':
-    resolution: {integrity: sha512-rV9TC7gqtwekWR9jXBdzuvCG65fnv7jphnYdJmFBfLX1b0Q+ma3xijzZaGGeN+US2pKw/XaQiZapJX/nZqtBJw==}
+  '@aws-sdk/client-dynamodb@3.1128.0':
+    resolution: {integrity: sha512-l8cr5ydjj0H9jK8MtTL337CbI+s9azwgWl/MLlBkGQqsAJ6BT6v72APDiv7GFGJVI7JmNItdifjbTqve2HQnJA==}
     engines: {node: '>=20.0.0'}
 
   '@aws-sdk/core@3.977.9':
@@ -2590,7 +2590,7 @@ snapshots:
 
   '@aws-cdk/cloud-assembly-schema@54.22.0': {}
 
-  '@aws-sdk/client-dynamodb@3.1127.0':
+  '@aws-sdk/client-dynamodb@3.1128.0':
     dependencies:
       '@aws-sdk/core': 3.977.9
       '@aws-sdk/credential-provider-node': 3.972.82
