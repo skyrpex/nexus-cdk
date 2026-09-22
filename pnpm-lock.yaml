@@ -265,8 +265,8 @@ importers:
   packages/@nexus-sdk/client-lambda:
     dependencies:
       devalue:
-        specifier: ^5.9.4
-        version: 5.9.4
+        specifier: ^6.0.0
+        version: 6.0.0
     devDependencies:
       '@nexus-cdk/lambda':
         specifier: workspace:^
@@ -1485,8 +1485,9 @@ packages:
   devalue@5.3.2:
     resolution: {integrity: sha512-UDsjUbpQn9kvm68slnrs+mfxwFkIflOhkanmyabZ8zOYk8SMEIbJ3TK+88g70hSIeytu4y18f0z/hYHMTrXIWw==}
 
-  devalue@5.9.4:
-    resolution: {integrity: sha512-sPAT4pztbu6586/hrhOnMKS17IJrvg12mXiSPSS3W5qDeN2RGgvZ0diZCm31dBbnevfVmujNO3IM2wrS4Y2Rhg==}
+  devalue@6.0.0:
+    resolution: {integrity: sha512-jITRGmc7d+UInNVsQxcz3zsbDwP1MvvVzlNto94FAeieVO5oAk3lupptFvTVBcB+rM2BAagsKtTjgVKFsddCkA==}
+    engines: {node: '>=22.17'}
 
   doctrine@2.1.0:
     resolution: {integrity: sha512-35mSku4ZXK0vfCuHEDAwt55dg2jNajHZ1odvF+8SSr82EsZY4QmXfuWso8oEd8zRhVObSN18aM0CjSdoBX7zIw==}
@@ -3670,7 +3671,7 @@ snapshots:
 
   devalue@5.3.2: {}
 
-  devalue@5.9.4: {}
+  devalue@6.0.0: {}
 
   doctrine@2.1.0:
     dependencies:
