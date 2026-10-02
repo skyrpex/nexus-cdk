@@ -1,7 +1,7 @@
 queue_rules:
   - name: default
     merge_method: squash
-    conditions:
+    merge_conditions:
       - "label=autorelease: pending"
 pull_request_rules:
   - name: Automatic merge
@@ -11,10 +11,8 @@ pull_request_rules:
     actions:
       merge:
   - name: Make sure PR are up to date before merging with rebase
-    description:
-      This automatically rebases PRs when they are out-of-date with the
-      base branch to avoid semantic conflicts (next step is using a merge
-      queue).
+    description: This automatically rebases PRs when they are out-of-date with the base 
+      branch to avoid semantic conflicts (next step is using a merge queue).
     conditions: []
     actions:
       rebase:
@@ -38,12 +36,13 @@ merge_protections:
     if:
       - base = main
     success_conditions:
-      - "title ~=
-        ^(fix|feat|docs|style|refactor|perf|test|build|ci|chore|revert)(?:\\(.+\
-        \\))?:"
+      - "title ~= ^(fix|feat|docs|style|refactor|perf|test|build|ci|chore|revert)(?:\\(.+\\\
+        ))?:"
   - name: Do not merge outdated PRs
     description: Make sure PRs are almost up to date before merging
     if:
       - base = main
     success_conditions:
       - "#commits-behind <= 10"
+merge_protections_settings:
+  reporting_method: check-runs
