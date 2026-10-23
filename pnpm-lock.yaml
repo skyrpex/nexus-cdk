@@ -56,11 +56,11 @@ importers:
   example:
     dependencies:
       '@aws-sdk/client-dynamodb':
-        specifier: ^3.1153.0
-        version: 3.1153.0
+        specifier: ^3.1154.0
+        version: 3.1154.0
       '@dotenvx/dotenvx':
-        specifier: ^2.38.0
-        version: 2.38.0
+        specifier: ^2.38.1
+        version: 2.38.1
       '@nexus-sdk/client-api':
         specifier: workspace:^
         version: link:../packages/@nexus-sdk/client-api
@@ -68,8 +68,8 @@ importers:
         specifier: ^5.104.5
         version: 5.104.5(react@19.0.0)
       aws-cdk-lib:
-        specifier: ^2.273.0
-        version: 2.273.0(constructs@10.8.1)
+        specifier: ^2.274.0
+        version: 2.274.0(constructs@10.8.1)
       constructs:
         specifier: ^10.8.1
         version: 10.8.1
@@ -113,8 +113,8 @@ importers:
   packages/@nexus-cdk/dynamodb:
     dependencies:
       '@aws-sdk/client-dynamodb':
-        specifier: ^3.1153.0
-        version: 3.1153.0
+        specifier: ^3.1154.0
+        version: 3.1154.0
       '@nexus-cdk/procedure':
         specifier: workspace:^
         version: link:../procedure
@@ -146,8 +146,8 @@ importers:
         specifier: workspace:^
         version: link:../utils
       aws-cdk-lib:
-        specifier: ^2.273.0
-        version: 2.273.0(constructs@10.8.1)
+        specifier: ^2.274.0
+        version: 2.274.0(constructs@10.8.1)
       constructs:
         specifier: ^10.8.1
         version: 10.8.1
@@ -308,8 +308,8 @@ importers:
         specifier: workspace:^
         version: link:../@nexus-cdk/vite
       aws-cdk-lib:
-        specifier: ^2.273.0
-        version: 2.273.0(constructs@10.8.1)
+        specifier: ^2.274.0
+        version: 2.274.0(constructs@10.8.1)
       constructs:
         specifier: ^10.8.1
         version: 10.8.1
@@ -317,8 +317,8 @@ importers:
         specifier: ^1.2.0
         version: 1.2.0
       emittery:
-        specifier: ^2.1.0
-        version: 2.1.0
+        specifier: ^2.2.0
+        version: 2.2.0
       esbuild:
         specifier: ^0.28.2
         version: 0.28.2
@@ -341,15 +341,15 @@ packages:
   '@aws-cdk/asset-node-proxy-agent-v6@2.1.3':
     resolution: {integrity: sha512-98We1QWfin9vtuuQtNFhIIAEWb8CreyYTAP0Vn8HqSBoNiFJM9nZgifJeQawT9Wq0NX1HCNFlxCyTccIrK1PSA==}
 
-  '@aws-cdk/cloud-assembly-schema@54.26.0':
-    resolution: {integrity: sha512-zYI3XhQ/bpuSXuPaF77f7u2q6rZBPwdrPh8a0v+e/B3IxbRQAtQv0fmacQ8uYh9RPVuIVnExE6IsFJBSALH7BA==}
+  '@aws-cdk/cloud-assembly-schema@55.1.0':
+    resolution: {integrity: sha512-q8tWC7UBXb1KnKuJEoNL3qfYg5wQGARHrxXfTVgTPWyKwvk/w0PpRPIp0BiOgyox+obSHwCKjiieE4pYBs88fw==}
     engines: {node: '>= 18.0.0'}
     bundledDependencies:
       - jsonschema
       - semver
 
-  '@aws-sdk/client-dynamodb@3.1153.0':
-    resolution: {integrity: sha512-VLltvPCGtzBIskdvOY6MDkCM5igTCAY4KUpFTFh/ak1DuvrJ8R9H0hiSfPBj8meqyJkc+dzc2oACVnwT9JMjvg==}
+  '@aws-sdk/client-dynamodb@3.1154.0':
+    resolution: {integrity: sha512-59z5o4r+U0jOC9QEPPCcZkfcF7vAiQPGkMUDe5p6euN0fAFMNDy4rVeyf1eMROEcTs+Lu9xkUJTOVPr5TrbkYg==}
     engines: {node: '>=20.0.0'}
 
   '@aws-sdk/core@3.978.4':
@@ -499,15 +499,15 @@ packages:
     resolution: {integrity: sha512-dlT1m5e/0yUL0kRNcQn7yGLVThkgbB0Ga/1AmfDDC/8ik6AIiSf2QLQO2zPYvefsHP0aFgxO93cVLCCfDp7kzQ==}
     engines: {node: '>= 20.12.0'}
 
-  '@dotenvx/dotenvx@2.38.0':
-    resolution: {integrity: sha512-HVkCYAQ+v/h/buDNWfQnA6QkidC34QZFFGcf9A5BMidAgiNKcIGWAA0eyhXNF4Ak8971ytJLDQY/u6xSLmsR2w==}
+  '@dotenvx/dotenvx@2.38.1':
+    resolution: {integrity: sha512-/E1w1e5+XjX13+BsGAupICHNwGVbgcsSQ/+2bAUXWlovNAt567SNqfON8ATkF1jUD+5OuxOhez2dt+IBifHG8A==}
     hasBin: true
 
   '@dotenvx/primitives@3.3.1':
     resolution: {integrity: sha512-ykX29rVnHwwV6m3AMmvR+niFSwhOG2TYttJjURz3n/3iHtpWC8gEptojYY+eHgBAV4fkaGRM1Rf0wgQ6/DeUYQ==}
 
-  '@dotenvx/providers@0.3.8':
-    resolution: {integrity: sha512-e1+O9dnFQRBDvc25DVduFTZDA4WLpGrC0IgD+/ot4Cnk0xCX/ikvGCMvoGnslCr+wF509uYLEE3J5T1Tead2ww==}
+  '@dotenvx/providers@0.3.11':
+    resolution: {integrity: sha512-5H5kAr5ps4shR7ZtA3mtDphh9Fbhp21yY77jCBCJLX2pbdEse0bcCBn7M1Ex1YrKF2O9SLKJB8ttJ2P5JsPidQ==}
 
   '@dotenvx/tooling@1.0.5':
     resolution: {integrity: sha512-XMAwZpxIajWaP31zLl2GQS3grIQsRY4B4VMss8fDv70XbGF/9aXSMHc3v9iJNZZVX/i0Loz1MAn6oM8dycbN4A==}
@@ -1398,8 +1398,8 @@ packages:
     resolution: {integrity: sha512-wvUjBtSGN7+7SjNpq/9M2Tg350UZD3q62IFZLbRAR1bSMlCo1ZaeW+BJ+D090e4hIIZLBcTDWe4Mh4jvUDajzQ==}
     engines: {node: '>= 0.4'}
 
-  aws-cdk-lib@2.273.0:
-    resolution: {integrity: sha512-H7hBQHnKn0ZBbpnWRL1Hn0GunSQUsYaLqOk2xIqV0HWr3qbYMwTEZT0HbJBUSxeUdzp1nz0AE2LN3K6qvYr4Zg==}
+  aws-cdk-lib@2.274.0:
+    resolution: {integrity: sha512-jez6nnPRPGLRv6PfaVUdJNnIQN/5OQQRyQRfdf2lbkww5Z2W4FJ+RIEW1TpYgJ3oLXoM23f9LGA1kxoqvF/sFg==}
     engines: {node: '>= 20.0.0'}
     peerDependencies:
       constructs: ^10.5.0
@@ -1537,8 +1537,8 @@ packages:
     resolution: {integrity: sha512-KIN/nDJBQRcXw0MLVhZE9iQHmG68qAVIBg9CqmUYjmQIhgij9U5MFvrqkUL5FbtyyzZuOeOt0zdeRe4UY7ct+A==}
     engines: {node: '>= 0.4'}
 
-  emittery@2.1.0:
-    resolution: {integrity: sha512-cPP/ddRdWhEQz7+R/QJi22O2iA73YuNWJRgDM2SUVEKA3XRPiv9f5cfGb508s+124sEBlnewHq/CiSOuIyewHg==}
+  emittery@2.2.0:
+    resolution: {integrity: sha512-zpmLSuVIqrtTPDR2IYiTbxXB6XgrS7+rRk5uT4w6qgmxeNvtdnSaAOGNNbVokgm+0F6zrRufshUfSlnsPc7d8g==}
     engines: {node: '>=22'}
 
   es-abstract@1.24.0:
@@ -2603,9 +2603,9 @@ snapshots:
 
   '@aws-cdk/asset-node-proxy-agent-v6@2.1.3': {}
 
-  '@aws-cdk/cloud-assembly-schema@54.26.0': {}
+  '@aws-cdk/cloud-assembly-schema@55.1.0': {}
 
-  '@aws-sdk/client-dynamodb@3.1153.0':
+  '@aws-sdk/client-dynamodb@3.1154.0':
     dependencies:
       '@aws-sdk/core': 3.978.4
       '@aws-sdk/credential-provider-node': 3.972.87
@@ -2900,10 +2900,10 @@ snapshots:
       fast-wrap-ansi: 0.2.2
       sisteransi: 1.0.5
 
-  '@dotenvx/dotenvx@2.38.0':
+  '@dotenvx/dotenvx@2.38.1':
     dependencies:
       '@dotenvx/primitives': 3.3.1
-      '@dotenvx/providers': 0.3.8
+      '@dotenvx/providers': 0.3.11
       '@dotenvx/tooling': 1.0.5
       undici: 6.29.1
       write-file-atomic: 5.0.1
@@ -2911,7 +2911,7 @@ snapshots:
 
   '@dotenvx/primitives@3.3.1': {}
 
-  '@dotenvx/providers@0.3.8':
+  '@dotenvx/providers@0.3.11':
     dependencies:
       '@dotenvx/primitives': 3.3.1
       '@dotenvx/tooling': 1.0.5
@@ -3617,11 +3617,11 @@ snapshots:
     dependencies:
       possible-typed-array-names: 1.1.0
 
-  aws-cdk-lib@2.273.0(constructs@10.8.1):
+  aws-cdk-lib@2.274.0(constructs@10.8.1):
     dependencies:
       '@aws-cdk/asset-awscli-v1': 2.2.292
       '@aws-cdk/asset-node-proxy-agent-v6': 2.1.3
-      '@aws-cdk/cloud-assembly-schema': 54.26.0
+      '@aws-cdk/cloud-assembly-schema': 55.1.0
       constructs: 10.8.1
 
   balanced-match@1.0.2: {}
@@ -3748,7 +3748,7 @@ snapshots:
       es-errors: 1.3.0
       gopd: 1.2.0
 
-  emittery@2.1.0: {}
+  emittery@2.2.0: {}
 
   es-abstract@1.24.0:
     dependencies:
