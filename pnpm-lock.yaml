@@ -56,8 +56,8 @@ importers:
   example:
     dependencies:
       '@aws-sdk/client-dynamodb':
-        specifier: ^3.1169.0
-        version: 3.1169.0
+        specifier: ^3.1170.0
+        version: 3.1170.0
       '@dotenvx/dotenvx':
         specifier: ^2.38.2
         version: 2.38.2
@@ -104,8 +104,8 @@ importers:
         specifier: ^7.2.0
         version: 7.2.0
       hono:
-        specifier: ^4.13.18
-        version: 4.13.18
+        specifier: ^4.13.19
+        version: 4.13.19
       json-codec:
         specifier: ^1.1.0
         version: 1.1.0
@@ -113,8 +113,8 @@ importers:
   packages/@nexus-cdk/dynamodb:
     dependencies:
       '@aws-sdk/client-dynamodb':
-        specifier: ^3.1169.0
-        version: 3.1169.0
+        specifier: ^3.1170.0
+        version: 3.1170.0
       '@nexus-cdk/procedure':
         specifier: workspace:^
         version: link:../procedure
@@ -135,7 +135,7 @@ importers:
     dependencies:
       '@hono/node-server':
         specifier: ^2.1.8
-        version: 2.1.8(hono@4.13.18)
+        version: 2.1.8(hono@4.13.19)
       '@nexus-cdk/procedure':
         specifier: workspace:^
         version: link:../procedure
@@ -164,8 +164,8 @@ importers:
         specifier: ^7.2.0
         version: 7.2.0
       hono:
-        specifier: ^4.13.18
-        version: 4.13.18
+        specifier: ^4.13.19
+        version: 4.13.19
       tsx:
         specifier: ^4.23.15
         version: 4.23.15
@@ -217,10 +217,10 @@ importers:
     dependencies:
       '@hono/node-server':
         specifier: ^2.1.8
-        version: 2.1.8(hono@4.13.18)
+        version: 2.1.8(hono@4.13.19)
       hono:
-        specifier: ^4.13.18
-        version: 4.13.18
+        specifier: ^4.13.19
+        version: 4.13.19
     devDependencies:
       '@types/bun':
         specifier: ^1.4.4
@@ -348,8 +348,8 @@ packages:
       - jsonschema
       - semver
 
-  '@aws-sdk/client-dynamodb@3.1169.0':
-    resolution: {integrity: sha512-FqvqV/l5gJCluCLxE37sNxd9UFunnZFwc/yQCizLYN368rlbFbcJ3SiHqYvJEmZZFFV3sWs9kyn3D3HiGxjumA==}
+  '@aws-sdk/client-dynamodb@3.1170.0':
+    resolution: {integrity: sha512-wg/UTlI2OYKdn9LUIOWAliTewoCdQa8HCVsJcZwf9XxO1ChsT8ZvRc4DEJVhwIkGS/JTlWW0Sv77qxn9Fy5YJQ==}
     engines: {node: '>=20.0.0'}
 
   '@aws-sdk/core@3.981.0':
@@ -912,8 +912,8 @@ packages:
   '@rtsao/scc@1.1.0':
     resolution: {integrity: sha512-zt6OdqaDoOnJ1ZYsCYGt9YmWzDXl4vQdKTyJev62gFhRGKdx7mcT54V9KIjg+d2wi9EXsPvAPKe7i7WjfVWB8g==}
 
-  '@smithy/core@3.40.0':
-    resolution: {integrity: sha512-DssGno52pzZ5m6RlDtyKuBIpZNPg9pqgs0CnNDKz9IatxCsmvNmJNn5Zn6rf77MthZo9wf89OvZFhTY/RwxhxQ==}
+  '@smithy/core@3.41.0':
+    resolution: {integrity: sha512-fuZ34H1uizS3WgcX9VXG7Uy8od5A5/kCc+CR3NkHLNm2H/BE9AUHG02VIdu8ZB7FYhLqsr/RZbqAoXuOCg/Oxg==}
     engines: {node: '>=18.0.0'}
 
   '@smithy/credential-provider-imds@4.5.2':
@@ -1847,8 +1847,8 @@ packages:
     resolution: {integrity: sha512-0hJU9SCPvmMzIBdZFqNPXWa6dqh7WdH0cII9y+CyS8rG3nL48Bclra9HmKhVVUHyPWNH5Y7xDwAB7bfgSjkUMQ==}
     engines: {node: '>= 0.4'}
 
-  hono@4.13.18:
-    resolution: {integrity: sha512-H9q/E1XizaWstJxUW881dmLxEj+t/TrGGnyxINkm4+sK0qUwsMtFdo2BWI9Vs3cIS19MU6b6iCijoUoEf4f3DA==}
+  hono@4.13.19:
+    resolution: {integrity: sha512-KmXvQAXwcAHV+muzbIwoJ23niEB5nMoDVr9WcRkU8mvjUECm/1+7v4Jgp7P7a+H6MLFrh+vXrGonGrGS+RQfkA==}
     engines: {node: '>=16.9.0'}
 
   hookified@1.15.1:
@@ -2641,14 +2641,14 @@ snapshots:
 
   '@aws-cdk/cloud-assembly-schema@55.6.0': {}
 
-  '@aws-sdk/client-dynamodb@3.1169.0':
+  '@aws-sdk/client-dynamodb@3.1170.0':
     dependencies:
       '@aws-sdk/core': 3.981.0
       '@aws-sdk/credential-provider-node': 3.972.97
       '@aws-sdk/dynamodb-codec': 3.973.58
       '@aws-sdk/middleware-endpoint-discovery': 3.972.39
       '@aws-sdk/types': 3.975.1
-      '@smithy/core': 3.40.0
+      '@smithy/core': 3.41.0
       '@smithy/fetch-http-handler': 5.8.1
       '@smithy/node-http-handler': 4.14.2
       '@smithy/types': 4.20.0
@@ -2659,7 +2659,7 @@ snapshots:
       '@aws-sdk/types': 3.975.1
       '@aws-sdk/xml-builder': 3.972.43
       '@aws/lambda-invoke-store': 0.3.0
-      '@smithy/core': 3.40.0
+      '@smithy/core': 3.41.0
       '@smithy/signature-v4': 5.7.5
       '@smithy/types': 4.20.0
       bowser: 2.15.0
@@ -2669,7 +2669,7 @@ snapshots:
     dependencies:
       '@aws-sdk/core': 3.981.0
       '@aws-sdk/types': 3.975.1
-      '@smithy/core': 3.40.0
+      '@smithy/core': 3.41.0
       '@smithy/types': 4.20.0
       tslib: 2.9.1
 
@@ -2677,7 +2677,7 @@ snapshots:
     dependencies:
       '@aws-sdk/core': 3.981.0
       '@aws-sdk/types': 3.975.1
-      '@smithy/core': 3.40.0
+      '@smithy/core': 3.41.0
       '@smithy/fetch-http-handler': 5.8.1
       '@smithy/node-http-handler': 4.14.2
       '@smithy/types': 4.20.0
@@ -2694,7 +2694,7 @@ snapshots:
       '@aws-sdk/credential-provider-web-identity': 3.972.90
       '@aws-sdk/nested-clients': 3.998.3
       '@aws-sdk/types': 3.975.1
-      '@smithy/core': 3.40.0
+      '@smithy/core': 3.41.0
       '@smithy/credential-provider-imds': 4.5.2
       '@smithy/types': 4.20.0
       tslib: 2.9.1
@@ -2704,7 +2704,7 @@ snapshots:
       '@aws-sdk/core': 3.981.0
       '@aws-sdk/nested-clients': 3.998.3
       '@aws-sdk/types': 3.975.1
-      '@smithy/core': 3.40.0
+      '@smithy/core': 3.41.0
       '@smithy/types': 4.20.0
       tslib: 2.9.1
 
@@ -2717,7 +2717,7 @@ snapshots:
       '@aws-sdk/credential-provider-sso': 3.973.28
       '@aws-sdk/credential-provider-web-identity': 3.972.90
       '@aws-sdk/types': 3.975.1
-      '@smithy/core': 3.40.0
+      '@smithy/core': 3.41.0
       '@smithy/credential-provider-imds': 4.5.2
       '@smithy/types': 4.20.0
       tslib: 2.9.1
@@ -2726,7 +2726,7 @@ snapshots:
     dependencies:
       '@aws-sdk/core': 3.981.0
       '@aws-sdk/types': 3.975.1
-      '@smithy/core': 3.40.0
+      '@smithy/core': 3.41.0
       '@smithy/types': 4.20.0
       tslib: 2.9.1
 
@@ -2736,7 +2736,7 @@ snapshots:
       '@aws-sdk/nested-clients': 3.998.3
       '@aws-sdk/token-providers': 3.1166.0
       '@aws-sdk/types': 3.975.1
-      '@smithy/core': 3.40.0
+      '@smithy/core': 3.41.0
       '@smithy/types': 4.20.0
       tslib: 2.9.1
 
@@ -2745,14 +2745,14 @@ snapshots:
       '@aws-sdk/core': 3.981.0
       '@aws-sdk/nested-clients': 3.998.3
       '@aws-sdk/types': 3.975.1
-      '@smithy/core': 3.40.0
+      '@smithy/core': 3.41.0
       '@smithy/types': 4.20.0
       tslib: 2.9.1
 
   '@aws-sdk/dynamodb-codec@3.973.58':
     dependencies:
       '@aws-sdk/core': 3.981.0
-      '@smithy/core': 3.40.0
+      '@smithy/core': 3.41.0
       '@smithy/types': 4.20.0
       tslib: 2.9.1
 
@@ -2765,7 +2765,7 @@ snapshots:
     dependencies:
       '@aws-sdk/endpoint-cache': 3.972.11
       '@aws-sdk/types': 3.975.1
-      '@smithy/core': 3.40.0
+      '@smithy/core': 3.41.0
       '@smithy/types': 4.20.0
       tslib: 2.9.1
 
@@ -2774,7 +2774,7 @@ snapshots:
       '@aws-sdk/core': 3.981.0
       '@aws-sdk/signature-v4-multi-region': 3.996.52
       '@aws-sdk/types': 3.975.1
-      '@smithy/core': 3.40.0
+      '@smithy/core': 3.41.0
       '@smithy/fetch-http-handler': 5.8.1
       '@smithy/node-http-handler': 4.14.2
       '@smithy/types': 4.20.0
@@ -2792,7 +2792,7 @@ snapshots:
       '@aws-sdk/core': 3.981.0
       '@aws-sdk/nested-clients': 3.998.3
       '@aws-sdk/types': 3.975.1
-      '@smithy/core': 3.40.0
+      '@smithy/core': 3.41.0
       '@smithy/types': 4.20.0
       tslib: 2.9.1
 
@@ -3098,9 +3098,9 @@ snapshots:
       '@eslint/core': 1.2.1
       levn: 0.4.1
 
-  '@hono/node-server@2.1.8(hono@4.13.18)':
+  '@hono/node-server@2.1.8(hono@4.13.19)':
     dependencies:
-      hono: 4.13.18
+      hono: 4.13.19
 
   '@humanfs/core@0.19.2':
     dependencies:
@@ -3226,32 +3226,32 @@ snapshots:
 
   '@rtsao/scc@1.1.0': {}
 
-  '@smithy/core@3.40.0':
+  '@smithy/core@3.41.0':
     dependencies:
       '@smithy/types': 4.20.0
       tslib: 2.9.1
 
   '@smithy/credential-provider-imds@4.5.2':
     dependencies:
-      '@smithy/core': 3.40.0
+      '@smithy/core': 3.41.0
       '@smithy/types': 4.20.0
       tslib: 2.9.1
 
   '@smithy/fetch-http-handler@5.8.1':
     dependencies:
-      '@smithy/core': 3.40.0
+      '@smithy/core': 3.41.0
       '@smithy/types': 4.20.0
       tslib: 2.9.1
 
   '@smithy/node-http-handler@4.14.2':
     dependencies:
-      '@smithy/core': 3.40.0
+      '@smithy/core': 3.41.0
       '@smithy/types': 4.20.0
       tslib: 2.9.1
 
   '@smithy/signature-v4@5.7.5':
     dependencies:
-      '@smithy/core': 3.40.0
+      '@smithy/core': 3.41.0
       '@smithy/types': 4.20.0
       tslib: 2.9.1
 
@@ -4218,7 +4218,7 @@ snapshots:
     dependencies:
       function-bind: 1.1.2
 
-  hono@4.13.18: {}
+  hono@4.13.19: {}
 
   hookified@1.15.1: {}
 
