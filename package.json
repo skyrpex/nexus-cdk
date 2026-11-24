@@ -8,7 +8,7 @@
 	},
 	"devDependencies": {
 		"@eslint/js": "^10.0.1",
-		"@tanstack/eslint-plugin-query": "^5.108.0",
+		"@tanstack/eslint-plugin-query": "^5.108.2",
 		"@types/node": "^26.6.6",
 		"eslint": "^10.15.0",
 		"eslint-import-resolver-typescript": "^4.4.5",
@@ -16,7 +16,7 @@
 		"eslint-plugin-perfectionist": "^5.14.0",
 		"globals": "^17.14.0",
 		"prettier": "^3.10.1",
-		"turbo": "^2.11.11",
+		"turbo": "^2.11.13",
 		"typescript": "^7.0.2",
 		"typescript-eslint": "^8.73.0"
 	},
